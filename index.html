@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hindi Tutor Point - Free JSON API Repository</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --success-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --warning-gradient: linear-gradient(135deg, #ffa751 0%, #ffe259 100%);
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        /* Navigation */
+        .navbar {
+            background: white !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 1.5rem;
+        }
+        
+        .nav-link {
+            color: #667eea !important;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-link:hover {
+            color: #764ba2 !important;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--primary-gradient);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+        
+        .nav-link:hover::after {
+            width: 80%;
+        }
+        
+        .hero-section {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 5rem 0 4rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            overflow: hidden;
+            height: 100%;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+        
+        .stat-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border-top: 4px solid transparent;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+        
+        .stat-card.primary {
+            border-top-color: #667eea;
+        }
+        
+        .stat-card.danger {
+            border-top-color: #f5576c;
+        }
+        
+        .stat-card.info {
+            border-top-color: #4facfe;
+        }
+        
+        .stat-card.warning {
+            border-top-color: #ffa751;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .stat-label {
+            font-size: 1rem;
+            color: #6c757d;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .btn-gradient {
+            background: var(--primary-gradient);
+            border: none;
+            color: white;
+            font-weight: 500;
+            padding: 0.8rem 2rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn-gradient:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+            color: white;
+        }
+        
+        .btn-coffee {
+            background: var(--warning-gradient);
+            border: none;
+            color: white;
+            font-weight: 600;
+            padding: 1rem 2.5rem;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+        
+        .btn-coffee:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(255, 167, 81, 0.4);
+            color: white;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            height: 100%;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            background: var(--primary-gradient);
+            color: white;
+        }
+        
+        .github-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .github-btn {
+            background: #24292e;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .github-btn:hover {
+            background: #1a1e21;
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        .contribute-section {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border-radius: 20px;
+            padding: 3rem;
+            margin: 3rem 0;
+        }
+        
+        .badge-custom {
+            background: var(--success-gradient);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+        
+        .api-endpoint {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 1rem;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            margin: 0.5rem 0;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <div x-data="homePage()">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="bi bi-database-gear me-2"></i>
+                    Hindi Tutor Point
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="blogs.html">
+                                <i class="bi bi-file-post me-1"></i>Blogs
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quotes.html">
+                                <i class="bi bi-quote me-1"></i>Quotes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="personalities.html">
+                                <i class="bi bi-person-badge me-1"></i>Personalities
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="vocabulary.html">
+                                <i class="bi bi-book me-1"></i>Vocabulary
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/hinditutorpoint/json" target="_blank">
+                                <i class="bi bi-github me-1"></i>GitHub
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <div class="container">
+                <div class="text-center hero-content">
+                    <h1 class="display-3 fw-bold mb-4">
+                        Free JSON API Repository
+                    </h1>
+                    <p class="lead mb-4 fs-4">
+                        Open-source data for developers, learners, and innovators
+                    </p>
+                    <p class="mb-5 fs-5">
+                        Access tech blogs, inspirational quotes, tech personalities, and vocabulary - all for free!
+                    </p>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap mb-4">
+                        <a href="blogs.html" class="btn btn-light btn-lg">
+                            <i class="bi bi-file-post me-2"></i>Explore Data
+                        </a>
+                        <a href="https://github.com/hinditutorpoint/json" target="_blank" class="btn btn-outline-light btn-lg">
+                            <i class="bi bi-github me-2"></i>View on GitHub
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <span class="badge-custom">
+                            <i class="bi bi-github me-2"></i>Open Source
+                        </span>
+                        <span class="badge-custom">
+                            <i class="bi bi-cloud-arrow-down me-2"></i>Free API
+                        </span>
+                        <span class="badge-custom">
+                            <i class="bi bi-code-slash me-2"></i>CORS Enabled
+                        </span>
+                        <span class="badge-custom">
+                            <i class="bi bi-stars me-2"></i>No Auth Required
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="container pb-5">
+            <!-- Stats Section -->
+            <div class="row g-4 mb-5">
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat-card primary">
+                        <div class="stat-number" x-text="stats.posts">5</div>
+                        <div class="stat-label">
+                            <i class="bi bi-file-post me-2"></i>Blog Posts
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat-card danger">
+                        <div class="stat-number" x-text="stats.quotes">--</div>
+                        <div class="stat-label">
+                            <i class="bi bi-quote me-2"></i>Quotes
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat-card info">
+                        <div class="stat-number" x-text="stats.personalities">--</div>
+                        <div class="stat-label">
+                            <i class="bi bi-person-badge me-2"></i>Personalities
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat-card warning">
+                        <div class="stat-number" x-text="stats.vocabulary">--</div>
+                        <div class="stat-label">
+                            <i class="bi bi-book me-2"></i>Vocabulary
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Pages Navigation -->
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-lg-3">
+                    <a href="blogs.html" class="text-decoration-none">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="bi bi-file-post-fill"></i>
+                            </div>
+                            <h4 class="mb-3">Tech Blogs</h4>
+                            <p class="text-muted mb-3">Explore latest technology articles with detailed discussions and comments</p>
+                            <span class="text-primary fw-bold">
+                                View Blogs <i class="bi bi-arrow-right ms-2"></i>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="quotes.html" class="text-decoration-none">
+                        <div class="feature-card">
+                            <div class="feature-icon" style="background: var(--secondary-gradient);">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                            <h4 class="mb-3">Quotes</h4>
+                            <p class="text-muted mb-3">Inspirational and motivational quotes from various authors and categories</p>
+                            <span class="text-primary fw-bold">
+                                View Quotes <i class="bi bi-arrow-right ms-2"></i>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="personalities.html" class="text-decoration-none">
+                        <div class="feature-card">
+                            <div class="feature-icon" style="background: var(--success-gradient);">
+                                <i class="bi bi-person-badge-fill"></i>
+                            </div>
+                            <h4 class="mb-3">Tech Personalities</h4>
+                            <p class="text-muted mb-3">Pioneers and innovators who shaped the technology world</p>
+                            <span class="text-primary fw-bold">
+                                View Personalities <i class="bi bi-arrow-right ms-2"></i>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="vocabulary.html" class="text-decoration-none">
+                        <div class="feature-card">
+                            <div class="feature-icon" style="background: var(--warning-gradient);">
+                                <i class="bi bi-book-fill"></i>
+                            </div>
+                            <h4 class="mb-3">Tech Vocabulary</h4>
+                            <p class="text-muted mb-3">Comprehensive tech terms with Hindi translations and examples</p>
+                            <span class="text-primary fw-bold">
+                                View Vocabulary <i class="bi bi-arrow-right ms-2"></i>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- API Endpoints Section -->
+            <div class="card mb-5">
+                <div class="card-body p-4">
+                    <h3 class="mb-4">
+                        <i class="bi bi-code-slash me-2"></i>API Endpoints
+                    </h3>
+                    <div class="row g-3">
+                        <div class="col-lg-6">
+                            <div class="api-endpoint">
+                                <small class="text-muted d-block mb-2">Posts API</small>
+                                <code>https://raw.githubusercontent.com/hinditutorpoint/json/main/posts.json</code>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="api-endpoint">
+                                <small class="text-muted d-block mb-2">Quotes API</small>
+                                <code>https://raw.githubusercontent.com/hinditutorpoint/json/main/quotes.json</code>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="api-endpoint">
+                                <small class="text-muted d-block mb-2">Tech Personalities API</small>
+                                <code>https://raw.githubusercontent.com/hinditutorpoint/json/main/tech_personalities.json</code>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="api-endpoint">
+                                <small class="text-muted d-block mb-2">Tech Vocabulary API</small>
+                                <code>https://raw.githubusercontent.com/hinditutorpoint/json/main/tech_vocabulary.json</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GitHub Section -->
+            <div class="card mb-5">
+                <div class="card-body text-center p-5">
+                    <h3 class="mb-4">
+                        <i class="bi bi-github me-2"></i>Support Us on GitHub
+                    </h3>
+                    <p class="lead mb-4">Star our repository and help us grow this free resource!</p>
+                    <div class="github-buttons mb-4">
+                        <a href="https://github.com/hinditutorpoint/json" target="_blank" class="github-btn">
+                            <i class="bi bi-star-fill"></i>
+                            Star on GitHub
+                        </a>
+                        <a href="https://github.com/hinditutorpoint/json/fork" target="_blank" class="github-btn">
+                            <i class="bi bi-bezier2"></i>
+                            Fork Repository
+                        </a>
+                        <a href="https://github.com/hinditutorpoint/json/issues" target="_blank" class="github-btn">
+                            <i class="bi bi-bug"></i>
+                            Report Issues
+                        </a>
+                    </div>
+                    <div class="text-muted">
+                        <small>Join our community of developers using this API</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- My Other Projects Section -->
+            <div class="card mb-5">
+                <div class="card-body p-4">
+                    <h3 class="mb-4 text-center">
+                        <i class="bi bi-box-seam me-2"></i>My Other Projects
+                    </h3>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <a href="https://github.com/hinditutorpoint/inputchooser" target="_blank" class="text-decoration-none">
+                                <div class="feature-card h-100">
+                                    <div class="feature-icon" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);">
+                                        <i class="bi bi-file-earmark-arrow-up-fill"></i>
+                                    </div>
+                                    <h5 class="mb-2 text-dark">InputChooser</h5>
+                                    <p class="text-muted mb-3">Lightweight JavaScript plugin for drag & drop file upload with preview and delete option. No dependencies required.</p>
+                                    <span class="text-success fw-bold">
+                                        <i class="bi bi-github me-2"></i>View on GitHub <i class="bi bi-box-arrow-up-right ms-1"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="https://github.com/hinditutorpoint/rbac-suite" target="_blank" class="text-decoration-none">
+                                <div class="feature-card h-100">
+                                    <div class="feature-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                                        <i class="bi bi-shield-lock-fill"></i>
+                                    </div>
+                                    <h5 class="mb-2 text-dark">RBAC Suite</h5>
+                                    <p class="text-muted mb-3">Advanced RBAC permission management package for Laravel with multi-tenancy, time-based permissions, and caching support.</p>
+                                    <span class="text-success fw-bold">
+                                        <i class="bi bi-github me-2"></i>View on GitHub <i class="bi bi-box-arrow-up-right ms-1"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="https://github.com/hinditutorpoint/aiGenerator" target="_blank" class="text-decoration-none">
+                                <div class="feature-card h-100">
+                                    <div class="feature-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                                        <i class="bi bi-robot"></i>
+                                    </div>
+                                    <h5 class="mb-2 text-dark">AI Generator</h5>
+                                    <p class="text-muted mb-3">Lightweight jQuery plugin for AI content generation with voice input support, customizable output, and modal compatibility.</p>
+                                    <span class="text-success fw-bold">
+                                        <i class="bi bi-github me-2"></i>View on GitHub <i class="bi bi-box-arrow-up-right ms-1"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contribute Section -->
+            <div class="contribute-section text-center">
+                <div class="float-animation mb-4">
+                    <i class="bi bi-heart-fill" style="font-size: 4rem; color: #f5576c;"></i>
+                </div>
+                <h2 class="mb-4">Contribute to the Project</h2>
+                <p class="lead mb-4">
+                    Help us expand this repository! Add new data, fix bugs, or improve documentation.
+                </p>
+                <div class="row justify-content-center mb-4">
+                    <div class="col-md-4 mb-3">
+                        <div class="p-3">
+                            <i class="bi bi-git text-primary" style="font-size: 3rem;"></i>
+                            <h5 class="mt-3">Submit Pull Request</h5>
+                            <p class="text-muted">Add new content or improve existing data</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="p-3">
+                            <i class="bi bi-bug text-danger" style="font-size: 3rem;"></i>
+                            <h5 class="mt-3">Report Issues</h5>
+                            <p class="text-muted">Found a bug? Let us know!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="p-3">
+                            <i class="bi bi-file-earmark-text text-success" style="font-size: 3rem;"></i>
+                            <h5 class="mt-3">Improve Docs</h5>
+                            <p class="text-muted">Help others understand better</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/hinditutorpoint/json" target="_blank" class="btn btn-gradient btn-lg">
+                    <i class="bi bi-github me-2"></i>Start Contributing
+                </a>
+            </div>
+
+            <!-- Buy Me a Coffee Section -->
+            <div class="card bg-warning bg-opacity-10 border-0 mb-5">
+                <div class="card-body text-center p-5">
+                    <div class="mb-4">
+                        <i class="bi bi-cup-hot-fill" style="font-size: 5rem; color: #ffa751;"></i>
+                    </div>
+                    <h2 class="mb-3">Support My Work</h2>
+                    <p class="lead mb-4">
+                        If this free API helped you, consider buying me a coffee! ☕
+                    </p>
+                    <p class="text-muted mb-4">
+                        Your support helps me maintain and expand this resource for the community
+                    </p>
+                    <a href="https://www.buymeacoffee.com/hinditutorpoint" target="_blank" class="btn btn-coffee">
+                        <i class="bi bi-cup-hot-fill"></i>
+                        Buy Me a Coffee
+                    </a>
+                    <div class="mt-4 text-muted">
+                        <small>Every contribution is deeply appreciated! 🙏</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features Section -->
+            <div class="card">
+                <div class="card-body p-4">
+                    <h3 class="mb-4 text-center">
+                        <i class="bi bi-stars me-2"></i>Why Use Our API?
+                    </h3>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <i class="bi bi-shield-check text-success" style="font-size: 3rem;"></i>
+                                <h5 class="mt-3">100% Free</h5>
+                                <p class="text-muted">No authentication, no rate limits, no cost</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <i class="bi bi-lightning-charge text-warning" style="font-size: 3rem;"></i>
+                                <h5 class="mt-3">Fast & Reliable</h5>
+                                <p class="text-muted">Hosted on GitHub with 99.9% uptime</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <i class="bi bi-code-square text-primary" style="font-size: 3rem;"></i>
+                                <h5 class="mt-3">Easy Integration</h5>
+                                <p class="text-muted">Simple REST API, just fetch the JSON</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white py-4 mt-5">
+            <div class="container text-center">
+                <p class="mb-2">
+                    <i class="bi bi-github me-2"></i>
+                    <a href="https://github.com/hinditutorpoint/json" target="_blank" class="text-white text-decoration-none">
+                        github.com/hinditutorpoint/json
+                    </a>
+                </p>
+                <p class="mb-0 text-muted">Built with Alpine.js & Bootstrap 5 | © 2026 Hindi Tutor Point</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        function homePage() {
+            return {
+                stats: {
+                    posts: '...',
+                    quotes: '...',
+                    personalities: '...',
+                    vocabulary: '...'
+                },
+                
+                init() {
+                    this.loadStats();
+                },
+                
+                async loadStats() {
+                    try {
+                        // Load all data to count items
+                        const [posts, quotes, personalities, vocabulary] = await Promise.all([
+                            fetch('https://raw.githubusercontent.com/hinditutorpoint/json/main/posts.json').then(r => r.json()),
+                            fetch('https://raw.githubusercontent.com/hinditutorpoint/json/main/quotes.json').then(r => r.json()),
+                            fetch('https://raw.githubusercontent.com/hinditutorpoint/json/main/tech_personalities.json').then(r => r.json()),
+                            fetch('https://raw.githubusercontent.com/hinditutorpoint/json/main/tech_vocabulary.json').then(r => r.json())
+                        ]);
+                        
+                        this.stats.posts = Array.isArray(posts) ? posts.length : 1;
+                        this.stats.quotes = Array.isArray(quotes) ? quotes.length : 1;
+                        this.stats.personalities = Array.isArray(personalities) ? personalities.length : 1;
+                        this.stats.vocabulary = Array.isArray(vocabulary) ? vocabulary.length : 1;
+                    } catch (err) {
+                        console.error('Failed to load stats:', err);
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
