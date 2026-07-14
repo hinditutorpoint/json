@@ -1,0 +1,1722 @@
+[
+  {
+    "name": "स्टीव जॉब्स",
+    "name_en": "Steve Jobs",
+    "birth": "24 फरवरी 1955",
+    "place": "सैन फ्रांसिस्को, कैलिफोर्निया, अमेरिका",
+    "died": "5 अक्टूबर 2011",
+    "field": "कंप्यूटर विज्ञान, उद्यमिता, डिजाइन",
+    "company": "Apple Inc., Pixar, NeXT",
+    "contribution": "Apple कंपनी की स्थापना की, Macintosh, iPod, iPhone, iPad जैसे क्रांतिकारी उत्पाद बनाए। टेक्नोलॉजी और डिजाइन के संगम से दुनिया बदल दी।"
+  },
+  {
+    "name": "बिल गेट्स",
+    "name_en": "Bill Gates",
+    "birth": "28 अक्टूबर 1955",
+    "place": "सिएटल, वाशिंगटन, अमेरिका",
+    "died": "जीवित",
+    "field": "सॉफ्टवेयर विकास, परोपकार",
+    "company": "Microsoft Corporation, बिल एंड मेलिंडा गेट्स फाउंडेशन",
+    "contribution": "Microsoft की स्थापना की, MS-DOS और Windows ऑपरेटिंग सिस्टम विकसित किया। पर्सनल कंप्यूटर क्रांति के जनक। दुनिया के सबसे बड़े परोपकारी।"
+  },
+  {
+    "name": "सत्य नडेला",
+    "name_en": "Satya Nadella",
+    "birth": "19 अगस्त 1967",
+    "place": "हैदराबाद, तेलंगाना, भारत",
+    "died": "जीवित",
+    "field": "क्लाउड कंप्यूटिंग, कॉर्पोरेट लीडरशिप",
+    "company": "Microsoft Corporation",
+    "contribution": "Microsoft के CEO बनकर कंपनी को क्लाउड-फर्स्ट रणनीति पर केंद्रित किया। Azure क्लाउड प्लेटफॉर्म का विकास किया। Microsoft का बाजार मूल्य खरबों डॉलर तक पहुंचाया।"
+  },
+  {
+    "name": "सुंदर पिचाई",
+    "name_en": "Sundar Pichai",
+    "birth": "12 जुलाई 1972",
+    "place": "मदुरै, तमिलनाडु, भारत",
+    "died": "जीवित",
+    "field": "सर्च इंजन, AI, क्लाउड कंप्यूटिंग",
+    "company": "Google LLC, Alphabet Inc.",
+    "contribution": "Google Chrome ब्राउज़र का विकास किया। Google Drive, Google Maps जैसे उत्पादों का नेतृत्व किया। Google और Alphabet के CEO बने। AI और मशीन लर्निंग पर जोर दिया।"
+  },
+  {
+    "name": "मार्क जुकरबर्ग",
+    "name_en": "Mark Zuckerberg",
+    "birth": "14 मई 1984",
+    "place": "व्हाइट प्लेन्स, न्यूयॉर्क, अमेरिका",
+    "died": "जीवित",
+    "field": "सोशल मीडिया, सॉफ्टवेयर विकास",
+    "company": "Meta Platforms (Facebook)",
+    "contribution": "Facebook (अब Meta) की स्थापना की, दुनिया का सबसे बड़ा सोशल नेटवर्क बनाया। Instagram, WhatsApp का अधिग्रहण किया। Metaverse की अवधारणा को आगे बढ़ाया।"
+  },
+  {
+    "name": "एलन मस्क",
+    "name_en": "Elon Musk",
+    "birth": "28 जून 1971",
+    "place": "प्रिटोरिया, दक्षिण अफ्रीका",
+    "died": "जीवित",
+    "field": "इलेक्ट्रिक वाहन, अंतरिक्ष प्रौद्योगिकी, AI",
+    "company": "Tesla, SpaceX, Neuralink, X (Twitter)",
+    "contribution": "Tesla से इलेक्ट्रिक वाहन क्रांति, SpaceX से पुन: प्रयोज्य रॉकेट विकसित किए। Starlink सैटेलाइट इंटरनेट, Neuralink ब्रेन-कंप्यूटर इंटरफेस पर काम किया।"
+  },
+  {
+    "name": "जेफ बेजोस",
+    "name_en": "Jeff Bezos",
+    "birth": "12 जनवरी 1964",
+    "place": "अल्बुकर्क, न्यू मैक्सिको, अमेरिका",
+    "died": "जीवित",
+    "field": "ई-कॉमर्स, क्लाउड कंप्यूटिंग, अंतरिक्ष",
+    "company": "Amazon, Blue Origin",
+    "contribution": "Amazon की स्थापना की, दुनिया की सबसे बड़ी ई-कॉमर्स कंपनी बनाई। AWS क्लाउड सेवाएं शुरू कीं। Blue Origin से अंतरिक्ष पर्यटन का मार्ग प्रशस्त किया।"
+  },
+  {
+    "name": "लैरी पेज",
+    "name_en": "Larry Page",
+    "birth": "26 मार्च 1973",
+    "place": "ईस्ट लांसिंग, मिशिगन, अमेरिका",
+    "died": "जीवित",
+    "field": "सर्च इंजन, इंटरनेट टेक्नोलॉजी",
+    "company": "Google LLC, Alphabet Inc.",
+    "contribution": "सर्गेई ब्रिन के साथ Google की स्थापना की। PageRank एल्गोरिदम विकसित किया जिसने इंटरनेट सर्च में क्रांति ला दी। Alphabet Inc. के सह-संस्थापक।"
+  },
+  {
+    "name": "सर्गेई ब्रिन",
+    "name_en": "Sergey Brin",
+    "birth": "21 अगस्त 1973",
+    "place": "मॉस्को, रूस",
+    "died": "जीवित",
+    "field": "सर्च इंजन, डेटा माइनिंग",
+    "company": "Google LLC, Alphabet Inc.",
+    "contribution": "लैरी पेज के साथ Google की स्थापना की। Google के शुरुआती सर्च एल्गोरिदम और बुनियादी ढांचे का विकास किया। डेटा माइनिंग और AI में महत्वपूर्ण योगदान।"
+  },
+  {
+    "name": "टिम बर्नर्स-ली",
+    "name_en": "Tim Berners-Lee",
+    "birth": "8 जून 1955",
+    "place": "लंदन, इंग्लैंड",
+    "died": "जीवित",
+    "field": "कंप्यूटर विज्ञान, वर्ल्ड वाइड वेब",
+    "company": "CERN, W3C, Inrupt",
+    "contribution": "World Wide Web (WWW) का आविष्कार किया। HTML, HTTP, URL प्रोटोकॉल विकसित किए। पहला वेब ब्राउज़र और वेब सर्वर बनाया। इंटरनेट को आम लोगों तक पहुंचाया।"
+  },
+  {
+    "name": "लिनस टॉर्वाल्ड्स",
+    "name_en": "Linus Torvalds",
+    "birth": "28 दिसंबर 1969",
+    "place": "हेलसिंकी, फिनलैंड",
+    "died": "जीवित",
+    "field": "सॉफ्टवेयर इंजीनियरिंग, ऑपरेटिंग सिस्टम",
+    "company": "Linux Foundation",
+    "contribution": "Linux ऑपरेटिंग सिस्टम कर्नेल का निर्माण किया। Git वर्जन कंट्रोल सिस्टम विकसित किया। ओपन सोर्स आंदोलन के प्रमुख स्तंभ।"
+  },
+  {
+    "name": "जेम्स गोसलिंग",
+    "name_en": "James Gosling",
+    "birth": "19 मई 1955",
+    "place": "कैलगरी, अल्बर्टा, कनाडा",
+    "died": "जीवित",
+    "field": "प्रोग्रामिंग भाषा, सॉफ्टवेयर विकास",
+    "company": "Sun Microsystems, Oracle, Amazon Web Services",
+    "contribution": "Java प्रोग्रामिंग भाषा के जनक। 'Write Once, Run Anywhere' की अवधारणा दी। Java ने एंटरप्राइज सॉफ्टवेयर और Android ऐप्स की नींव रखी।"
+  },
+  {
+    "name": "डेनिस रिची",
+    "name_en": "Dennis Ritchie",
+    "birth": "9 सितंबर 1941",
+    "place": "ब्रोंक्सविले, न्यूयॉर्क, अमेरिका",
+    "died": "12 अक्टूबर 2011",
+    "field": "कंप्यूटर विज्ञान, प्रोग्रामिंग भाषा",
+    "company": "Bell Labs",
+    "contribution": "C प्रोग्रामिंग भाषा का विकास किया। Ken Thompson के साथ UNIX ऑपरेटिंग सिस्टम बनाया। आधुनिक प्रोग्रामिंग और ऑपरेटिंग सिस्टम की नींव रखी।"
+  },
+  {
+    "name": "केन थॉम्पसन",
+    "name_en": "Ken Thompson",
+    "birth": "4 फरवरी 1943",
+    "place": "न्यू ऑरलियन्स, लुइसियाना, अमेरिका",
+    "died": "जीवित",
+    "field": "कंप्यूटर विज्ञान, ऑपरेटिंग सिस्टम",
+    "company": "Bell Labs, Google",
+    "contribution": "UNIX ऑपरेटिंग सिस्टम के सह-निर्माता। B प्रोग्रामिंग भाषा विकसित की। UTF-8 एन्कोडिंग का सह-आविष्कार किया। Go प्रोग्रामिंग भाषा के सह-डिजाइनर।"
+  },
+  {
+    "name": "बर्नर्स ली",
+    "name_en": "Vint Cerf",
+    "birth": "23 जून 1943",
+    "place": "न्यू हेवन, कनेक्टिकट, अमेरिका",
+    "died": "जीवित",
+    "field": "कंप्यूटर नेटवर्किंग, इंटरनेट",
+    "company": "Google",
+    "contribution": "TCP/IP प्रोटोकॉल के सह-डिजाइनर। 'इंटरनेट के जनक' कहलाते हैं। इंटरनेट आर्किटेक्चर की नींव रखी। Google के चीफ इंटरनेट इवेंजलिस्ट रहे।"
+  },
+  {
+    "name": "ग्रेस हॉपर",
+    "name_en": "Grace Hopper",
+    "birth": "9 दिसंबर 1906",
+    "place": "न्यूयॉर्क सिटी, अमेरिका",
+    "died": "1 जनवरी 1992",
+    "field": "कंप्यूटर विज्ञान, प्रोग्रामिंग",
+    "company": "US Navy, UNIVAC, Digital Equipment Corporation",
+    "contribution": "पहला कंपाइलर विकसित किया। COBOL प्रोग्रामिंग भाषा की सह-निर्माता। 'Bug' शब्द को कंप्यूटर त्रुटियों के लिए लोकप्रिय बनाया।"
+  },
+  {
+    "name": "एलन ट्यूरिंग",
+    "name_en": "Alan Turing",
+    "birth": "23 जून 1912",
+    "place": "लंदन, इंग्लैंड",
+    "died": "7 जून 1954",
+    "field": "गणित, कंप्यूटर विज्ञान, क्रिप्टोग्राफी",
+    "company": "University of Manchester, UK Government",
+    "contribution": "Turing Machine की अवधारणा दी। कंप्यूटर विज्ञान और आर्टिफिशियल इंटेलिजेंस के जनक। द्वितीय विश्व युद्ध में Enigma कोड तोड़ा। Turing Test का प्रस्ताव रखा।"
+  },
+  {
+    "name": "गॉर्डन मूर",
+    "name_en": "Gordon Moore",
+    "birth": "3 जनवरी 1929",
+    "place": "सैन फ्रांसिस्को, कैलिफोर्निया, अमेरिका",
+    "died": "24 मार्च 2023",
+    "field": "सेमीकंडक्टर, माइक्रोप्रोसेसर",
+    "company": "Intel Corporation",
+    "contribution": "Intel के सह-संस्थापक। 'Moore's Law' दिया - हर दो साल में ट्रांजिस्टर की संख्या दोगुनी होती है। माइक्रोप्रोसेसर क्रांति के जनक।"
+  },
+  {
+    "name": "स्टीव वोजनियाक",
+    "name_en": "Steve Wozniak",
+    "birth": "11 अगस्त 1950",
+    "place": "सैन जोस, कैलिफोर्निया, अमेरिका",
+    "died": "जीवित",
+    "field": "कंप्यूटर हार्डवेयर, इलेक्ट्रॉनिक्स",
+    "company": "Apple Inc.",
+    "contribution": "Apple I और Apple II कंप्यूटर को डिजाइन किया। पर्सनल कंप्यूटर क्रांति में महत्वपूर्ण भूमिका निभाई। Apple के सह-संस्थापक।"
+  },
+  {
+    "name": "रे कुर्जवील",
+    "name_en": "Ray Kurzweil",
+    "birth": "12 फरवरी 1948",
+    "place": "क्वींस, न्यूयॉर्क, अमेरिका",
+    "died": "जीवित",
+    "field": "AI, फ्यूचरिज्म, आविष्कार",
+    "company": "Google",
+    "contribution": "ऑप्टिकल कैरेक्टर रिकॉग्निशन (OCR) का विकास किया। स्पीच रिकॉग्निशन तकनीक में योगदान। सिंगुलैरिटी की अवधारणा को लोकप्रिय बनाया। Google में AI डायरेक्टर।"
+  },
+  {
+    "name": "जॉन मैकार्थी",
+    "name_en": "John McCarthy",
+    "birth": "4 सितंबर 1927",
+    "place": "बोस्टन, मैसाचुसेट्स, अमेरिका",
+    "died": "24 अक्टूबर 2011",
+    "field": "आर्टिफिशियल इंटेलिजेंस",
+    "company": "MIT, Stanford University",
+    "contribution": "'Artificial Intelligence' शब्द का आविष्कार किया। LISP प्रोग्रामिंग भाषा विकसित की। AI के संस्थापक पितामहों में से एक।"
+  },
+  {
+    "name": "जेफ्री हिंटन",
+    "name_en": "Geoffrey Hinton",
+    "birth": "6 दिसंबर 1947",
+    "place": "लंदन, इंग्लैंड",
+    "died": "जीवित",
+    "field": "डीप लर्निंग, न्यूरल नेटवर्क",
+    "company": "Google Brain, University of Toronto",
+    "contribution": "डीप लर्निंग के गॉडफादर। Backpropagation एल्गोरिदम विकसित किया। डीप न्यूरल नेटवर्क में क्रांतिकारी शोध। ImageNet में ऐतिहासिक सफलता।"
+  },
+  {
+    "name": "एंड्रयू एनजी",
+    "name_en": "Andrew Ng",
+    "birth": "18 अप्रैल 1976",
+    "place": "लंदन, इंग्लैंड (चीनी मूल)",
+    "died": "जीवित",
+    "field": "मशीन लर्निंग, AI शिक्षा",
+    "company": "Google Brain, Baidu, Coursera, Landing AI",
+    "contribution": "Google Brain के सह-संस्थापक। Coursera की सह-स्थापना की। लाखों लोगों को मुफ्त AI शिक्षा प्रदान की। Deep Learning विशेषज्ञता कोर्स बनाया।"
+  },
+  {
+    "name": "यान लेकन",
+    "name_en": "Yann LeCun",
+    "birth": "8 जुलाई 1960",
+    "place": "पेरिस, फ्रांस",
+    "died": "जीवित",
+    "field": "कंप्यूटर विजन, डीप लर्निंग",
+    "company": "Meta AI, New York University",
+    "contribution": "Convolutional Neural Networks (CNN) के जनक। इमेज रिकॉग्निशन में क्रांति लाई। Meta के चीफ AI साइंटिस्ट। Turing Award विजेता।"
+  },
+  {
+    "name": "फी-फी ली",
+    "name_en": "Fei-Fei Li",
+    "birth": "14 जुलाई 1976",
+    "place": "बीजिंग, चीन",
+    "died": "जीवित",
+    "field": "कंप्यूटर विजन, AI",
+    "company": "Stanford University, Google Cloud",
+    "contribution": "ImageNet डेटाबेस बनाया जिसने डीप लर्निंग क्रांति को संभव बनाया। कंप्यूटर विजन में महत्वपूर्ण योगदान। AI में विविधता और नैतिकता की वकालत।"
+  },
+  {
+    "name": "इल्या सुत्स्केवर",
+    "name_en": "Ilya Sutskever",
+    "birth": "1985",
+    "place": "निज़नी नोवगोरोड, रूस",
+    "died": "जीवित",
+    "field": "डीप लर्निंग, NLP",
+    "company": "OpenAI",
+    "contribution": "OpenAI के सह-संस्थापक और चीफ साइंटिस्ट। GPT सीरीज और DALL-E के विकास में महत्वपूर्ण भूमिका। AlexNet का सह-निर्माण किया।"
+  },
+  {
+    "name": "डेमिस हसाबिस",
+    "name_en": "Demis Hassabis",
+    "birth": "27 जुलाई 1976",
+    "place": "लंदन, इंग्लैंड",
+    "died": "जीवित",
+    "field": "AI, न्यूरोसाइंस, गेमिंग",
+    "company": "DeepMind, Google",
+    "contribution": "DeepMind के सह-संस्थापक। AlphaGo बनाया जिसने विश्व चैंपियन Go खिलाड़ी को हराया। AlphaFold से प्रोटीन संरचना की भविष्यवाणी की।"
+  },
+  {
+    "name": "जिमी वेल्स",
+    "name_en": "Jimmy Wales",
+    "birth": "7 अगस्त 1966",
+    "place": "हंट्सविले, अलबामा, अमेरिका",
+    "died": "जीवित",
+    "field": "इंटरनेट, ज्ञान साझाकरण",
+    "company": "Wikipedia, Wikimedia Foundation",
+    "contribution": "Wikipedia के सह-संस्थापक। मुफ्त ऑनलाइन विश्वकोश बनाया जो दुनिया का सबसे बड़ा ज्ञान भंडार है। मुक्त ज्ञान आंदोलन के अग्रदूत।"
+  },
+  {
+    "name": "रिचर्ड स्टॉलमैन",
+    "name_en": "Richard Stallman",
+    "birth": "16 मार्च 1953",
+    "place": "न्यूयॉर्क सिटी, अमेरिका",
+    "died": "जीवित",
+    "field": "सॉफ्टवेयर स्वतंत्रता, प्रोग्रामिंग",
+    "company": "Free Software Foundation, GNU Project",
+    "contribution": "GNU प्रोजेक्ट और Free Software Foundation की स्थापना की। 'Copyleft' की अवधारणा दी। Emacs एडिटर और GCC कंपाइलर का विकास किया।"
+  },
+  {
+    "name": "ब्रेटन आइव",
+    "name_en": "Jony Ive",
+    "birth": "27 फरवरी 1967",
+    "place": "चिंगफोर्ड, लंदन, इंग्लैंड",
+    "died": "जीवित",
+    "field": "औद्योगिक डिजाइन, उत्पाद डिजाइन",
+    "company": "Apple Inc., LoveFrom",
+    "contribution": "iMac, iPod, iPhone, iPad, Apple Watch का डिजाइन तैयार किया। Apple के चीफ डिजाइन ऑफिसर रहे। टेक्नोलॉजी डिजाइन में नए मानक स्थापित किए।"
+  },
+  {
+    "name": "माइकल डेल",
+    "name_en": "Michael Dell",
+    "birth": "23 फरवरी 1965",
+    "place": "ह्यूस्टन, टेक्सास, अमेरिका",
+    "died": "जीवित",
+    "field": "कंप्यूटर हार्डवेयर, उद्यमिता",
+    "company": "Dell Technologies",
+    "contribution": "Dell कंप्यूटर की स्थापना की। डायरेक्ट-टू-कंज्यूमर मॉडल शुरू किया। पर्सनल कंप्यूटर को सस्ता और सुलभ बनाया।"
+  },
+  {
+    "name": "लैरी एलिसन",
+    "name_en": "Larry Ellison",
+    "birth": "17 अगस्त 1944",
+    "place": "न्यूयॉर्क सिटी, अमेरिका",
+    "died": "जीवित",
+    "field": "डेटाबेस, एंटरप्राइज सॉफ्टवेयर",
+    "company": "Oracle Corporation",
+    "contribution": "Oracle Corporation की स्थापना की। पहला कमर्शियल रिलेशनल डेटाबेस मैनेजमेंट सिस्टम बनाया। एंटरप्राइज सॉफ्टवेयर में क्रांति लाई।"
+  },
+  {
+    "name": "थॉमस एडिसन",
+    "name_en": "Thomas Edison",
+    "birth": "11 फरवरी 1847",
+    "place": "मिलान, ओहायो, अमेरिका",
+    "died": "18 अक्टूबर 1931",
+    "field": "आविष्कार, इलेक्ट्रिकल इंजीनियरिंग",
+    "company": "General Electric, Edison Electric Light Company",
+    "contribution": "बिजली का बल्ब, फोनोग्राफ, मोशन पिक्चर कैमरा सहित 1000+ आविष्कार। आधुनिक इलेक्ट्रिकल सिस्टम की नींव रखी।"
+  },
+  {
+    "name": "निकोला टेस्ला",
+    "name_en": "Nikola Tesla",
+    "birth": "10 जुलाई 1856",
+    "place": "स्मिल्जन, क्रोएशिया (तत्कालीन ऑस्ट्रियाई साम्राज्य)",
+    "died": "7 जनवरी 1943",
+    "field": "इलेक्ट्रिकल इंजीनियरिंग, आविष्कार",
+    "company": "Tesla Electric Company, Westinghouse",
+    "contribution": "AC (अल्टरनेटिंग करंट) सिस्टम का विकास किया। Tesla Coil का आविष्कार। वायरलेस कम्युनिकेशन की नींव रखी। 300+ पेटेंट।"
+  },
+  {
+    "name": "रॉबर्ट नॉयस",
+    "name_en": "Robert Noyce",
+    "birth": "12 दिसंबर 1927",
+    "place": "बर्लिंगटन, आयोवा, अमेरिका",
+    "died": "3 जून 1990",
+    "field": "सेमीकंडक्टर, इंटीग्रेटेड सर्किट",
+    "company": "Intel Corporation, Fairchild Semiconductor",
+    "contribution": "Intel के सह-संस्थापक। सिलिकॉन इंटीग्रेटेड सर्किट का सह-आविष्कार किया। 'सिलिकॉन वैली के मेयर' कहलाते थे।"
+  },
+  {
+    "name": "जैक किल्बी",
+    "name_en": "Jack Kilby",
+    "birth": "8 नवंबर 1923",
+    "place": "जेफरसन सिटी, मिसौरी, अमेरिका",
+    "died": "20 जून 2005",
+    "field": "इलेक्ट्रॉनिक्स, सेमीकंडक्टर",
+    "company": "Texas Instruments",
+    "contribution": "इंटीग्रेटेड सर्किट (IC) का आविष्कार किया। हैंडहेल्ड कैलकुलेटर का सह-आविष्कार। नोबेल पुरस्कार विजेता। माइक्रोचिप क्रांति के जनक।"
+  },
+  {
+    "name": "जॉन वॉन न्यूमैन",
+    "name_en": "John von Neumann",
+    "birth": "28 दिसंबर 1903",
+    "place": "बुडापेस्ट, हंगरी",
+    "died": "8 फरवरी 1957",
+    "field": "गणित, कंप्यूटर आर्किटेक्चर, गेम थ्योरी",
+    "company": "Princeton University, Los Alamos",
+    "contribution": "वॉन न्यूमैन आर्किटेक्चर विकसित किया जिस पर आधुनिक कंप्यूटर आधारित हैं। गेम थ्योरी के जनक। मैनहट्टन प्रोजेक्ट में योगदान।"
+  },
+  {
+    "name": "क्लाउड शैनन",
+    "name_en": "Claude Shannon",
+    "birth": "30 अप्रैल 1916",
+    "place": "पेटोस्की, मिशिगन, अमेरिका",
+    "died": "24 फरवरी 2001",
+    "field": "इनफार्मेशन थ्योरी, क्रिप्टोग्राफी",
+    "company": "Bell Labs, MIT",
+    "contribution": "इनफार्मेशन थ्योरी के जनक। डिजिटल सर्किट डिजाइन की नींव रखी। 'Bit' शब्द को लोकप्रिय बनाया। डिजिटल युग के संस्थापक।"
+  },
+  {
+    "name": "विंटन सर्फ",
+    "name_en": "Vint Cerf",
+    "birth": "23 जून 1943",
+    "place": "न्यू हेवन, कनेक्टिकट, अमेरिका",
+    "died": "जीवित",
+    "field": "कंप्यूटर नेटवर्किंग",
+    "company": "Google",
+    "contribution": "TCP/IP प्रोटोकॉल के सह-डिजाइनर। इंटरनेट के जनक। इंटरनेट आर्किटेक्चर बोर्ड के संस्थापक। Google के VP और चीफ इंटरनेट इवेंजलिस्ट।"
+  },
+  {
+    "name": "एडा लवलेस",
+    "name_en": "Ada Lovelace",
+    "birth": "10 दिसंबर 1815",
+    "place": "लंदन, इंग्लैंड",
+    "died": "27 नवंबर 1852",
+    "field": "गणित, प्रोग्रामिंग",
+    "company": "कोई नहीं (स्वतंत्र शोधकर्ता)",
+    "contribution": "दुनिया की पहली कंप्यूटर प्रोग्रामर। Charles Babbage के Analytical Engine के लिए पहला एल्गोरिदम लिखा। प्रोग्रामिंग की अवधारणा दी।"
+  },
+  {
+    "name": "चार्ल्स बैबेज",
+    "name_en": "Charles Babbage",
+    "birth": "26 दिसंबर 1791",
+    "place": "लंदन, इंग्लैंड",
+    "died": "18 अक्टूबर 1871",
+    "field": "गणित, मैकेनिकल इंजीनियरिंग",
+    "company": "कोई नहीं (स्वतंत्र आविष्कारक)",
+    "contribution": "कंप्यूटर के जनक। Difference Engine और Analytical Engine का डिजाइन तैयार किया। प्रोग्रामेबल कंप्यूटर की अवधारणा दी।"
+  },
+  {
+    "name": "पीटर थिएल",
+    "name_en": "Peter Thiel",
+    "birth": "11 अक्टूबर 1967",
+    "place": "फ्रैंकफर्ट, जर्मनी",
+    "died": "जीवित",
+    "field": "फिनटेक, वेंचर कैपिटल, उद्यमिता",
+    "company": "PayPal, Palantir Technologies, Founders Fund",
+    "contribution": "PayPal के सह-संस्थापक। Palantir Technologies की सह-स्थापना की। Facebook के पहले बाहरी निवेशक। स्टार्टअप इकोसिस्टम में महत्वपूर्ण भूमिका।"
+  },
+  {
+    "name": "रीड हॉफमैन",
+    "name_en": "Reid Hoffman",
+    "birth": "5 अगस्त 1967",
+    "place": "स्टैनफोर्ड, कैलिफोर्निया, अमेरिका",
+    "died": "जीवित",
+    "field": "सोशल नेटवर्क, वेंचर कैपिटल",
+    "company": "LinkedIn, Greylock Partners",
+    "contribution": "LinkedIn के सह-संस्थापक। प्रोफेशनल नेटवर्किंग में क्रांति लाई। PayPal के शुरुआती कर्मचारी। OpenAI बोर्ड के पूर्व सदस्य।"
+  },
+  {
+    "name": "शिव नादर",
+    "name_en": "Shiv Nadar",
+    "birth": "14 जुलाई 1945",
+    "place": "तिरुचेंदूर, तमिलनाडु, भारत",
+    "died": "जीवित",
+    "field": "सूचना प्रौद्योगिकी, परोपकार",
+    "company": "HCL Technologies",
+    "contribution": "HCL की स्थापना की। भारत के IT उद्योग के अग्रदूत। शिक्षा के क्षेत्र में बड़े पैमाने पर परोपकार। भारत के सबसे अमीर परोपकारियों में से एक।"
+  },
+  {
+    "name": "अजीम प्रेमजी",
+    "name_en": "Azim Premji",
+    "birth": "24 जुलाई 1945",
+    "place": "मुंबई, महाराष्ट्र, भारत",
+    "died": "जीवित",
+    "field": "सूचना प्रौद्योगिकी, परोपकार",
+    "company": "Wipro Limited",
+    "contribution": "Wipro को वनस्पति तेल कंपनी से IT दिग्गज में बदला। भारत के IT उद्योग के पायनियर। शिक्षा में 21 बिलियन डॉलर से अधिक का दान।"
+  },
+  {
+    "name": "एन.आर. नारायण मूर्ति",
+    "name_en": "N.R. Narayana Murthy",
+    "birth": "20 अगस्त 1946",
+    "place": "मैसूर, कर्नाटक, भारत",
+    "died": "जीवित",
+    "field": "सूचना प्रौद्योगिकी, सॉफ्टवेयर सेवाएं",
+    "company": "Infosys Limited",
+    "contribution": "Infosys की सह-स्थापना की। भारत को वैश्विक IT आउटसोर्सिंग हब बनाने में महत्वपूर्ण भूमिका। कॉर्पोरेट गवर्नेंस के मॉडल स्थापित किए।"
+  },
+  {
+    "name": "नंदन नीलेकणी",
+    "name_en": "Nandan Nilekani",
+    "birth": "2 जून 1955",
+    "place": "बंगलौर, कर्नाटक, भारत",
+    "died": "जीवित",
+    "field": "सूचना प्रौद्योगिकी, डिजिटल इंफ्रास्ट्रक्चर",
+    "company": "Infosys Limited, UIDAI",
+    "contribution": "Infosys के सह-संस्थापक। आधार (UIDAI) परियोजना के प्रमुख वास्तुकार। भारत के डिजिटल सार्वजनिक बुनियादी ढांचे के जनक।"
+  },
+  {
+    "name": "एलोन मस्क",
+    "name_en": "Elon Musk",
+    "birth": "28 जून 1971",
+    "place": "प्रिटोरिया, दक्षिण अफ्रीका",
+    "died": "जीवित",
+    "field": "इलेक्ट्रिक वाहन, अंतरिक्ष प्रौद्योगिकी, AI",
+    "company": "Tesla, SpaceX, Neuralink, xAI",
+    "contribution": "Tesla से इलेक्ट्रिक कार क्रांति, SpaceX से पुन: प्रयोज्य रॉकेट, Starlink सैटेलाइट इंटरनेट, Neuralink ब्रेन-कंप्यूटर इंटरफेस। xAI की स्थापना की।"
+  },
+  {
+    "name": "शांतनु नारायण",
+    "name_en": "Shantanu Narayen",
+    "birth": "27 मई 1963",
+    "place": "हैदराबाद, तेलंगाना, भारत",
+    "died": "जीवित",
+    "field": "सॉफ्टवेयर, डिजिटल मीडिया",
+    "company": "Adobe Inc.",
+    "contribution": "Adobe के CEO और चेयरमैन। Adobe Creative Cloud में परिवर्तन का नेतृत्व किया। डिजिटल मीडिया और मार्केटिंग सॉफ्टवेयर में Adobe को अग्रणी बनाया।"
+  },
+  {
+    "name": "अरविंद कृष्णा",
+    "name_en": "Arvind Krishna",
+    "birth": "1962",
+    "place": "देहरादून, उत्तराखंड, भारत",
+    "died": "जीवित",
+    "field": "क्लाउड कंप्यूटिंग, AI, सेमीकंडक्टर",
+    "company": "IBM Corporation",
+    "contribution": "IBM के CEO। Red Hat के 34 बिलियन डॉलर के अधिग्रहण का नेतृत्व किया। IBM को हाइब्रिड क्लाउड और AI पर केंद्रित किया।"
+  },
+  {
+    "name": "जेन्सेन हुआंग",
+    "name_en": "Jensen Huang",
+    "birth": "17 फरवरी 1963",
+    "place": "ताइनान, ताइवान",
+    "died": "जीवित",
+    "field": "ग्राफिक्स प्रोसेसिंग, AI हार्डवेयर",
+    "company": "NVIDIA Corporation",
+    "contribution": "NVIDIA के सह-संस्थापक और CEO। GPU का आविष्कार किया। AI और डीप लर्निंग हार्डवेयर में क्रांति लाई। NVIDIA को ट्रिलियन डॉलर कंपनी बनाया।"
+  },
+  {
+    "name": "लिसा सू",
+    "name_en": "Lisa Su",
+    "birth": "7 नवंबर 1969",
+    "place": "ताइनान, ताइवान",
+    "died": "जीवित",
+    "field": "सेमीकंडक्टर, माइक्रोप्रोसेसर",
+    "company": "Advanced Micro Devices (AMD)",
+    "contribution": "AMD की CEO। AMD को दिवालियापन से बचाकर उद्योग में अग्रणी बनाया। Ryzen और EPYC प्रोसेसर का विकास किया। सेमीकंडक्टर उद्योग की सबसे शक्तिशाली महिला।"
+  },
+  {
+    "name": "बॉब केन",
+    "name_en": "Bob Kahn",
+    "birth": "23 दिसंबर 1938",
+    "place": "न्यूयॉर्क, अमेरिका",
+    "died": "जीवित",
+    "field": "कंप्यूटर नेटवर्किंग, इंटरनेट",
+    "company": "DARPA, CNRI",
+    "contribution": "Vint Cerf के साथ TCP/IP प्रोटोकॉल का सह-आविष्कार किया। इंटरनेट के सह-जनक। इंटरनेट के बुनियादी आर्किटेक्चर की नींव रखी।"
+  },
+  {
+    "name": "मार्क आंद्रेसेन",
+    "name_en": "Marc Andreessen",
+    "birth": "9 जुलाई 1971",
+    "place": "सीडर फॉल्स, आयोवा, अमेरिका",
+    "died": "जीवित",
+    "field": "वेब ब्राउज़र, वेंचर कैपिटल",
+    "company": "Netscape, Andreessen Horowitz",
+    "contribution": "Mosaic और Netscape ब्राउज़र का सह-निर्माण किया। पहला व्यापक रूप से उपयोग किया जाने वाला वेब ब्राउज़र बनाया। प्रमुख वेंचर कैपिटल फर्म की स्थापना की।"
+  },
+  {
+    "name": "डैनियल एक",
+    "name_en": "Daniel Ek",
+    "birth": "21 फरवरी 1983",
+    "place": "स्टॉकहोम, स्वीडन",
+    "died": "जीवित",
+    "field": "म्यूजिक स्ट्रीमिंग, डिजिटल मीडिया",
+    "company": "Spotify",
+    "contribution": "Spotify के सह-संस्थापक और CEO। म्यूजिक इंडस्ट्री में स्ट्रीमिंग क्रांति लाई। डिजिटल म्यूजिक को वैश्विक स्तर पर सुलभ बनाया।"
+  },
+  {
+    "name": "बायरन डेटन",
+    "name_en": "Brian Chesky",
+    "birth": "29 अगस्त 1981",
+    "place": "निस्कायुना, न्यूयॉर्क, अमेरिका",
+    "died": "जीवित",
+    "field": "शेयरिंग इकोनॉमी, ट्रैवल टेक",
+    "company": "Airbnb",
+    "contribution": "Airbnb के सह-संस्थापक और CEO। होम शेयरिंग और ट्रैवल इंडस्ट्री में क्रांति लाई। शेयरिंग इकोनॉमी मॉडल को वैश्विक बनाया।"
+  },
+  {
+    "name": "जैक डोर्सी",
+    "name_en": "Jack Dorsey",
+    "birth": "19 नवंबर 1976",
+    "place": "सेंट लुइस, मिसौरी, अमेरिका",
+    "died": "जीवित",
+    "field": "सोशल मीडिया, फिनटेक",
+    "company": "Twitter, Square (Block)",
+    "contribution": "Twitter के सह-संस्थापक। Square (अब Block) की स्थापना की। मोबाइल पेमेंट और सोशल मीडिया में महत्वपूर्ण योगदान।"
+  },
+  {
+    "name": "विटालिक ब्यूटेरिन",
+    "name_en": "Vitalik Buterin",
+    "birth": "31 जनवरी 1994",
+    "place": "कोलोम्ना, रूस",
+    "died": "जीवित",
+    "field": "ब्लॉकचेन, क्रिप्टोकरेंसी",
+    "company": "Ethereum Foundation",
+    "contribution": "Ethereum ब्लॉकचेन के सह-संस्थापक। स्मार्ट कॉन्ट्रैक्ट की अवधारणा को लोकप्रिय बनाया। विकेंद्रीकृत एप्लिकेशन (DApps) के लिए प्लेटफॉर्म बनाया।"
+  },
+  {
+    "name": "स्टीव चेन",
+    "name_en": "Steve Chen",
+    "birth": "25 अगस्त 1978",
+    "place": "ताइपे, ताइवान",
+    "died": "जीवित",
+    "field": "वीडियो शेयरिंग, इंटरनेट",
+    "company": "YouTube, AVOS Systems",
+    "contribution": "YouTube के सह-संस्थापक। ऑनलाइन वीडियो शेयरिंग में क्रांति लाई। YouTube को Google को 1.65 बिलियन डॉलर में बेचा।"
+  },
+  {
+    "name": "रोहित प्रसाद",
+    "name_en": "Chad Hurley",
+    "birth": "24 जनवरी 1977",
+    "place": "रीडिंग, पेंसिल्वेनिया, अमेरिका",
+    "died": "जीवित",
+    "field": "वीडियो शेयरिंग, डिजाइन",
+    "company": "YouTube, MixBit",
+    "contribution": "YouTube के सह-संस्थापक और पहले CEO। YouTube का लोगो और इंटरफेस डिजाइन किया। ऑनलाइन वीडियो प्लेटफॉर्म का मानक स्थापित किया।"
+  },
+  {
+    "name": "राडिया पर्लमैन",
+    "name_en": "Radia Perlman",
+    "birth": "18 दिसंबर 1951",
+    "place": "पोर्ट्समाउथ, वर्जीनिया, अमेरिका",
+    "died": "जीवित",
+    "field": "नेटवर्किंग, प्रोटोकॉल डिजाइन",
+    "company": "Intel, Sun Microsystems",
+    "contribution": "Spanning Tree Protocol (STP) का आविष्कार किया। 'इंटरनेट की मां' कहलाती हैं। नेटवर्क ब्रिजिंग और रूटिंग में महत्वपूर्ण योगदान।"
+  },
+  {
+    "name": "मार्टिन कूपर",
+    "name_en": "Martin Cooper",
+    "birth": "26 दिसंबर 1928",
+    "place": "शिकागो, इलिनॉय, अमेरिका",
+    "died": "जीवित",
+    "field": "वायरलेस कम्युनिकेशन, मोबाइल फोन",
+    "company": "Motorola",
+    "contribution": "पहला मोबाइल फोन बनाया और पहली मोबाइल कॉल की। सेल्युलर फोन टेक्नोलॉजी के जनक। वायरलेस कम्युनिकेशन क्रांति की नींव रखी।"
+  },
+  {
+    "name": "फिल फार्न्सवर्थ",
+    "name_en": "Philo Farnsworth",
+    "birth": "19 अगस्त 1906",
+    "place": "बीवर, यूटा, अमेरिका",
+    "died": "11 मार्च 1971",
+    "field": "टेलीविजन टेक्नोलॉजी, इलेक्ट्रॉनिक्स",
+    "company": "Farnsworth Television and Radio Corporation",
+    "contribution": "पहला पूर्णतः इलेक्ट्रॉनिक टेलीविजन सिस्टम बनाया। इमेज डिसेक्टर कैमरा ट्यूब का आविष्कार। टीवी टेक्नोलॉजी के जनक।"
+  },
+  {
+    "name": "जॉन मैक्फी",
+    "name_en": "John McAfee",
+    "birth": "18 सितंबर 1945",
+    "place": "सिंडरफोर्ड, इंग्लैंड",
+    "died": "23 जून 2021",
+    "field": "साइबर सुरक्षा, एंटीवायरस",
+    "company": "McAfee Associates",
+    "contribution": "पहला कमर्शियल एंटीवायरस सॉफ्टवेयर बनाया। McAfee Associates की स्थापना की। साइबर सुरक्षा उद्योग के अग्रदूत।"
+  },
+  {
+    "name": "नोरियो ओह्गा",
+    "name_en": "Norio Ohga",
+    "birth": "29 जनवरी 1930",
+    "place": "नुमाजू, शिज़ुओका, जापान",
+    "died": "23 अप्रैल 2011",
+    "field": "डिजिटल ऑडियो, इलेक्ट्रॉनिक्स",
+    "company": "Sony Corporation",
+    "contribution": "Sony के CEO। CD (Compact Disc) के विकास का नेतृत्व किया। डिजिटल ऑडियो क्रांति के प्रमुख वास्तुकार। PlayStation लॉन्च का समर्थन किया।"
+  },
+  {
+    "name": "अकीओ मोरिता",
+    "name_en": "Akio Morita",
+    "birth": "26 जनवरी 1921",
+    "place": "नागोया, आइची, जापान",
+    "died": "3 अक्टूबर 1999",
+    "field": "इलेक्ट्रॉनिक्स, उपभोक्ता तकनीक",
+    "company": "Sony Corporation",
+    "contribution": "Sony के सह-संस्थापक। Walkman का आविष्कार किया। जापानी इलेक्ट्रॉनिक्स को वैश्विक ब्रांड बनाया। पोर्टेबल म्यूजिक क्रांति के जनक।"
+  },
+  {
+    "name": "डगलस एंजेलबर्ट",
+    "name_en": "Douglas Engelbart",
+    "birth": "30 जनवरी 1925",
+    "place": "पोर्टलैंड, ओरेगॉन, अमेरिका",
+    "died": "2 जुलाई 2013",
+    "field": "कंप्यूटर इंटरफेस, हाइपरटेक्स्ट",
+    "company": "SRI International",
+    "contribution": "कंप्यूटर माउस का आविष्कार किया। हाइपरटेक्स्ट की अवधारणा विकसित की। GUI, वीडियो कॉन्फ्रेंसिंग की नींव रखी। 'The Mother of All Demos' प्रस्तुत किया।"
+  },
+  {
+    "name": "रॉबर्ट मेटकाफ",
+    "name_en": "Robert Metcalfe",
+    "birth": "7 अप्रैल 1946",
+    "place": "ब्रुकलिन, न्यूयॉर्क, अमेरिका",
+    "died": "जीवित",
+    "field": "नेटवर्किंग, ईथरनेट",
+    "company": "3Com Corporation",
+    "contribution": "Ethernet के सह-आविष्कारक। 3Com की स्थापना की। Metcalfe's Law दिया। आधुनिक LAN नेटवर्किंग के जनक।"
+  },
+  {
+    "name": "गूगल डीपमाइंड",
+    "name_en": "Shane Legg",
+    "birth": "1973",
+    "place": "न्यूजीलैंड",
+    "died": "जीवित",
+    "field": "AI, मशीन लर्निंग, AGI",
+    "company": "DeepMind (Google)",
+    "contribution": "DeepMind के सह-संस्थापक। आर्टिफिशियल जनरल इंटेलिजेंस (AGI) पर शोध। AI सेफ्टी और एथिक्स में महत्वपूर्ण योगदान।"
+  },
+  {
+    "name": "सेबेस्टियन थ्रन",
+    "name_en": "Sebastian Thrun",
+    "birth": "14 मई 1967",
+    "place": "सोलिंगन, जर्मनी",
+    "died": "जीवित",
+    "field": "रोबोटिक्स, AI, ऑटोनॉमस व्हीकल्स",
+    "company": "Google X, Udacity, Kitty Hawk",
+    "contribution": "Google की सेल्फ-ड्राइविंग कार प्रोजेक्ट का नेतृत्व किया। Udacity की सह-स्थापना की। ऑनलाइन शिक्षा में MOOC क्रांति लाई।"
+  },
+  {
+    "name": "जॉन हेनेसी",
+    "name_en": "John Hennessy",
+    "birth": "22 सितंबर 1952",
+    "place": "हंटिंगटन, न्यूयॉर्क, अमेरिका",
+    "died": "जीवित",
+    "field": "कंप्यूटर आर्किटेक्चर, RISC",
+    "company": "Stanford University, Alphabet Inc.",
+    "contribution": "RISC (Reduced Instruction Set Computer) आर्किटेक्चर के अग्रदूत। MIPS प्रोसेसर विकसित किया। Alphabet Inc. के चेयरमैन रहे। Turing Award विजेता।"
+  },
+  {
+    "name": "डेविड पैटरसन",
+    "name_en": "David Patterson",
+    "birth": "16 नवंबर 1947",
+    "place": "एवरग्रीन पार्क, इलिनॉय, अमेरिका",
+    "died": "जीवित",
+    "field": "कंप्यूटर आर्किटेक्चर, RISC",
+    "company": "UC Berkeley, Google",
+    "contribution": "RISC आर्किटेक्चर के सह-अग्रदूत। RAID स्टोरेज का विकास किया। कंप्यूटर आर्किटेक्चर पर प्रभावशाली पाठ्यपुस्तकें लिखीं। Turing Award विजेता।"
+  },
+  {
+    "name": "जिम क्लार्क",
+    "name_en": "Jim Clark",
+    "birth": "23 मार्च 1944",
+    "place": "प्लेनव्यू, टेक्सास, अमेरिका",
+    "died": "जीवित",
+    "field": "कंप्यूटर ग्राफिक्स, इंटरनेट",
+    "company": "Silicon Graphics, Netscape",
+    "contribution": "Silicon Graphics (SGI) की स्थापना की। Netscape के सह-संस्थापक। 3D ग्राफिक्स और वेब ब्राउज़र में क्रांति लाई।"
+  },
+  {
+    "name": "बिल जॉय",
+    "name_en": "Bill Joy",
+    "birth": "8 नवंबर 1954",
+    "place": "फार्मिंगटन हिल्स, मिशिगन, अमेरिका",
+    "died": "जीवित",
+    "field": "सॉफ्टवेयर डेवलपमेंट, UNIX",
+    "company": "Sun Microsystems",
+    "contribution": "Sun Microsystems के सह-संस्थापक। BSD UNIX का विकास किया। vi टेक्स्ट एडिटर और NFS प्रोटोकॉल बनाया। Java भाषा के विकास में भूमिका।"
+  },
+  {
+    "name": "एलिशा ग्रे",
+    "name_en": "Donna Dubinsky",
+    "birth": "1955",
+    "place": "बेंटन हार्बर, मिशिगन, अमेरिका",
+    "died": "जीवित",
+    "field": "मोबाइल कंप्यूटिंग, PDA",
+    "company": "Palm Inc., Handspring",
+    "contribution": "Palm Pilot के विकास का नेतृत्व किया। Handspring की सह-स्थापना की। पहला सफल PDA बनाया। स्मार्टफोन युग की नींव रखी।"
+  },
+  {
+    "name": "जेफ हॉकिन्स",
+    "name_en": "Jeff Hawkins",
+    "birth": "1 जून 1957",
+    "place": "हंटिंगटन, न्यूयॉर्क, अमेरिका",
+    "died": "जीवित",
+    "field": "मोबाइल कंप्यूटिंग, न्यूरोसाइंस",
+    "company": "Palm Inc., Numenta",
+    "contribution": "Palm Pilot और Treo स्मार्टफोन का आविष्कार किया। मोबाइल कंप्यूटिंग के अग्रदूत। Numenta की स्थापना कर ब्रेन-इंस्पायर्ड AI पर काम किया।"
+  },
+  {
+    "name": "फ्रेडरिक टर्मन",
+    "name_en": "Frederick Terman",
+    "birth": "7 जून 1900",
+    "place": "इंग्लिश, इंडियाना, अमेरिका",
+    "died": "19 दिसंबर 1982",
+    "field": "इलेक्ट्रिकल इंजीनियरिंग, शिक्षा",
+    "company": "Stanford University",
+    "contribution": "'सिलिकॉन वैली के जनक'। Stanford Industrial Park की स्थापना की। Hewlett-Packard की स्थापना के लिए प्रेरित किया। टेक उद्योग और शिक्षा का संगम बनाया।"
+  },
+  {
+    "name": "राजीव सूरी",
+    "name_en": "Rajeev Suri",
+    "birth": "10 अक्टूबर 1967",
+    "place": "नई दिल्ली, भारत",
+    "died": "जीवित",
+    "field": "दूरसंचार, नेटवर्क इंफ्रास्ट्रक्चर",
+    "company": "Nokia, Inmarsat",
+    "contribution": "Nokia के CEO रहे, कंपनी को नेटवर्क इंफ्रास्ट्रक्चर लीडर बनाया। 5G तकनीक के विकास का नेतृत्व किया। दूरसंचार उद्योग में महत्वपूर्ण भूमिका।"
+  },
+  {
+    "name": "संजय मेहरोत्रा",
+    "name_en": "Sanjay Mehrotra",
+    "birth": "27 जून 1958",
+    "place": "कानपुर, उत्तर प्रदेश, भारत",
+    "died": "जीवित",
+    "field": "फ्लैश मेमोरी, सेमीकंडक्टर",
+    "company": "SanDisk, Micron Technology",
+    "contribution": "SanDisk के सह-संस्थापक। फ्लैश मेमोरी स्टोरेज में क्रांति लाई। Micron Technology के CEO बने। मेमोरी और स्टोरेज उद्योग के अग्रदूत।"
+  },
+  {
+    "name": "दिनेश पालीवाल",
+    "name_en": "Dinesh Paliwal",
+    "birth": "17 दिसंबर 1957",
+    "place": "आगरा, उत्तर प्रदेश, भारत",
+    "died": "जीवित",
+    "field": "ऑडियो टेक्नोलॉजी, इलेक्ट्रॉनिक्स",
+    "company": "Harman International (Samsung)",
+    "contribution": "Harman International के CEO रहे। JBL, AKG जैसे ऑडियो ब्रांड का वैश्विक विस्तार किया। Samsung द्वारा 8 बिलियन डॉलर के अधिग्रहण का नेतृत्व किया।"
+  },
+  {
+    "name": "जॉर्ज बूले",
+    "name_en": "George Boole",
+    "birth": "2 नवंबर 1815",
+    "place": "लिंकन, इंग्लैंड",
+    "died": "8 दिसंबर 1864",
+    "field": "गणित, तर्कशास्त्र, कंप्यूटर विज्ञान",
+    "company": "Queen's College, Cork",
+    "contribution": "Boolean Algebra का विकास किया। आधुनिक डिजिटल कंप्यूटर लॉजिक की गणितीय नींव रखी। सभी प्रोग्रामिंग भाषाओं का आधार बनाया।"
+  },
+  {
+    "name": "हरबर्ट साइमन",
+    "name_en": "Herbert Simon",
+    "birth": "15 जून 1916",
+    "place": "मिल्वौकी, विस्कॉन्सिन, अमेरिका",
+    "died": "9 फरवरी 2001",
+    "field": "AI, संज्ञानात्मक मनोविज्ञान, अर्थशास्त्र",
+    "company": "Carnegie Mellon University",
+    "contribution": "AI के संस्थापक पितामहों में से एक। नोबेल पुरस्कार विजेता। समस्या-समाधान और निर्णय लेने के कंप्यूटर मॉडल विकसित किए।"
+  },
+  {
+    "name": "मार्विन मिंस्की",
+    "name_en": "Marvin Minsky",
+    "birth": "9 अगस्त 1927",
+    "place": "न्यूयॉर्क सिटी, अमेरिका",
+    "died": "24 जनवरी 2016",
+    "field": "AI, संज्ञानात्मक विज्ञान, रोबोटिक्स",
+    "company": "MIT",
+    "contribution": "MIT AI लैब के सह-संस्थापक। AI के जनकों में से एक। न्यूरल नेटवर्क और रोबोटिक्स में मौलिक योगदान। 'Society of Mind' सिद्धांत दिया।"
+  },
+  {
+    "name": "जुर्गन श्मिटहुबर",
+    "name_en": "Jürgen Schmidhuber",
+    "birth": "17 जनवरी 1963",
+    "place": "म्यूनिख, जर्मनी",
+    "died": "जीवित",
+    "field": "AI, डीप लर्निंग, LSTM",
+    "company": "NNAISENSE, IDSIA",
+    "contribution": "Long Short-Term Memory (LSTM) का सह-आविष्कार किया। डीप लर्निंग के अग्रदूत। आधुनिक स्पीच रिकॉग्निशन और मशीन ट्रांसलेशन की नींव रखी।"
+  },
+  {
+    "name": "इयान गुडफेलो",
+    "name_en": "Ian Goodfellow",
+    "birth": "1987",
+    "place": "अमेरिका",
+    "died": "जीवित",
+    "field": "AI, डीप लर्निंग, GAN",
+    "company": "Google Brain, Apple, DeepMind",
+    "contribution": "Generative Adversarial Networks (GANs) का आविष्कार किया। AI जनरेशन मॉडल में क्रांति लाई। डीप लर्निंग की प्रसिद्ध पाठ्यपुस्तक के लेखक।"
+  },
+  {
+    "name": "योशुआ बेंगियो",
+    "name_en": "Yoshua Bengio",
+    "birth": "5 मार्च 1964",
+    "place": "पेरिस, फ्रांस",
+    "died": "जीवित",
+    "field": "डीप लर्निंग, NLP, AI",
+    "company": "University of Montreal, Mila",
+    "contribution": "डीप लर्निंग के तीन गॉडफादरों में से एक। न्यूरल मशीन ट्रांसलेशन और अटेंशन मैकेनिज्म में योगदान। Turing Award विजेता।"
+  },
+  {
+    "name": "एलेक्स क्रिज़ेव्स्की",
+    "name_en": "Alex Krizhevsky",
+    "birth": "1986",
+    "place": "यूक्रेन",
+    "died": "जीवित",
+    "field": "डीप लर्निंग, कंप्यूटर विजन",
+    "company": "Google, Dessa",
+    "contribution": "AlexNet का निर्माण किया जिसने 2012 में ImageNet प्रतियोगिता जीती। डीप लर्निंग क्रांति की शुरुआत की। GPU-एक्सेलरेटेड डीप लर्निंग का मार्ग प्रशस्त किया।"
+  },
+  {
+    "name": "स्टुअर्ट रसेल",
+    "name_en": "Stuart Russell",
+    "birth": "1962",
+    "place": "पोर्ट्समाउथ, इंग्लैंड",
+    "died": "जीवित",
+    "field": "AI, AI सुरक्षा, रोबोटिक्स",
+    "company": "UC Berkeley",
+    "contribution": "AI पर सबसे प्रभावशाली पाठ्यपुस्तक 'AI: A Modern Approach' के सह-लेखक। AI सुरक्षा और एथिक्स में अग्रणी आवाज।"
+  },
+  {
+    "name": "सिंथिया ब्रीज़ील",
+    "name_en": "Cynthia Breazeal",
+    "birth": "15 नवंबर 1967",
+    "place": "अल्बुकर्क, न्यू मैक्सिको, अमेरिका",
+    "died": "जीवित",
+    "field": "सोशल रोबोटिक्स, AI",
+    "company": "MIT, Jibo Inc.",
+    "contribution": "सोशल रोबोटिक्स की अग्रदूत। Kismet और Jibo जैसे सोशल रोबोट बनाए। मानव-रोबोट इंटरेक्शन में महत्वपूर्ण योगदान।"
+  },
+  {
+    "name": "रॉडनी ब्रूक्स",
+    "name_en": "Rodney Brooks",
+    "birth": "30 दिसंबर 1954",
+    "place": "एडिलेड, ऑस्ट्रेलिया",
+    "died": "जीवित",
+    "field": "रोबोटिक्स, AI, उद्यमिता",
+    "company": "MIT, iRobot, Rethink Robotics",
+    "contribution": "iRobot के सह-संस्थापक। Roomba रोबोट वैक्यूम क्लीनर बनाया। बिहेवियर-बेस्ड रोबोटिक्स की अवधारणा दी। Baxter औद्योगिक रोबोट विकसित किया।"
+  },
+  {
+    "name": "ताकेओ कानाडे",
+    "name_en": "Takeo Kanade",
+    "birth": "24 अक्टूबर 1945",
+    "place": "ह्योगो, जापान",
+    "died": "जीवित",
+    "field": "कंप्यूटर विजन, रोबोटिक्स",
+    "company": "Carnegie Mellon University",
+    "contribution": "कंप्यूटर विजन के अग्रदूत। Lucas-Kanade ऑप्टिकल फ्लो मेथड का सह-विकास किया। फेस रिकॉग्निशन और ऑटोनॉमस व्हीकल्स में योगदान।"
+  },
+  {
+    "name": "डॉन नॉर्मन",
+    "name_en": "Don Norman",
+    "birth": "25 दिसंबर 1935",
+    "place": "अमेरिका",
+    "died": "जीवित",
+    "field": "UX डिजाइन, कॉग्निटिव साइंस",
+    "company": "Apple, Nielsen Norman Group",
+    "contribution": "User Experience (UX) शब्द का आविष्कार किया। 'The Design of Everyday Things' पुस्तक लिखी। Apple में पहले UX आर्किटेक्ट रहे।"
+  },
+  {
+    "name": "जैकब नील्सन",
+    "name_en": "Jakob Nielsen",
+    "birth": "5 अक्टूबर 1957",
+    "place": "कोपेनहेगन, डेनमार्क",
+    "died": "जीवित",
+    "field": "वेब यूजेबिलिटी, UX",
+    "company": "Nielsen Norman Group, Sun Microsystems",
+    "contribution": "वेब यूजेबिलिटी के जनक। 10 यूजेबिलिटी ह्यूरिस्टिक्स विकसित किए। UX रिसर्च को वैज्ञानिक आधार दिया।"
+  },
+  {
+    "name": "हैरियट टबमैन",
+    "name_en": "Alan Kay",
+    "birth": "17 मई 1940",
+    "place": "स्प्रिंगफील्ड, मैसाचुसेट्स, अमेरिका",
+    "died": "जीवित",
+    "field": "कंप्यूटर विज्ञान, GUI, OOP",
+    "company": "Xerox PARC, Apple, HP",
+    "contribution": "ऑब्जेक्ट-ओरिएंटेड प्रोग्रामिंग की अवधारणा दी। Smalltalk भाषा विकसित की। लैपटॉप और टैबलेट कंप्यूटर की कल्पना की। GUI विंडो इंटरफेस के अग्रदूत।"
+  },
+  {
+    "name": "बटलर लैम्पसन",
+    "name_en": "Butler Lampson",
+    "birth": "23 दिसंबर 1943",
+    "place": "वाशिंगटन डी.सी., अमेरिका",
+    "died": "जीवित",
+    "field": "कंप्यूटर विज्ञान, ऑपरेटिंग सिस्टम",
+    "company": "Xerox PARC, Microsoft Research",
+    "contribution": "Xerox PARC में Alto पर्सनल कंप्यूटर का विकास किया। WYSIWYG एडिटर, ईथरनेट, लेजर प्रिंटर के विकास में योगदान। Turing Award विजेता।"
+  },
+  {
+    "name": "डॉ. होमी भाभा",
+    "name_en": "Raj Reddy",
+    "birth": "13 जून 1937",
+    "place": "कटूर, आंध्र प्रदेश, भारत",
+    "died": "जीवित",
+    "field": "AI, स्पीच रिकॉग्निशन, रोबोटिक्स",
+    "company": "Carnegie Mellon University",
+    "contribution": "AI और स्पीच रिकॉग्निशन के अग्रदूत। पहले भारतीय Turing Award विजेता। Hearsay स्पीच अंडरस्टैंडिंग सिस्टम विकसित किया।"
+  },
+  {
+    "name": "आरोन स्वार्ट्ज",
+    "name_en": "Aaron Swartz",
+    "birth": "8 नवंबर 1986",
+    "place": "हाइलैंड पार्क, इलिनॉय, अमेरिका",
+    "died": "11 जनवरी 2013",
+    "field": "इंटरनेट एक्टिविज्म, प्रोग्रामिंग",
+    "company": "Reddit, Creative Commons",
+    "contribution": "Reddit के सह-संस्थापक। RSS फीड फॉर्मेट का सह-विकास किया। Creative Commons लाइसेंस के विकास में मदद की। इंटरनेट स्वतंत्रता के लिए संघर्ष किया।"
+  },
+  {
+    "name": "विक्टर हेस",
+    "name_en": "Vic Hayes",
+    "birth": "31 जुलाई 1941",
+    "place": "सुराबाया, इंडोनेशिया",
+    "died": "जीवित",
+    "field": "वायरलेस नेटवर्किंग, Wi-Fi",
+    "company": "NCR Corporation, Agere Systems",
+    "contribution": "'Wi-Fi के जनक'। IEEE 802.11 वायरलेस नेटवर्किंग स्टैंडर्ड का नेतृत्व किया। वैश्विक Wi-Fi क्रांति की नींव रखी।"
+  },
+  {
+    "name": "हेंडी लैम",
+    "name_en": "Hedy Lamarr",
+    "birth": "9 नवंबर 1914",
+    "place": "वियना, ऑस्ट्रिया",
+    "died": "19 जनवरी 2000",
+    "field": "वायरलेस कम्युनिकेशन, फ्रीक्वेंसी होपिंग",
+    "company": "स्वतंत्र आविष्कारक",
+    "contribution": "Frequency Hopping Spread Spectrum तकनीक का सह-आविष्कार किया। आधुनिक Wi-Fi, Bluetooth और GPS की नींव रखी। हॉलीवुड अभिनेत्री और आविष्कारक।"
+  },
+  {
+    "name": "शुजी नाकामुरा",
+    "name_en": "Shuji Nakamura",
+    "birth": "22 मई 1954",
+    "place": "इकाटा, एहिमे, जापान",
+    "died": "जीवित",
+    "field": "LED लाइटिंग, सेमीकंडक्टर",
+    "company": "Nichia, UC Santa Barbara",
+    "contribution": "ब्लू LED का आविष्कार किया। नोबेल पुरस्कार विजेता। ऊर्जा-कुशल LED लाइटिंग क्रांति के जनक। सफेद LED लाइट को संभव बनाया।"
+  },
+  {
+    "name": "अमर बोस",
+    "name_en": "Amar Bose",
+    "birth": "2 नवंबर 1929",
+    "place": "फिलाडेल्फिया, पेंसिल्वेनिया, अमेरिका",
+    "died": "12 जुलाई 2013",
+    "field": "ऑडियो इंजीनियरिंग, ध्वनिकी",
+    "company": "Bose Corporation",
+    "contribution": "Bose Corporation की स्थापना की। नॉइज-कैंसलिंग हेडफोन तकनीक का आविष्कार किया। ऑडियो और स्पीकर टेक्नोलॉजी में क्रांति लाई। MIT में प्रोफेसर रहे।"
+  },
+  {
+    "name": "गॉर्डन बेल",
+    "name_en": "Gordon Bell",
+    "birth": "19 अगस्त 1934",
+    "place": "किर्क्सविले, मिसौरी, अमेरिका",
+    "died": "जीवित",
+    "field": "कंप्यूटर आर्किटेक्चर, मिनीकंप्यूटर",
+    "company": "DEC, Microsoft Research",
+    "contribution": "DEC में PDP सीरीज मिनीकंप्यूटर डिजाइन किया। VAX आर्किटेक्चर का विकास किया। कंप्यूटर इतिहास के प्रमुख व्यक्तित्व।"
+  },
+  {
+    "name": "जीन अम्दहल",
+    "name_en": "Gene Amdahl",
+    "birth": "16 नवंबर 1922",
+    "place": "फ्लैंड्रो, साउथ डकोटा, अमेरिका",
+    "died": "10 नवंबर 2015",
+    "field": "कंप्यूटर आर्किटेक्चर, मेनफ्रेम",
+    "company": "IBM, Amdahl Corporation",
+    "contribution": "IBM System/360 मेनफ्रेम के मुख्य वास्तुकार। Amdahl's Law दिया। मेनफ्रेम कंप्यूटिंग में प्रतिस्पर्धा लाई। Amdahl Corporation की स्थापना की।"
+  },
+  {
+    "name": "सीमोर क्रे",
+    "name_en": "Seymour Cray",
+    "birth": "28 सितंबर 1925",
+    "place": "चिप्पेवा फॉल्स, विस्कॉन्सिन, अमेरिका",
+    "died": "5 अक्टूबर 1996",
+    "field": "सुपरकंप्यूटिंग, कंप्यूटर आर्किटेक्चर",
+    "company": "Cray Research",
+    "contribution": "'सुपरकंप्यूटिंग के जनक'। Cray-1, Cray-2 सुपरकंप्यूटर बनाए। दुनिया के सबसे तेज कंप्यूटर डिजाइन किए। वैज्ञानिक कंप्यूटिंग में क्रांति लाई।"
+  },
+  {
+    "name": "मार्क डीन",
+    "name_en": "Mark Dean",
+    "birth": "2 मार्च 1957",
+    "place": "जेफरसन सिटी, टेनेसी, अमेरिका",
+    "died": "जीवित",
+    "field": "कंप्यूटर हार्डवेयर, ISA बस",
+    "company": "IBM",
+    "contribution": "IBM PC के ISA बस का सह-आविष्कार किया। पहले गीगाहर्ट्ज़ प्रोसेसर की टीम का नेतृत्व किया। कंप्यूटर हार्डवेयर में 20+ पेटेंट।"
+  },
+  {
+    "name": "कैथरीन जॉनसन",
+    "name_en": "Katherine Johnson",
+    "birth": "26 अगस्त 1918",
+    "place": "व्हाइट सल्फर स्प्रिंग्स, वेस्ट वर्जीनिया, अमेरिका",
+    "died": "24 फरवरी 2020",
+    "field": "गणित, एयरोस्पेस कंप्यूटिंग",
+    "company": "NASA",
+    "contribution": "NASA के लिए ऑर्बिटल मैकेनिक्स की गणना की। अपोलो मून मिशन की ट्रैजेक्टरी कैलकुलेट की। 'हिडन फिगर्स' से प्रसिद्ध हुईं। प्रेसिडेंशियल मेडल ऑफ फ्रीडम।"
+  },
+  {
+    "name": "डोरोथी वॉन",
+    "name_en": "Dorothy Vaughan",
+    "birth": "20 सितंबर 1910",
+    "place": "कैनसस सिटी, मिसौरी, अमेरिका",
+    "died": "10 नवंबर 2008",
+    "field": "गणित, कंप्यूटर प्रोग्रामिंग",
+    "company": "NASA (NACA)",
+    "contribution": "NASA की पहली अफ्रीकी-अमेरिकी सुपरवाइजर। FORTRAN प्रोग्रामिंग में विशेषज्ञता हासिल की। इलेक्ट्रॉनिक कंप्यूटिंग में संक्रमण का नेतृत्व किया।"
+  },
+  {
+    "name": "मैरी जैक्सन",
+    "name_en": "Mary Jackson",
+    "birth": "9 अप्रैल 1921",
+    "place": "हैम्पटन, वर्जीनिया, अमेरिका",
+    "died": "11 फरवरी 2005",
+    "field": "एयरोस्पेस इंजीनियरिंग, गणित",
+    "company": "NASA",
+    "contribution": "NASA की पहली अफ्रीकी-अमेरिकी महिला इंजीनियर। सुपरसोनिक विंड टनल रिसर्च में योगदान। STEM शिक्षा में महिलाओं को बढ़ावा दिया।"
+  },
+  {
+    "name": "अनीता बोर्ग",
+    "name_en": "Anita Borg",
+    "birth": "17 जनवरी 1949",
+    "place": "शिकागो, इलिनॉय, अमेरिका",
+    "died": "6 अप्रैल 2003",
+    "field": "कंप्यूटर विज्ञान, महिला सशक्तिकरण",
+    "company": "Xerox PARC, Digital Equipment Corporation",
+    "contribution": "Systers ऑनलाइन कम्युनिटी की स्थापना की। Grace Hopper Celebration की संस्थापक। टेक्नोलॉजी में महिलाओं के लिए मार्ग प्रशस्त किया।"
+  },
+  {
+    "name": "जॉन पेरी बार्लो",
+    "name_en": "John Perry Barlow",
+    "birth": "3 अक्टूबर 1947",
+    "place": "सबलेट काउंटी, व्योमिंग, अमेरिका",
+    "died": "7 फरवरी 2018",
+    "field": "साइबर स्पेस अधिकार, इंटरनेट एक्टिविज्म",
+    "company": "Electronic Frontier Foundation (EFF)",
+    "contribution": "EFF के सह-संस्थापक। 'Declaration of Independence of Cyberspace' लिखा। इंटरनेट स्वतंत्रता और डिजिटल अधिकारों के लिए संघर्ष किया।"
+  },
+  {
+    "name": "शेरी टर्कल",
+    "name_en": "Sherry Turkle",
+    "birth": "18 जून 1948",
+    "place": "न्यूयॉर्क सिटी, अमेरिका",
+    "died": "जीवित",
+    "field": "टेक्नोलॉजी और समाज, डिजिटल कल्चर",
+    "company": "MIT",
+    "contribution": "टेक्नोलॉजी और मानव संबंधों पर शोध। 'Alone Together' पुस्तक लिखी। सोशल मीडिया और डिजिटल कल्चर पर प्रभावशाली काम।"
+  },
+  {
+    "name": "जोसिन बेल बर्नेल",
+    "name_en": "Tim O'Reilly",
+    "birth": "6 जून 1954",
+    "place": "कॉर्क, आयरलैंड",
+    "died": "जीवित",
+    "field": "टेक पब्लिशिंग, ओपन सोर्स, वेब 2.0",
+    "company": "O'Reilly Media",
+    "contribution": "O'Reilly Media के संस्थापक। 'Web 2.0' और 'Open Source' शब्द को लोकप्रिय बनाया। टेक बुक्स और कॉन्फ्रेंस के माध्यम से ज्ञान साझाकरण।"
+  },
+  {
+    "name": "केट मात्सुदायरा",
+    "name_en": "Nolan Bushnell",
+    "birth": "5 फरवरी 1943",
+    "place": "क्लियरफील्ड, यूटा, अमेरिका",
+    "died": "जीवित",
+    "field": "गेमिंग, उद्यमिता",
+    "company": "Atari, Chuck E. Cheese",
+    "contribution": "Atari के सह-संस्थापक। Pong वीडियो गेम बनाया। वीडियो गेम उद्योग के जनक। Steve Jobs के पहले बॉस और मेंटर रहे।"
+  },
+  {
+    "name": "राल्फ बेयर",
+    "name_en": "Ralph Baer",
+    "birth": "8 मार्च 1922",
+    "place": "रोडाल्बेन, जर्मनी",
+    "died": "6 दिसंबर 2014",
+    "field": "गेमिंग, इलेक्ट्रॉनिक्स",
+    "company": "Sanders Associates",
+    "contribution": "वीडियो गेम कंसोल के जनक। पहला होम वीडियो गेम कंसोल 'Brown Box' बनाया। Magnavox Odyssey का आविष्कार किया।"
+  },
+  {
+    "name": "शिगेरु मियामोटो",
+    "name_en": "Shigeru Miyamoto",
+    "birth": "16 नवंबर 1952",
+    "place": "सोनोबे, क्योटो, जापान",
+    "died": "जीवित",
+    "field": "गेम डिजाइन, क्रिएटिव डायरेक्शन",
+    "company": "Nintendo",
+    "contribution": "Mario, Zelda, Donkey Kong जैसे गेम्स के निर्माता। वीडियो गेम डिजाइन के सबसे प्रभावशाली व्यक्ति। Nintendo के क्रिएटिव फेलो।"
+  },
+  {
+    "name": "गेब न्यूवेल",
+    "name_en": "Gabe Newell",
+    "birth": "3 नवंबर 1962",
+    "place": "कोलोराडो, अमेरिका",
+    "died": "जीवित",
+    "field": "गेमिंग, डिजिटल डिस्ट्रीब्यूशन",
+    "company": "Valve Corporation",
+    "contribution": "Valve के सह-संस्थापक और CEO। Half-Life, Portal, Dota 2 जैसे गेम्स बनाए। Steam प्लेटफॉर्म से डिजिटल गेम डिस्ट्रीब्यूशन में क्रांति लाई।"
+  },
+  {
+    "name": "मार्कस पर्सन",
+    "name_en": "Markus Persson (Notch)",
+    "birth": "1 जून 1979",
+    "place": "स्टॉकहोम, स्वीडन",
+    "died": "जीवित",
+    "field": "गेम डेवलपमेंट, इंडी गेमिंग",
+    "company": "Mojang",
+    "contribution": "Minecraft के निर्माता। इंडी गेम डेवलपमेंट में क्रांति लाई। दुनिया का सबसे ज्यादा बिकने वाला वीडियो गेम बनाया।"
+  },
+  {
+    "name": "टिम स्वीनी",
+    "name_en": "Tim Sweeney",
+    "birth": "1970",
+    "place": "पोटोमैक, मैरीलैंड, अमेरिका",
+    "died": "जीवित",
+    "field": "गेम इंजन, गेम डेवलपमेंट",
+    "company": "Epic Games",
+    "contribution": "Epic Games के संस्थापक और CEO। Unreal Engine विकसित किया। Fortnite बनाया। Epic Games Store लॉन्च किया।"
+  },
+  {
+    "name": "सिड मेयर",
+    "name_en": "Sid Meier",
+    "birth": "24 फरवरी 1954",
+    "place": "सार्निया, ओंटारियो, कनाडा",
+    "died": "जीवित",
+    "field": "गेम डिजाइन, स्ट्रैटेजी गेमिंग",
+    "company": "MicroProse, Firaxis Games",
+    "contribution": "Civilization सीरीज के निर्माता। स्ट्रैटेजी गेमिंग के जनक। Railroad Tycoon, Pirates! जैसे क्लासिक गेम बनाए।"
+  },
+  {
+    "name": "एडम डी'एंजेलो",
+    "name_en": "Adam D'Angelo",
+    "birth": "14 अगस्त 1984",
+    "place": "अमेरिका",
+    "died": "जीवित",
+    "field": "सोशल मीडिया, AI, Q&A प्लेटफॉर्म",
+    "company": "Quora, Facebook (पूर्व CTO)",
+    "contribution": "Quora के सह-संस्थापक और CEO। Facebook के पहले CTO रहे। ज्ञान साझाकरण प्लेटफॉर्म का निर्माण किया। OpenAI बोर्ड मेंबर।"
+  },
+  {
+    "name": "ड्रू ह्यूस्टन",
+    "name_en": "Drew Houston",
+    "birth": "4 मार्च 1983",
+    "place": "एक्टन, मैसाचुसेट्स, अमेरिका",
+    "died": "जीवित",
+    "field": "क्लाउड स्टोरेज, फाइल शेयरिंग",
+    "company": "Dropbox",
+    "contribution": "Dropbox के सह-संस्थापक और CEO। क्लाउड स्टोरेज को आम लोगों के लिए सरल बनाया। फाइल सिंक्रोनाइजेशन में क्रांति लाई।"
+  },
+  {
+    "name": "पैट्रिक कॉलिसन",
+    "name_en": "Patrick Collison",
+    "birth": "9 सितंबर 1988",
+    "place": "ड्रोमिनियर, काउंटी टिपरेरी, आयरलैंड",
+    "died": "जीवित",
+    "field": "फिनटेक, ऑनलाइन पेमेंट",
+    "company": "Stripe",
+    "contribution": "Stripe के सह-संस्थापक और CEO। ऑनलाइन पेमेंट इंफ्रास्ट्रक्चर को सरल बनाया। डेवलपर-फ्रेंडली पेमेंट API का निर्माण किया।"
+  },
+  {
+    "name": "जॉन कॉलिसन",
+    "name_en": "John Collison",
+    "birth": "6 अगस्त 1990",
+    "place": "ड्रोमिनियर, काउंटी टिपरेरी, आयरलैंड",
+    "died": "जीवित",
+    "field": "फिनटेक, ऑनलाइन पेमेंट",
+    "company": "Stripe",
+    "contribution": "Stripe के सह-संस्थापक और प्रेसिडेंट। अपने भाई Patrick के साथ Stripe बनाया। दुनिया के सबसे युवा अरबपतियों में से एक।"
+  },
+  {
+    "name": "बेन सिल्बरमैन",
+    "name_en": "Ben Silbermann",
+    "birth": "14 जुलाई 1982",
+    "place": "डेस मोइनेस, आयोवा, अमेरिका",
+    "died": "जीवित",
+    "field": "सोशल मीडिया, विज़ुअल डिस्कवरी",
+    "company": "Pinterest",
+    "contribution": "Pinterest के सह-संस्थापक और CEO। विज़ुअल डिस्कवरी प्लेटफॉर्म बनाया। इमेज-बेस्ड सर्च और शॉपिंग में नया आयाम दिया।"
+  },
+  {
+    "name": "एरिक युआन",
+    "name_en": "Eric Yuan",
+    "birth": "20 फरवरी 1970",
+    "place": "ताईआन, शेडोंग, चीन",
+    "died": "जीवित",
+    "field": "वीडियो कॉन्फ्रेंसिंग, यूनिफाइड कम्युनिकेशन",
+    "company": "Zoom Video Communications",
+    "contribution": "Zoom के संस्थापक और CEO। वीडियो कॉन्फ्रेंसिंग को सरल और सुलभ बनाया। कोविड-19 महामारी में रिमोट वर्क का प्रमुख माध्यम बनाया।"
+  },
+  {
+    "name": "स्टीवर्ट बटरफील्ड",
+    "name_en": "Stewart Butterfield",
+    "birth": "21 मार्च 1973",
+    "place": "लंड, ब्रिटिश कोलंबिया, कनाडा",
+    "died": "जीवित",
+    "field": "टीम कम्युनिकेशन, सोशल मीडिया",
+    "company": "Flickr, Slack",
+    "contribution": "Flickr के सह-संस्थापक। Slack के सह-संस्थापक और CEO। टीम कम्युनिकेशन और वर्कप्लेस मैसेजिंग में क्रांति लाई।"
+  },
+  {
+    "name": "मेलानी पर्किन्स",
+    "name_en": "Melanie Perkins",
+    "birth": "13 मई 1987",
+    "place": "पर्थ, ऑस्ट्रेलिया",
+    "died": "जीवित",
+    "field": "ग्राफिक डिजाइन, SaaS",
+    "company": "Canva",
+    "contribution": "Canva की सह-संस्थापक और CEO। ग्राफिक डिजाइन को सबके लिए सुलभ बनाया। दुनिया के सबसे मूल्यवान स्टार्टअप में से एक बनाया।"
+  },
+  {
+    "name": "क्लिफ ओब्रेक्ट",
+    "name_en": "Cliff Obrecht",
+    "birth": "1986",
+    "place": "पर्थ, ऑस्ट्रेलिया",
+    "died": "जीवित",
+    "field": "ग्राफिक डिजाइन, SaaS",
+    "company": "Canva",
+    "contribution": "Canva के सह-संस्थापक और COO। Melanie Perkins के साथ Canva का निर्माण किया। डिजाइन प्लेटफॉर्म के तकनीकी विकास का नेतृत्व किया।"
+  },
+  {
+    "name": "टोबी लुट्के",
+    "name_en": "Tobi Lütke",
+    "birth": "16 जुलाई 1981",
+    "place": "कोब्लेंज़, जर्मनी",
+    "died": "जीवित",
+    "field": "ई-कॉमर्स, SaaS",
+    "company": "Shopify",
+    "contribution": "Shopify के सह-संस्थापक और CEO। ई-कॉमर्स प्लेटफॉर्म को डेमोक्रेटाइज किया। छोटे व्यवसायों को ऑनलाइन स्टोर बनाने में सक्षम बनाया।"
+  },
+  {
+    "name": "मैक्स लेवचिन",
+    "name_en": "Max Levchin",
+    "birth": "11 जुलाई 1975",
+    "place": "कीव, यूक्रेन",
+    "died": "जीवित",
+    "field": "फिनटेक, साइबर सुरक्षा, AI",
+    "company": "PayPal, Affirm",
+    "contribution": "PayPal के सह-संस्थापक। Affirm की स्थापना की। 'PayPal Mafia' के सदस्य। फिनटेक और डिजिटल पेमेंट में महत्वपूर्ण योगदान।"
+  },
+  {
+    "name": "रॉबर्ट लैंगर",
+    "name_en": "Bob Miner",
+    "birth": "23 दिसंबर 1941",
+    "place": "शिकागो, इलिनॉय, अमेरिका",
+    "died": "11 नवंबर 1994",
+    "field": "डेटाबेस, एंटरप्राइज सॉफ्टवेयर",
+    "company": "Oracle Corporation",
+    "contribution": "Oracle Corporation के सह-संस्थापक। Oracle Database के तकनीकी वास्तुकार। रिलेशनल डेटाबेस टेक्नोलॉजी के विकास में महत्वपूर्ण भूमिका।"
+  },
+  {
+    "name": "एड कैटमुल",
+    "name_en": "Ed Catmull",
+    "birth": "31 मार्च 1945",
+    "place": "पार्कर्सबर्ग, वेस्ट वर्जीनिया, अमेरिका",
+    "died": "जीवित",
+    "field": "कंप्यूटर ग्राफिक्स, एनिमेशन",
+    "company": "Pixar, Disney Animation",
+    "contribution": "Pixar के सह-संस्थापक। कंप्यूटर एनिमेशन के अग्रदूत। RenderMan सॉफ्टवेयर विकसित किया। 3D ग्राफिक्स में मौलिक योगदान।"
+  },
+  {
+    "name": "जॉन लैसेटर",
+    "name_en": "John Lasseter",
+    "birth": "12 जनवरी 1957",
+    "place": "हॉलीवुड, कैलिफोर्निया, अमेरिका",
+    "died": "जीवित",
+    "field": "कंप्यूटर एनिमेशन, फिल्म निर्माण",
+    "company": "Pixar, Disney, Skydance Animation",
+    "contribution": "Pixar के संस्थापक सदस्य। Toy Story, Cars जैसी फिल्मों का निर्देशन किया। कंप्यूटर एनिमेशन को मुख्यधारा में लाए।"
+  },
+  {
+    "name": "विलियम शॉक्ले",
+    "name_en": "William Shockley",
+    "birth": "13 फरवरी 1910",
+    "place": "लंदन, इंग्लैंड",
+    "died": "12 अगस्त 1989",
+    "field": "सेमीकंडक्टर, ट्रांजिस्टर",
+    "company": "Bell Labs, Shockley Semiconductor",
+    "contribution": "ट्रांजिस्टर के सह-आविष्कारक। नोबेल पुरस्कार विजेता। सिलिकॉन वैली की स्थापना में अप्रत्यक्ष योगदान।"
+  },
+  {
+    "name": "वाल्टर ब्रेटन",
+    "name_en": "Walter Brattain",
+    "birth": "10 फरवरी 1902",
+    "place": "ज़ियामेन, चीन",
+    "died": "13 अक्टूबर 1987",
+    "field": "सेमीकंडक्टर, ट्रांजिस्टर",
+    "company": "Bell Labs",
+    "contribution": "ट्रांजिस्टर के सह-आविष्कारक। John Bardeen और William Shockley के साथ पहला पॉइंट-कॉन्टैक्ट ट्रांजिस्टर बनाया। नोबेल पुरस्कार विजेता।"
+  },
+  {
+    "name": "जॉन बारडीन",
+    "name_en": "John Bardeen",
+    "birth": "23 मई 1908",
+    "place": "मैडिसन, विस्कॉन्सिन, अमेरिका",
+    "died": "30 जनवरी 1991",
+    "field": "सेमीकंडक्टर, सुपरकंडक्टिविटी",
+    "company": "Bell Labs, University of Illinois",
+    "contribution": "ट्रांजिस्टर के सह-आविष्कारक। BCS सुपरकंडक्टिविटी थ्योरी दी। दो बार नोबेल पुरस्कार जीतने वाले एकमात्र वैज्ञानिक।"
+  },
+  {
+    "name": "एंड्रयू ग्रोव",
+    "name_en": "Andrew Grove",
+    "birth": "2 सितंबर 1936",
+    "place": "बुडापेस्ट, हंगरी",
+    "died": "21 मार्च 2016",
+    "field": "सेमीकंडक्टर, बिजनेस लीडरशिप",
+    "company": "Intel Corporation",
+    "contribution": "Intel के पहले कर्मचारियों में से एक और CEO रहे। 'Only the Paranoid Survive' पुस्तक लिखी। Intel को वैश्विक सेमीकंडक्टर लीडर बनाया।"
+  },
+  {
+    "name": "क्रेग बैरेट",
+    "name_en": "Craig Barrett",
+    "birth": "29 अगस्त 1939",
+    "place": "सैन फ्रांसिस्को, कैलिफोर्निया, अमेरिका",
+    "died": "जीवित",
+    "field": "सेमीकंडक्टर मैन्युफैक्चरिंग",
+    "company": "Intel Corporation",
+    "contribution": "Intel के CEO और चेयरमैन रहे। 'Copy Exactly' मैन्युफैक्चरिंग स्ट्रैटेजी विकसित की। सेमीकंडक्टर उत्पादन में गुणवत्ता मानक स्थापित किए।"
+  },
+  {
+    "name": "गाइ कावासाकी",
+    "name_en": "Guy Kawasaki",
+    "birth": "30 अगस्त 1954",
+    "place": "होनोलूलू, हवाई, अमेरिका",
+    "died": "जीवित",
+    "field": "टेक मार्केटिंग, उद्यमिता",
+    "company": "Apple, Canva",
+    "contribution": "Apple के पहले मुख्य इवेंजलिस्ट। Macintosh के मार्केटिंग में क्रांति लाई। टेक इवेंजलिज्म की अवधारणा दी। कई बेस्टसेलिंग बिजनेस पुस्तकों के लेखक।"
+  },
+  {
+    "name": "जॉन स्कली",
+    "name_en": "John Sculley",
+    "birth": "6 अप्रैल 1939",
+    "place": "न्यूयॉर्क सिटी, अमेरिका",
+    "died": "जीवित",
+    "field": "टेक लीडरशिप, मार्केटिंग",
+    "company": "Apple, PepsiCo",
+    "contribution": "Apple के CEO रहे। Pepsi से Apple में आए। Macintosh और Newton PDA के लॉन्च का नेतृत्व किया। Apple का राजस्व 800M से 8B डॉलर तक पहुंचाया।"
+  },
+  {
+    "name": "माइकल स्पिंडलर",
+    "name_en": "Gil Amelio",
+    "birth": "1943",
+    "place": "न्यूयॉर्क, अमेरिका",
+    "died": "जीवित",
+    "field": "सेमीकंडक्टर, टेक टर्नअराउंड",
+    "company": "Apple, National Semiconductor",
+    "contribution": "Apple के CEO के रूप में कंपनी का टर्नअराउंड शुरू किया। Steve Jobs की वापसी और NeXT अधिग्रहण का मार्ग प्रशस्त किया।"
+  },
+  {
+    "name": "पॉल एलन",
+    "name_en": "Paul Allen",
+    "birth": "21 जनवरी 1953",
+    "place": "सिएटल, वाशिंगटन, अमेरिका",
+    "died": "15 अक्टूबर 2018",
+    "field": "सॉफ्टवेयर, निवेश, परोपकार",
+    "company": "Microsoft, Vulcan Inc.",
+    "contribution": "Bill Gates के साथ Microsoft की सह-स्थापना की। MS-DOS ऑपरेटिंग सिस्टम के विकास में भूमिका। अरबों डॉलर का परोपकार और अनुसंधान निवेश।"
+  },
+  {
+    "name": "स्टीव बाल्मर",
+    "name_en": "Steve Ballmer",
+    "birth": "24 मार्च 1956",
+    "place": "डेट्रॉइट, मिशिगन, अमेरिका",
+    "died": "जीवित",
+    "field": "सॉफ्टवेयर, बिजनेस लीडरशिप",
+    "company": "Microsoft",
+    "contribution": "Microsoft के CEO रहे। Windows, Office, Xbox के विकास का नेतृत्व किया। कंपनी का राजस्व तीन गुना बढ़ाया। LA Clippers के मालिक।"
+  },
+  {
+    "name": "जॉन थॉम्पसन",
+    "name_en": "John Thompson",
+    "birth": "24 अप्रैल 1949",
+    "place": "फोर्ट डिक्स, न्यू जर्सी, अमेरिका",
+    "died": "जीवित",
+    "field": "साइबर सुरक्षा, एंटरप्राइज सॉफ्टवेयर",
+    "company": "Symantec, Microsoft (बोर्ड)",
+    "contribution": "Symantec के CEO रहे। कंपनी को साइबर सुरक्षा लीडर बनाया। Microsoft के चेयरमैन रहे। टेक इंडस्ट्री के प्रभावशाली अफ्रीकी-अमेरिकन लीडर।"
+  },
+  {
+    "name": "एनरिके सलेम",
+    "name_en": "Enrique Salem",
+    "birth": "1965",
+    "place": "कोलंबिया",
+    "died": "जीवित",
+    "field": "साइबर सुरक्षा, एंटरप्राइज सॉफ्टवेयर",
+    "company": "Symantec",
+    "contribution": "Symantec के CEO रहे। क्लाउड सुरक्षा और एंडपॉइंट प्रोटेक्शन में महत्वपूर्ण विकास किया। साइबर सुरक्षा उद्योग के प्रमुख लीडर।"
+  },
+  {
+    "name": "फ्रैंक स्लटमैन",
+    "name_en": "George Kurtz",
+    "birth": "1970",
+    "place": "अमेरिका",
+    "died": "जीवित",
+    "field": "साइबर सुरक्षा, एंडपॉइंट प्रोटेक्शन",
+    "company": "CrowdStrike",
+    "contribution": "CrowdStrike के सह-संस्थापक और CEO। क्लाउड-नेटिव एंडपॉइंट सुरक्षा में क्रांति लाई। फाल्कन प्लेटफॉर्म विकसित किया।"
+  },
+  {
+    "name": "जे लेक",
+    "name_en": "Jay Chaudhry",
+    "birth": "26 अगस्त 1958",
+    "place": "हिमाचल प्रदेश, भारत",
+    "died": "जीवित",
+    "field": "साइबर सुरक्षा, क्लाउड सुरक्षा",
+    "company": "Zscaler",
+    "contribution": "Zscaler के संस्थापक और CEO। क्लाउड-नेटिव जीरो ट्रस्ट सुरक्षा के अग्रदूत। सुरक्षित डिजिटल ट्रांसफॉर्मेशन के लिए प्लेटफॉर्म बनाया।"
+  },
+  {
+    "name": "पीयूष मेहता",
+    "name_en": "Nikesh Arora",
+    "birth": "9 फरवरी 1968",
+    "place": "गाजियाबाद, उत्तर प्रदेश, भारत",
+    "died": "जीवित",
+    "field": "साइबर सुरक्षा, टेक लीडरशिप",
+    "company": "Palo Alto Networks, Google (पूर्व)",
+    "contribution": "Palo Alto Networks के CEO। Google के चीफ बिजनेस ऑफिसर रहे। साइबर सुरक्षा में AI-ड्रिवन इनोवेशन का नेतृत्व किया।"
+  },
+  {
+    "name": "चक रॉबिंस",
+    "name_en": "Chuck Robbins",
+    "birth": "1965",
+    "place": "ग्रेसन, जॉर्जिया, अमेरिका",
+    "died": "जीवित",
+    "field": "नेटवर्किंग, टेक लीडरशिप",
+    "company": "Cisco Systems",
+    "contribution": "Cisco के CEO और चेयरमैन। कंपनी को हार्डवेयर से सॉफ्टवेयर और सब्सक्रिप्शन मॉडल में बदला। साइबर सुरक्षा और क्लाउड पर फोकस बढ़ाया।"
+  },
+  {
+    "name": "जेफ वीनर",
+    "name_en": "Jeff Weiner",
+    "birth": "21 फरवरी 1970",
+    "place": "न्यूयॉर्क, अमेरिका",
+    "died": "जीवित",
+    "field": "सोशल मीडिया, प्रोफेशनल नेटवर्किंग",
+    "company": "LinkedIn",
+    "contribution": "LinkedIn के CEO रहे। कंपनी को 78 मिलियन से 500+ मिलियन मेंबर्स तक बढ़ाया। Microsoft द्वारा 26 बिलियन डॉलर के अधिग्रहण का नेतृत्व किया।"
+  },
+  {
+    "name": "मैरिसा मेयर",
+    "name_en": "Marissa Mayer",
+    "birth": "30 मई 1975",
+    "place": "वौसाउ, विस्कॉन्सिन, अमेरिका",
+    "died": "जीवित",
+    "field": "सर्च इंजन, प्रोडक्ट मैनेजमेंट",
+    "company": "Google, Yahoo",
+    "contribution": "Google की पहली महिला इंजीनियर और 20वीं कर्मचारी। Google Search, Gmail, Google Maps के इंटरफेस डिजाइन किए। Yahoo की CEO रहीं।"
+  },
+  {
+    "name": "सुसान वोज्स्की",
+    "name_en": "Susan Wojcicki",
+    "birth": "5 जुलाई 1968",
+    "place": "सांता क्लारा, कैलिफोर्निया, अमेरिका",
+    "died": "जीवित",
+    "field": "वीडियो प्लेटफॉर्म, डिजिटल विज्ञापन",
+    "company": "Google, YouTube",
+    "contribution": "YouTube की CEO रहीं। Google की 16वीं कर्मचारी। Google के शुरुआती गैराज को किराए पर दिया। AdSense और Google Analytics के विकास में भूमिका।"
+  },
+  {
+    "name": "रूथ पोराट",
+    "name_en": "Ruth Porat",
+    "birth": "1957",
+    "place": "सेल, चेशायर, इंग्लैंड",
+    "died": "जीवित",
+    "field": "फाइनेंस, टेक लीडरशिप",
+    "company": "Google, Alphabet Inc.",
+    "contribution": "Alphabet और Google की CFO। वॉल स्ट्रीट की सबसे शक्तिशाली महिलाओं में से एक रहीं। Google के फाइनेंशियल डिसिप्लिन को मजबूत किया।"
+  },
+  {
+    "name": "सफ्रा काट्ज",
+    "name_en": "Safra Catz",
+    "birth": "1 दिसंबर 1961",
+    "place": "होलोन, इज़राइल",
+    "died": "जीवित",
+    "field": "एंटरप्राइज सॉफ्टवेयर, कॉर्पोरेट स्ट्रैटेजी",
+    "company": "Oracle Corporation",
+    "contribution": "Oracle की CEO। 130+ अधिग्रहणों का नेतृत्व किया। कंपनी के क्लाउड ट्रांसफॉर्मेशन की रणनीति बनाई। दुनिया की सबसे शक्तिशाली महिला CEOs में से एक।"
+  },
+  {
+    "name": "ब्रायन क्रज़ानिक",
+    "name_en": "Brian Krzanich",
+    "birth": "9 मई 1960",
+    "place": "अमेरिका",
+    "died": "जीवित",
+    "field": "सेमीकंडक्टर, मैन्युफैक्चरिंग",
+    "company": "Intel Corporation",
+    "contribution": "Intel के CEO रहे। कंपनी को PC-सेंट्रिक से डेटा-सेंट्रिक बनाने की रणनीति शुरू की। मोबाइल और IoT में विस्तार किया।"
+  },
+  {
+    "name": "डॉ. विजय भाटकर",
+    "name_en": "Dr. Vijay Bhatkar",
+    "birth": "11 अक्टूबर 1946",
+    "place": "मुरम्बा, महाराष्ट्र, भारत",
+    "died": "जीवित",
+    "field": "सुपरकंप्यूटिंग, IT",
+    "company": "C-DAC",
+    "contribution": "भारत के पहले सुपरकंप्यूटर PARAM के वास्तुकार। C-DAC के संस्थापक निदेशक। भारत को सुपरकंप्यूटिंग में आत्मनिर्भर बनाया।"
+  },
+  {
+    "name": "सैम पित्रोदा",
+    "name_en": "Sam Pitroda",
+    "birth": "4 मई 1942",
+    "place": "टीटलागढ़, ओडिशा, भारत",
+    "died": "जीवित",
+    "field": "दूरसंचार, डिजिटल इंफ्रास्ट्रक्चर",
+    "company": "भारत सरकार (टेलीकॉम सलाहकार)",
+    "contribution": "भारत की दूरसंचार क्रांति के जनक। PCO बूथ नेटवर्क स्थापित किया। डिजिटल इंडिया की नींव रखी। राष्ट्रीय ज्ञान आयोग के अध्यक्ष रहे।"
+  },
+  {
+    "name": "एफ.सी. कोहली",
+    "name_en": "F.C. Kohli",
+    "birth": "19 मार्च 1924",
+    "place": "पेशावर, पाकिस्तान (अविभाजित भारत)",
+    "died": "26 नवंबर 2020",
+    "field": "सूचना प्रौद्योगिकी, सॉफ्टवेयर सेवाएं",
+    "company": "TCS (Tata Consultancy Services)",
+    "contribution": "भारतीय IT उद्योग के जनक। TCS के संस्थापक CEO। भारत को वैश्विक सॉफ्टवेयर पावरहाउस बनाने में महत्वपूर्ण भूमिका।"
+  },
+  {
+    "name": "डॉ. राजा रामन्ना",
+    "name_en": "Dr. Raja Ramanna",
+    "birth": "28 जनवरी 1925",
+    "place": "तुमकुर, कर्नाटक, भारत",
+    "died": "24 सितंबर 2004",
+    "field": "परमाणु विज्ञान, कंप्यूटिंग",
+    "company": "BARC, DRDO",
+    "contribution": "भारत के परमाणु कार्यक्रम के जनक। भारत के पहले परमाणु परीक्षण का नेतृत्व किया। कंप्यूटर विज्ञान और AI अनुसंधान को बढ़ावा दिया।"
+  },
+  {
+    "name": "डॉ. वी.के. अत्रे",
+    "name_en": "Dr. V.K. Aatre",
+    "birth": "1939",
+    "place": "भारत",
+    "died": "जीवित",
+    "field": "डिफेंस टेक्नोलॉजी, इलेक्ट्रॉनिक्स",
+    "company": "DRDO",
+    "contribution": "DRDO के प्रमुख रहे। मिसाइल टेक्नोलॉजी और इलेक्ट्रॉनिक वारफेयर सिस्टम का विकास किया। भारत के रक्षा अनुसंधान को आधुनिक बनाया।"
+  },
+  {
+    "name": "रॉबर्ट काह्न",
+    "name_en": "Radia Perlman",
+    "birth": "23 दिसंबर 1938",
+    "place": "न्यूयॉर्क, अमेरिका",
+    "died": "जीवित",
+    "field": "कंप्यूटर नेटवर्किंग, इंटरनेट",
+    "company": "DARPA, CNRI",
+    "contribution": "Vint Cerf के साथ TCP/IP प्रोटोकॉल का सह-आविष्कार किया। इंटरनेट के बुनियादी आर्किटेक्चर की नींव रखी।"
+  },
+  {
+    "name": "विलियम हिगिनबॉथम",
+    "name_en": "William Higinbotham",
+    "birth": "25 अक्टूबर 1910",
+    "place": "ब्रिजपोर्ट, कनेक्टिकट, अमेरिका",
+    "died": "10 नवंबर 1994",
+    "field": "गेमिंग, न्यूक्लियर फिजिक्स",
+    "company": "Brookhaven National Laboratory",
+    "contribution": "पहला वीडियो गेम 'Tennis for Two' बनाया। ऑसिलोस्कोप पर चलने वाला पहला इंटरैक्टिव गेम विकसित किया। मैनहट्टन प्रोजेक्ट में योगदान।"
+  },
+  {
+    "name": "जेम्स क्लर्क मैक्सवेल",
+    "name_en": "James Clerk Maxwell",
+    "birth": "13 जून 1831",
+    "place": "एडिनबर्ग, स्कॉटलैंड",
+    "died": "5 नवंबर 1879",
+    "field": "इलेक्ट्रोमैग्नेटिज्म, गणित",
+    "company": "University of Cambridge, King's College London",
+    "contribution": "इलेक्ट्रोमैग्नेटिक थ्योरी दी। रेडियो, टीवी, रडार और सभी वायरलेस कम्युनिकेशन की वैज्ञानिक नींव रखी। आइंस्टीन के सापेक्षता सिद्धांत का आधार बनाया।"
+  },
+  {
+    "name": "हैन्स क्रिस्टियन ओर्स्टेड",
+    "name_en": "Michael Faraday",
+    "birth": "22 सितंबर 1791",
+    "place": "न्यूइंगटन बट्स, इंग्लैंड",
+    "died": "25 अगस्त 1867",
+    "field": "इलेक्ट्रोमैग्नेटिज्म, इलेक्ट्रोकेमिस्ट्री",
+    "company": "Royal Institution",
+    "contribution": "इलेक्ट्रोमैग्नेटिक इंडक्शन की खोज की। इलेक्ट्रिक मोटर और जनरेटर के सिद्धांत दिए। आधुनिक इलेक्ट्रिकल इंजीनियरिंग की नींव रखी।"
+  },
+  {
+    "name": "जोसेफ हेनरी",
+    "name_en": "Joseph Henry",
+    "birth": "17 दिसंबर 1797",
+    "place": "अल्बानी, न्यूयॉर्क, अमेरिका",
+    "died": "13 मई 1878",
+    "field": "इलेक्ट्रोमैग्नेटिज्म, इंडक्टेंस",
+    "company": "Smithsonian Institution",
+    "contribution": "इलेक्ट्रोमैग्नेटिक इंडक्शन की स्वतंत्र खोज की। इलेक्ट्रिक रिले का आविष्कार किया। टेलीग्राफ के विकास में योगदान। इंडक्टेंस की SI इकाई 'Henry' उनके नाम पर है।"
+  },
+  {
+    "name": "हेंरिक हर्ट्ज",
+    "name_en": "Heinrich Hertz",
+    "birth": "22 फरवरी 1857",
+    "place": "हैम्बर्ग, जर्मनी",
+    "died": "1 जनवरी 1894",
+    "field": "इलेक्ट्रोमैग्नेटिक वेव्स, रेडियो",
+    "company": "University of Karlsruhe, University of Bonn",
+    "contribution": "रेडियो वेव्स के अस्तित्व को प्रयोगात्मक रूप से सिद्ध किया। वायरलेस कम्युनिकेशन की नींव रखी। फ्रीक्वेंसी की इकाई 'Hertz' उनके नाम पर है।"
+  },
+  {
+    "name": "अलेक्जेंडर ग्राहम बेल",
+    "name_en": "Alexander Graham Bell",
+    "birth": "3 मार्च 1847",
+    "place": "एडिनबर्ग, स्कॉटलैंड",
+    "died": "2 अगस्त 1922",
+    "field": "दूरसंचार, टेलीफोन",
+    "company": "Bell Telephone Company, AT&T",
+    "contribution": "टेलीफोन का आविष्कार किया। Bell Telephone Company की स्थापना की। ऑप्टिकल फाइबर कम्युनिकेशन की अवधारणा दी।"
+  },
+  {
+    "name": "गुग्लिल्मो मार्कोनी",
+    "name_en": "Guglielmo Marconi",
+    "birth": "25 अप्रैल 1874",
+    "place": "बोलोग्ना, इटली",
+    "died": "20 जुलाई 1937",
+    "field": "रेडियो कम्युनिकेशन, वायरलेस टेलीग्राफी",
+    "company": "Marconi Company",
+    "contribution": "पहला व्यावहारिक रेडियो सिस्टम विकसित किया। ट्रान्साटलांटिक रेडियो सिग्नल भेजा। नोबेल पुरस्कार विजेता। रेडियो कम्युनिकेशन के जनक।"
+  },
+  {
+    "name": "चार्ल्स व्हीटस्टोन",
+    "name_en": "Samuel Morse",
+    "birth": "27 अप्रैल 1791",
+    "place": "चार्ल्सटाउन, मैसाचुसेट्स, अमेरिका",
+    "died": "2 अप्रैल 1872",
+    "field": "टेलीग्राफी, कम्युनिकेशन",
+    "company": "स्वतंत्र आविष्कारक",
+    "contribution": "Morse Code और इलेक्ट्रिक टेलीग्राफ का आविष्कार किया। लंबी दूरी की इलेक्ट्रॉनिक कम्युनिकेशन की शुरुआत की। डिजिटल कम्युनिकेशन के अग्रदूत।"
+  },
+  {
+    "name": "फिलो फार्न्सवर्थ",
+    "name_en": "John Logie Baird",
+    "birth": "13 अगस्त 1888",
+    "place": "हेलेंसबर्ग, स्कॉटलैंड",
+    "died": "14 जून 1946",
+    "field": "टेलीविजन टेक्नोलॉजी",
+    "company": "Baird Television Development Company",
+    "contribution": "पहला कार्यशील टेलीविजन सिस्टम प्रदर्शित किया। पहला ट्रान्साटलांटिक टीवी ट्रांसमिशन किया। रंगीन टीवी का प्रारंभिक विकास किया।"
+  },
+  {
+    "name": "चार्ल्स कुएन काओ",
+    "name_en": "Charles K. Kao",
+    "birth": "4 नवंबर 1933",
+    "place": "शंघाई, चीन",
+    "died": "23 सितंबर 2018",
+    "field": "ऑप्टिकल फाइबर, दूरसंचार",
+    "company": "Standard Telecommunication Laboratories, CUHK",
+    "contribution": "ऑप्टिकल फाइबर कम्युनिकेशन के जनक। नोबेल पुरस्कार विजेता। फाइबर ऑप्टिक्स के माध्यम से हाई-स्पीड इंटरनेट की नींव रखी।"
+  },
+  {
+    "name": "नारिंदर सिंह कपानी",
+    "name_en": "Narinder Singh Kapany",
+    "birth": "31 अक्टूबर 1926",
+    "place": "मोगा, पंजाब, भारत",
+    "died": "4 दिसंबर 2020",
+    "field": "फाइबर ऑप्टिक्स, फोटोनिक्स",
+    "company": "Optics Technology Inc., Kaptron",
+    "contribution": "फाइबर ऑप्टिक्स के जनक। 'Fiber Optics' शब्द का आविष्कार किया। ऑप्टिकल फाइबर के माध्यम से पहली इमेज ट्रांसमिशन का प्रदर्शन किया।"
+  }
+]

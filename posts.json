@@ -1,0 +1,466 @@
+[
+    {
+        "id": 1,
+        "title": "The Rise of Quantum Computing: Breaking Classical Barriers",
+        "slug": "rise-of-quantum-computing",
+        "short_display": "Quantum computing is revolutionizing how we process complex calculations. With qubits replacing traditional bits, industries from cryptography to drug discovery are witnessing unprecedented computational power that could solve problems once thought impossible.",
+        "thumbnail": "https://cdn.pixabay.com/photo/2020/03/25/16/57/quantum-4964716_640.jpg",
+        "likes": 1247,
+        "dislikes": 83,
+        "shares": 356,
+        "read_time": "8 min read",
+        "replies": 7,
+        "tags": [
+            "quantum-computing",
+            "future-tech",
+            "computing",
+            "IBM",
+            "Google",
+            "cryptography"
+        ],
+        "content": "<article><h2>The Quantum Leap Forward</h2><p>Quantum computing represents a paradigm shift in computational science. Unlike classical computers that use bits (0s and 1s), quantum computers leverage <strong>quantum bits or qubits</strong> that can exist in multiple states simultaneously through superposition.</p><img src='https://cdn.pixabay.com/photo/2020/03/25/16/57/quantum-4964716_960_720.jpg' alt='Quantum computing visualization' style='width:100%;max-width:800px;margin:20px 0;'><p>Major tech companies like IBM, Google, and Microsoft are racing to achieve quantum supremacy. In 2019, Google's Sycamore processor completed a calculation in 200 seconds that would take the world's fastest supercomputer 10,000 years.</p><h3>Real-World Applications</h3><ul><li><strong>Cryptography:</strong> Breaking and creating unbreakable encryption</li><li><strong>Drug Discovery:</strong> Simulating molecular interactions at atomic levels</li><li><strong>Financial Modeling:</strong> Optimizing portfolios with countless variables</li><li><strong>Climate Science:</strong> Modeling complex weather patterns accurately</li></ul><img src='https://cdn.pixabay.com/photo/2021/08/04/13/06/quantum-6521695_960_720.jpg' alt='Quantum circuit board' style='width:100%;max-width:800px;margin:20px 0;'><p>The quantum computing market is projected to reach $65 billion by 2030. However, challenges remain in error correction and maintaining quantum coherence at scale.</p><blockquote>'Quantum computing will change everything about how we approach complex problems.' - Dr. Michio Kaku</blockquote></article>",
+        "messages": [
+            {
+                "id": 101,
+                "author": {
+                    "id": 201,
+                    "name": "Dr. Sarah Chen",
+                    "avatar": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png",
+                    "role": "Quantum Physicist"
+                },
+                "content": "Excellent overview! One thing to add: quantum error correction remains the biggest hurdle. We're making progress with surface codes, but fault-tolerant quantum computers are still 5-10 years away.",
+                "created_at": "2026-07-12T14:30:00Z",
+                "modified_at": "2026-07-12T14:30:00Z",
+                "replies": [
+                    {
+                        "id": 1011,
+                        "author": {
+                            "id": 202,
+                            "name": "Marcus Johnson",
+                            "avatar": "https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_640.png",
+                            "role": "Software Engineer"
+                        },
+                        "content": "Completely agree Dr. Chen! I've been following the surface code research at Google. Do you think topological qubits will eventually solve the error correction problem?",
+                        "created_at": "2026-07-12T16:45:00Z",
+                        "modified_at": "2026-07-12T16:45:00Z"
+                    },
+                    {
+                        "id": 1012,
+                        "author": {
+                            "id": 201,
+                            "name": "Dr. Sarah Chen",
+                            "avatar": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png",
+                            "role": "Quantum Physicist"
+                        },
+                        "content": "Topological qubits are promising but we're still years away from practical implementation. Majorana fermions are incredibly difficult to control reliably.",
+                        "created_at": "2026-07-13T08:20:00Z",
+                        "modified_at": "2026-07-13T09:15:00Z"
+                    }
+                ]
+            },
+            {
+                "id": 102,
+                "author": {
+                    "id": 202,
+                    "name": "Marcus Johnson",
+                    "avatar": "https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_640.png",
+                    "role": "Software Engineer"
+                },
+                "content": "I've been experimenting with Qiskit and it's mind-blowing! The learning curve is steep but the potential is incredible. Anyone else tried quantum programming?",
+                "created_at": "2026-07-13T09:15:00Z",
+                "modified_at": "2026-07-13T10:45:00Z",
+                "replies": [
+                    {
+                        "id": 1021,
+                        "author": {
+                            "id": 203,
+                            "name": "Prof. James Wright",
+                            "avatar": "https://cdn.pixabay.com/photo/2017/02/23/13/05/avatar-2092113_640.png",
+                            "role": "Computer Science Professor"
+                        },
+                        "content": "I teach Qiskit in my advanced computing class. Start with the Bernstein-Vazirani algorithm—it's a great way to understand quantum advantage without getting overwhelmed.",
+                        "created_at": "2026-07-13T11:30:00Z",
+                        "modified_at": "2026-07-13T11:30:00Z"
+                    }
+                ]
+            },
+            {
+                "id": 103,
+                "author": {
+                    "id": 203,
+                    "name": "Prof. James Wright",
+                    "avatar": "https://cdn.pixabay.com/photo/2017/02/23/13/05/avatar-2092113_640.png",
+                    "role": "Computer Science Professor"
+                },
+                "content": "Great article! I'd emphasize that hybrid classical-quantum approaches will dominate the near future. Pure quantum advantage is still limited to specific use cases.",
+                "created_at": "2026-07-14T11:20:00Z",
+                "modified_at": "2026-07-14T11:20:00Z",
+                "replies": []
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Edge Computing: Bringing Data Processing Closer to Home",
+        "slug": "edge-computing-data-processing",
+        "short_display": "As IoT devices multiply, edge computing is transforming data architecture by processing information closer to its source. This reduces latency, bandwidth usage, and enables real-time decision making for autonomous systems.",
+        "thumbnail": "https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_640.jpg",
+        "likes": 893,
+        "dislikes": 47,
+        "shares": 214,
+        "read_time": "6 min read",
+        "replies": 4,
+        "tags": [
+            "edge-computing",
+            "IoT",
+            "cloud-computing",
+            "5G",
+            "AWS",
+            "real-time-processing"
+        ],
+        "content": "<article><h2>The Edge Computing Revolution</h2><p>Edge computing is reshaping how we think about data processing infrastructure. By moving computation from centralized cloud servers to the <strong>network's edge</strong>, organizations can achieve sub-millisecond latency critical for modern applications.</p><img src='https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_960_720.jpg' alt='AI network visualization' style='width:100%;max-width:800px;margin:20px 0;'><p>With over <strong>75 billion IoT devices</strong> expected by 2025, traditional cloud architectures struggle to handle the massive data influx. Edge computing solves this by processing data locally on devices or nearby edge servers.</p><h3>Key Benefits</h3><ul><li><strong>Reduced Latency:</strong> Critical for autonomous vehicles and industrial robotics</li><li><strong>Bandwidth Optimization:</strong> Only relevant data sent to cloud</li><li><strong>Enhanced Privacy:</strong> Sensitive data processed locally</li><li><strong>Offline Operation:</strong> Systems work without constant connectivity</li></ul><img src='https://cdn.pixabay.com/photo/2020/06/04/14/44/smart-home-5253084_960_720.jpg' alt='Smart home technology' style='width:100%;max-width:800px;margin:20px 0;'><p>Major cloud providers including AWS, Azure, and Google Cloud now offer edge computing services. The market is projected to reach $61 billion by 2028.</p></article>",
+        "messages": [
+            {
+                "id": 201,
+                "author": {
+                    "id": 301,
+                    "name": "Lisa Rodriguez",
+                    "avatar": "https://cdn.pixabay.com/photo/2016/03/31/19/56/avatar-1295392_640.png",
+                    "role": "IoT Architect"
+                },
+                "content": "We've deployed edge computing in our manufacturing plants and reduced response times by 90%. The ROI is incredible for real-time quality control!",
+                "created_at": "2026-07-11T16:45:00Z",
+                "modified_at": "2026-07-12T08:30:00Z",
+                "replies": [
+                    {
+                        "id": 2011,
+                        "author": {
+                            "id": 302,
+                            "name": "David Kim",
+                            "avatar": "https://cdn.pixabay.com/photo/2014/04/02/10/25/man-303792_640.png",
+                            "role": "Network Engineer"
+                        },
+                        "content": "That's impressive Lisa! What edge platform are you using? We're evaluating AWS Wavelength vs Azure Stack Edge.",
+                        "created_at": "2026-07-12T09:00:00Z",
+                        "modified_at": "2026-07-12T09:00:00Z"
+                    },
+                    {
+                        "id": 2012,
+                        "author": {
+                            "id": 301,
+                            "name": "Lisa Rodriguez",
+                            "avatar": "https://cdn.pixabay.com/photo/2016/03/31/19/56/avatar-1295392_640.png",
+                            "role": "IoT Architect"
+                        },
+                        "content": "We went with AWS Wavelength for the 5G integration capabilities. The ultra-low latency pairing with Verizon's network has been a game changer.",
+                        "created_at": "2026-07-12T14:20:00Z",
+                        "modified_at": "2026-07-12T14:20:00Z"
+                    }
+                ]
+            },
+            {
+                "id": 202,
+                "author": {
+                    "id": 302,
+                    "name": "David Kim",
+                    "avatar": "https://cdn.pixabay.com/photo/2014/04/02/10/25/man-303792_640.png",
+                    "role": "Network Engineer"
+                },
+                "content": "Security is my main concern. More edge nodes mean a larger attack surface. We need robust zero-trust architectures before widespread adoption.",
+                "created_at": "2026-07-13T10:00:00Z",
+                "modified_at": "2026-07-13T10:00:00Z",
+                "replies": []
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Web 3.0: Decentralizing the Internet with Blockchain",
+        "slug": "web3-decentralizing-internet",
+        "short_display": "Web 3.0 promises a decentralized internet where users control their data through blockchain technology. From DeFi to DAOs, this new paradigm challenges traditional web architecture and big tech monopolies.",
+        "thumbnail": "https://cdn.pixabay.com/photo/2022/01/08/19/51/blockchain-6924721_640.jpg",
+        "likes": 1562,
+        "dislikes": 234,
+        "shares": 578,
+        "read_time": "7 min read",
+        "replies": 5,
+        "tags": [
+            "web3",
+            "blockchain",
+            "decentralization",
+            "DeFi",
+            "DAO",
+            "cryptocurrency",
+            "Ethereum"
+        ],
+        "content": "<article><h2>Welcome to Web 3.0</h2><p>The internet is evolving from Web 2.0's centralized platforms to a <strong>decentralized ecosystem</strong> powered by blockchain technology. Web 3.0 represents a fundamental shift in how data is owned, stored, and monetized online.</p><img src='https://cdn.pixabay.com/photo/2022/01/08/19/51/blockchain-6924721_960_720.jpg' alt='Blockchain technology concept' style='width:100%;max-width:800px;margin:20px 0;'><p>At its core, Web 3.0 uses <strong>decentralized protocols</strong> to give users sovereignty over their digital identities and assets. Smart contracts automate transactions without intermediaries, while DAOs enable community governance.</p><h3>Core Technologies</h3><ul><li><strong>Blockchain:</strong> Immutable distributed ledgers for trustless transactions</li><li><strong>Smart Contracts:</strong> Self-executing code on Ethereum and similar platforms</li><li><strong>IPFS:</strong> Decentralized file storage replacing HTTP</li><li><strong>DeFi:</strong> Decentralized finance removing banking intermediaries</li></ul><img src='https://cdn.pixabay.com/photo/2022/01/10/15/14/cryptocurrency-6927624_960_720.jpg' alt='Cryptocurrency digital art' style='width:100%;max-width:800px;margin:20px 0;'><p>Despite the promise, challenges include scalability issues, high gas fees, and regulatory uncertainty. The total value locked in DeFi protocols exceeded $200 billion, showing massive potential.</p></article>",
+        "messages": [
+            {
+                "id": 301,
+                "author": {
+                    "id": 401,
+                    "name": "Alex Thompson",
+                    "avatar": "https://cdn.pixabay.com/photo/2013/07/13/10/07/man-156584_640.png",
+                    "role": "Blockchain Developer"
+                },
+                "content": "Solid intro to Web3! I've been building dApps for 3 years and the ecosystem maturity is incredible compared to 2020. Layer 2 solutions are solving the scaling issues.",
+                "created_at": "2026-07-10T08:20:00Z",
+                "modified_at": "2026-07-10T09:15:00Z",
+                "replies": [
+                    {
+                        "id": 3011,
+                        "author": {
+                            "id": 402,
+                            "name": "Rachel Green",
+                            "avatar": "https://cdn.pixabay.com/photo/2016/03/31/19/56/avatar-1295395_640.png",
+                            "role": "UX Designer"
+                        },
+                        "content": "Which L2 are you most bullish on? I've been impressed with Arbitrum's UX improvements lately.",
+                        "created_at": "2026-07-10T10:00:00Z",
+                        "modified_at": "2026-07-10T10:00:00Z"
+                    },
+                    {
+                        "id": 3012,
+                        "author": {
+                            "id": 401,
+                            "name": "Alex Thompson",
+                            "avatar": "https://cdn.pixabay.com/photo/2013/07/13/10/07/man-156584_640.png",
+                            "role": "Blockchain Developer"
+                        },
+                        "content": "Arbitrum and Optimism are both great. I'm also keeping an eye on zkSync—zero-knowledge proofs are the future of L2 scaling.",
+                        "created_at": "2026-07-10T12:15:00Z",
+                        "modified_at": "2026-07-10T12:15:00Z"
+                    }
+                ]
+            },
+            {
+                "id": 302,
+                "author": {
+                    "id": 402,
+                    "name": "Rachel Green",
+                    "avatar": "https://cdn.pixabay.com/photo/2016/03/31/19/56/avatar-1295395_640.png",
+                    "role": "UX Designer"
+                },
+                "content": "The UX is still terrible for average users. Until we make wallets and key management intuitive, mass adoption will be limited. We need Apple-level simplicity.",
+                "created_at": "2026-07-12T14:30:00Z",
+                "modified_at": "2026-07-12T14:30:00Z",
+                "replies": []
+            },
+            {
+                "id": 303,
+                "author": {
+                    "id": 403,
+                    "name": "Michael Patel",
+                    "avatar": "https://cdn.pixabay.com/photo/2017/03/01/22/18/avatar-2109801_640.png",
+                    "role": "Venture Capitalist"
+                },
+                "content": "Invested in 5 Web3 startups this year. The space is maturing beyond speculation. Real utility is emerging in supply chain, identity, and gaming.",
+                "created_at": "2026-07-13T11:45:00Z",
+                "modified_at": "2026-07-14T07:20:00Z",
+                "replies": []
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "5G and Beyond: The Future of Wireless Connectivity",
+        "slug": "5g-future-wireless-connectivity",
+        "short_display": "5G networks are rolling out globally, promising speeds 100x faster than 4G. But researchers are already developing 6G technology that will enable holographic communications and tactile internet experiences by 2030.",
+        "thumbnail": "https://cdn.pixabay.com/photo/2019/04/04/06/56/5g-4101941_640.jpg",
+        "likes": 678,
+        "dislikes": 91,
+        "shares": 189,
+        "read_time": "6 min read",
+        "replies": 3,
+        "tags": [
+            "5G",
+            "6G",
+            "wireless",
+            "telecommunications",
+            "network",
+            "connectivity",
+            "IoT"
+        ],
+        "content": "<article><h2>The 5G Transformation</h2><p>Fifth-generation wireless technology is more than just faster smartphones. <strong>5G networks</strong> are enabling a new era of connectivity with ultra-reliable low-latency communications (URLLC) that will power everything from autonomous vehicles to remote surgery.</p><img src='https://cdn.pixabay.com/photo/2019/04/04/06/56/5g-4101941_960_720.jpg' alt='5G network concept' style='width:100%;max-width:800px;margin:20px 0;'><p>With theoretical speeds up to <strong>20 Gbps</strong> and latency as low as 1 millisecond, 5G creates possibilities that were science fiction just a decade ago. Smart cities, Industry 4.0, and massive IoT deployments all depend on this infrastructure.</p><h3>Looking to 6G</h3><p>Research labs worldwide are already developing 6G technology, expected around 2030. 6G will operate at <strong>terahertz frequencies</strong>, enabling data rates of 1 terabyte per second.</p><ul><li><strong>Holographic Communications:</strong> Real-time 3D video calls</li><li><strong>Digital Twins:</strong> Perfect real-time replicas of physical systems</li><li><strong>Tactile Internet:</strong> Transmitting touch and haptic feedback</li><li><strong>Brain-Computer Interfaces:</strong> Direct neural connections</li></ul><img src='https://cdn.pixabay.com/photo/2020/05/01/11/53/communication-5116352_960_720.jpg' alt='Global network connections' style='width:100%;max-width:800px;margin:20px 0;'><p>The global 5G infrastructure market is expected to reach $83 billion by 2030, with Asia leading in deployment density.</p></article>",
+        "messages": [
+            {
+                "id": 401,
+                "author": {
+                    "id": 501,
+                    "name": "Dr. Emily Watson",
+                    "avatar": "https://cdn.pixabay.com/photo/2016/03/31/19/56/avatar-1295397_640.png",
+                    "role": "Telecommunications Engineer"
+                },
+                "content": "Great article! The millimeter wave challenges are still significant though. Signal penetration through walls remains problematic for dense urban deployments.",
+                "created_at": "2026-07-09T15:20:00Z",
+                "modified_at": "2026-07-09T16:00:00Z",
+                "replies": [
+                    {
+                        "id": 4011,
+                        "author": {
+                            "id": 502,
+                            "name": "Tom Baker",
+                            "avatar": "https://cdn.pixabay.com/photo/2014/04/02/14/10/man-306407_640.png",
+                            "role": "Network Infrastructure PM"
+                        },
+                        "content": "We're seeing this firsthand. We had to install 3x more small cells than initially planned for mmWave coverage in our downtown area.",
+                        "created_at": "2026-07-09T17:00:00Z",
+                        "modified_at": "2026-07-09T17:00:00Z"
+                    }
+                ]
+            },
+            {
+                "id": 402,
+                "author": {
+                    "id": 502,
+                    "name": "Tom Baker",
+                    "avatar": "https://cdn.pixabay.com/photo/2014/04/02/14/10/man-306407_640.png",
+                    "role": "Network Infrastructure PM"
+                },
+                "content": "We're deploying small cells across our city and the improvement is dramatic. However, the cost per square mile is 3x higher than 4G. ROI calculations are complex.",
+                "created_at": "2026-07-11T10:15:00Z",
+                "modified_at": "2026-07-11T14:30:00Z",
+                "replies": []
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Cybersecurity in 2026: AI-Powered Threats and Defenses",
+        "slug": "cybersecurity-2026-ai-threats",
+        "short_display": "As artificial intelligence evolves, both cybercriminals and defenders are leveraging machine learning. From deepfake phishing to autonomous security systems, the cybersecurity landscape has become an AI arms race.",
+        "thumbnail": "https://cdn.pixabay.com/photo/2017/01/18/17/39/cyber-security-1990288_640.jpg",
+        "likes": 1034,
+        "dislikes": 56,
+        "shares": 445,
+        "read_time": "9 min read",
+        "replies": 8,
+        "tags": [
+            "cybersecurity",
+            "AI",
+            "machine-learning",
+            "deepfake",
+            "zero-trust",
+            "XDR",
+            "threat-detection"
+        ],
+        "content": "<article><h2>The AI Cybersecurity Arms Race</h2><p>2026 marks a turning point in cybersecurity as <strong>artificial intelligence</strong> becomes the primary tool for both attackers and defenders. Machine learning algorithms now detect threats in milliseconds, while adversaries use AI to craft increasingly sophisticated attacks.</p><img src='https://cdn.pixabay.com/photo/2017/01/18/17/39/cyber-security-1990288_960_720.jpg' alt='Cybersecurity concept' style='width:100%;max-width:800px;margin:20px 0;'><p>Last year, AI-powered attacks increased by <strong>300%</strong>, with deepfake-enabled social engineering causing billions in losses. Simultaneously, defensive AI systems prevented an estimated 85% of automated attacks before human analysts even detected them.</p><h3>Emerging Threats</h3><ul><li><strong>Deepfake Phishing:</strong> AI-generated video/audio impersonating executives</li><li><strong>Autonomous Malware:</strong> Self-modifying code that evades signature detection</li><li><strong>AI-Powered Reconnaissance:</strong> Automated vulnerability discovery at machine speed</li><li><strong>Supply Chain Poisoning:</strong> Corrupting ML training data</li></ul><img src='https://cdn.pixabay.com/photo/2021/11/07/13/18/cyber-attack-6774419_960_720.jpg' alt='Cyber attack visualization' style='width:100%;max-width:800px;margin:20px 0;'><h3>Defensive Innovations</h3><p>Zero-trust architectures combined with <strong>behavioral AI analysis</strong> are becoming standard. Extended Detection and Response (XDR) platforms now process over 1 million events per second, correlating threats across endpoints, networks, and cloud environments.</p><blockquote>'AI doesn't just augment cybersecurity—it's fundamentally redefining the battlefield.' - Gartner Security Summit 2025</blockquote><p>The cybersecurity workforce gap remains critical, with 3.5 million unfilled positions globally, making AI automation not just advantageous but essential.</p></article>",
+        "messages": [
+            {
+                "id": 501,
+                "author": {
+                    "id": 601,
+                    "name": "Maria Santos",
+                    "avatar": "https://cdn.pixabay.com/photo/2016/03/31/19/56/avatar-1295396_640.png",
+                    "role": "CISO"
+                },
+                "content": "We implemented AI-driven threat hunting last quarter and caught 47 advanced persistent threats that bypassed traditional defenses. Game changer for our SOC team.",
+                "created_at": "2026-07-08T09:30:00Z",
+                "modified_at": "2026-07-08T11:15:00Z",
+                "replies": [
+                    {
+                        "id": 5011,
+                        "author": {
+                            "id": 604,
+                            "name": "Chris Williams",
+                            "avatar": "https://cdn.pixabay.com/photo/2014/04/02/10/25/man-303792_640.png",
+                            "role": "Security Architect"
+                        },
+                        "content": "That's phenomenal Maria! What AI platform are you using for threat hunting? We're evaluating CrowdStrike vs SentinelOne.",
+                        "created_at": "2026-07-08T10:45:00Z",
+                        "modified_at": "2026-07-08T10:45:00Z"
+                    },
+                    {
+                        "id": 5012,
+                        "author": {
+                            "id": 601,
+                            "name": "Maria Santos",
+                            "avatar": "https://cdn.pixabay.com/photo/2016/03/31/19/56/avatar-1295396_640.png",
+                            "role": "CISO"
+                        },
+                        "content": "We went with CrowdStrike Falcon. Their AI model detected lateral movement that our previous SIEM completely missed. Worth every penny.",
+                        "created_at": "2026-07-08T14:30:00Z",
+                        "modified_at": "2026-07-08T14:30:00Z"
+                    }
+                ]
+            },
+            {
+                "id": 502,
+                "author": {
+                    "id": 602,
+                    "name": "Ryan Cooper",
+                    "avatar": "https://cdn.pixabay.com/photo/2017/02/23/13/05/avatar-2092115_640.png",
+                    "role": "Ethical Hacker"
+                },
+                "content": "The offensive AI tools I test are terrifying. We need mandatory AI security certifications before these models are deployed in critical infrastructure.",
+                "created_at": "2026-07-10T16:45:00Z",
+                "modified_at": "2026-07-12T08:20:00Z",
+                "replies": [
+                    {
+                        "id": 5021,
+                        "author": {
+                            "id": 603,
+                            "name": "Dr. Nina Patel",
+                            "avatar": "https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_640.png",
+                            "role": "AI Security Researcher"
+                        },
+                        "content": "Absolutely agree! We're working on an adversarial robustness framework at my lab. The EU AI Act is a step in the right direction but doesn't go far enough for security.",
+                        "created_at": "2026-07-11T09:15:00Z",
+                        "modified_at": "2026-07-11T09:15:00Z"
+                    }
+                ]
+            },
+            {
+                "id": 503,
+                "author": {
+                    "id": 603,
+                    "name": "Dr. Nina Patel",
+                    "avatar": "https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_640.png",
+                    "role": "AI Security Researcher"
+                },
+                "content": "Adversarial ML is the next frontier. We've demonstrated attacks that fool medical imaging AI with imperceptible perturbations. Defensive techniques are lagging behind.",
+                "created_at": "2026-07-13T13:00:00Z",
+                "modified_at": "2026-07-14T09:45:00Z",
+                "replies": [
+                    {
+                        "id": 5031,
+                        "author": {
+                            "id": 602,
+                            "name": "Ryan Cooper",
+                            "avatar": "https://cdn.pixabay.com/photo/2017/02/23/13/05/avatar-2092115_640.png",
+                            "role": "Ethical Hacker"
+                        },
+                        "content": "That's frightening. We need adversarial training to become standard practice in ML pipelines. Are you publishing your findings?",
+                        "created_at": "2026-07-14T10:00:00Z",
+                        "modified_at": "2026-07-14T10:00:00Z"
+                    },
+                    {
+                        "id": 5032,
+                        "author": {
+                            "id": 603,
+                            "name": "Dr. Nina Patel",
+                            "avatar": "https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_640.png",
+                            "role": "AI Security Researcher"
+                        },
+                        "content": "Yes, our paper will be presented at NeurIPS 2026. I'll share the preprint next month. The medical imaging results are particularly concerning.",
+                        "created_at": "2026-07-14T11:30:00Z",
+                        "modified_at": "2026-07-14T11:30:00Z"
+                    }
+                ]
+            },
+            {
+                "id": 504,
+                "author": {
+                    "id": 604,
+                    "name": "Chris Williams",
+                    "avatar": "https://cdn.pixabay.com/photo/2014/04/02/10/25/man-303792_640.png",
+                    "role": "Security Architect"
+                },
+                "content": "Zero trust is the way forward. We've moved 90% of our workloads to zero trust architecture and incident response time dropped from hours to minutes.",
+                "created_at": "2026-07-14T07:10:00Z",
+                "modified_at": "2026-07-14T07:10:00Z",
+                "replies": []
+            }
+        ]
+    }
+]
