@@ -27,6 +27,11 @@ This project is intended as a free resource for developers and learners. If you 
 | `tech_personalities.json` | Famous tech personalities data | 100+ |
 | `quotes.json` | Inspirational & educational quotes | 100+ |
 | `posts.json` | Technology blog posts | 10+ |
+| `regions.json`| Demographic Regions | 6 |
+| `subregions.json` | Demographic Sub Regions | 22 |
+| `countries.json` | Demographic Countries | 250 |
+| `states.json` | Country States | 5101 |
+| `cities.json` | Country State Cities | 150000+ |
 
 ## Usage
 
