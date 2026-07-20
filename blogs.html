@@ -4,36 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Blogs - Hindi Tutor Point</title>
-    
-    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    
-    <!-- Alpine.js -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    
     <style>
-        :root {
-            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-        }
-        
+        :root { --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
         body {
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
             min-height: 100vh;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
+        .navbar {
+            background: white !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .navbar-brand {
+            font-weight: 700;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 1.5rem;
+        }
+        .nav-link {
+            color: #667eea !important;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link:hover { color: #764ba2 !important; }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--primary-gradient);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+        .nav-link:hover::after { width: 80%; }
         .hero-section {
             background: var(--primary-gradient);
             color: white;
-            padding: 3rem 0 2rem;
+            padding: 4rem 0 3rem;
             margin-bottom: 2rem;
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
-        
         .card {
             border: none;
             border-radius: 15px;
@@ -41,12 +59,10 @@
             transition: all 0.3s ease;
             overflow: hidden;
         }
-        
         .card:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 40px rgba(0,0,0,0.2);
         }
-        
         .blog-item {
             background: white;
             border-radius: 15px;
@@ -56,22 +72,16 @@
             transition: all 0.3s ease;
             overflow: hidden;
         }
-        
         .blog-item:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 40px rgba(0,0,0,0.2);
         }
-        
         .blog-thumbnail {
             width: 100%;
             height: 250px;
             object-fit: cover;
         }
-        
-        .blog-content {
-            padding: 1.5rem;
-        }
-        
+        .blog-content { padding: 1.5rem; }
         .tag {
             display: inline-block;
             padding: 0.25rem 0.75rem;
@@ -81,7 +91,6 @@
             border-radius: 15px;
             font-size: 0.85rem;
         }
-        
         .stat-badge {
             display: inline-flex;
             align-items: center;
@@ -93,18 +102,6 @@
             font-size: 0.9rem;
             font-weight: 500;
         }
-        
-        .search-box {
-            border-radius: 25px;
-            border: 2px solid #667eea;
-            padding: 0.7rem 1.5rem;
-        }
-        
-        .search-box:focus {
-            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
-            border-color: #764ba2;
-        }
-        
         .btn-gradient {
             background: var(--primary-gradient);
             border: none;
@@ -114,13 +111,11 @@
             border-radius: 25px;
             transition: all 0.3s ease;
         }
-        
         .btn-gradient:hover {
             transform: scale(1.05);
             box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
             color: white;
         }
-        
         .message-thread {
             background: #f8f9fa;
             border-left: 4px solid #667eea;
@@ -128,267 +123,162 @@
             margin: 0.5rem 0;
             border-radius: 8px;
         }
-        
         .author-info {
             display: flex;
             align-items: center;
             gap: 0.8rem;
             margin-bottom: 0.8rem;
         }
-        
         .author-avatar {
             width: 45px;
             height: 45px;
             border-radius: 50%;
             object-fit: cover;
         }
-        
         .reply-section {
             margin-left: 2rem;
             margin-top: 1rem;
         }
-        
-        .page-link {
-            color: #667eea;
-            border: none;
-            margin: 0 0.2rem;
-            border-radius: 8px;
-        }
-        
-        .page-link:hover {
-            background: var(--primary-gradient);
-            color: white;
-        }
-        
-        .page-item.active .page-link {
-            background: var(--primary-gradient);
-            border: none;
-        }
-        
-        .loading-spinner {
-            display: inline-block;
-            width: 3rem;
-            height: 3rem;
-            border: 0.4rem solid rgba(102, 126, 234, 0.3);
-            border-top-color: #667eea;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-        
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-        
         .content-section {
             line-height: 1.8;
             color: #333;
         }
-        
         .stats-row {
             display: flex;
             gap: 1rem;
             flex-wrap: wrap;
             margin: 1rem 0;
         }
+        body.print-mode .navbar,
+        body.print-mode .hero-section,
+        body.print-mode footer,
+        body.print-mode .no-print,
+        body.print-mode .pagination { display: none !important; }
+        body.print-mode .print-only { display: block !important; }
+        body.print-mode .card { box-shadow: none; border: 1px solid #ddd; }
+        .print-only { display: none; }
     </style>
 </head>
 <body>
     <div x-data="blogsViewer()" x-init="init()">
-        <!-- Hero Section -->
-        <div class="hero-section">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
             <div class="container">
-                <div class="text-center">
-                    <h1 class="display-4 fw-bold mb-3">
-                        <i class="bi bi-file-post-fill me-3"></i>
-                        Tech Blogs
-                    </h1>
-                    <p class="lead">Explore the latest technology articles and insights</p>
-                    <a href="index.html" class="btn btn-light mt-3">
-                        <i class="bi bi-house-fill me-2"></i>Back to Home
-                    </a>
+                <a class="navbar-brand d-flex align-items-center" href="index.html"><img src="jar.svg" alt="JAR" height="35" class="me-2"><span class="d-flex flex-column"><span>JAR</span><small class="text-muted" style="font-size:0.6rem;font-weight:400;line-height:1;background:none;-webkit-text-fill-color:#6c757d;color:#6c757d;">JSON API Repository</small></span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="demographicDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-globe2 me-1"></i>Demographic
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="demographicDropdown">
+                                <li><a class="dropdown-item" href="regions.html"><i class="bi bi-globe me-1"></i>Regions</a></li>
+                                <li><a class="dropdown-item" href="subregions.html"><i class="bi bi-map me-1"></i>Subregions</a></li>
+                                <li><a class="dropdown-item" href="country.html"><i class="bi bi-flag me-1"></i>Countries</a></li>
+                                <li><a class="dropdown-item" href="states.html"><i class="bi bi-building me-1"></i>States</a></li>
+                                <li><a class="dropdown-item" href="cities.html"><i class="bi bi-geo-alt me-1"></i>Cities</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="personalities.html"><i class="bi bi-person-badge me-1"></i>Personalities</a></li>
+                        <li class="nav-item"><a class="nav-link" href="quotes.html"><i class="bi bi-quote me-1"></i>Quotes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blogs.html"><i class="bi bi-file-post me-1"></i>Blogs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="vocabulary.html"><i class="bi bi-book me-1"></i>Vocabulary</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://github.com/hinditutorpoint/json" target="_blank"><i class="bi bi-github me-1"></i>GitHub</a></li>
+                    </ul>
                 </div>
+            </div>
+        </nav>
+
+        <div class="hero-section">
+            <div class="container text-center">
+                <h1 class="display-4 fw-bold mb-3"><i class="bi bi-file-post-fill me-3"></i>Tech Blogs</h1>
+                <p class="lead mb-0">Explore the latest technology articles and insights</p>
             </div>
         </div>
 
-        <!-- Main Content -->
         <div class="container pb-5">
-            <!-- API Information -->
-            <div class="card mb-4 border-primary">
-                <div class="card-body">
-                    <h5 class="mb-3">
-                        <i class="bi bi-code-slash me-2"></i>API Endpoint for Developers
-                    </h5>
-                    <div class="alert alert-primary mb-3">
-                        <strong>GET Request URL:</strong>
-                        <div class="input-group mt-2">
-                            <input 
-                                type="text" 
-                                class="form-control" 
-                                value="https://raw.githubusercontent.com/hinditutorpoint/json/main/posts.json" 
-                                id="apiUrl"
-                                readonly>
-                            <button 
-                                class="btn btn-primary" 
-                                type="button"
-                                @click="copyToClipboard('https://raw.githubusercontent.com/hinditutorpoint/json/main/posts.json')">
-                                <i class="bi bi-clipboard me-1"></i>Copy
-                            </button>
-                        </div>
-                    </div>
-                    <div class="row g-3">
-                        <div class="col-md-4">
-                            <small class="text-muted d-block">Method</small>
-                            <code class="badge bg-success">GET</code>
-                        </div>
-                        <div class="col-md-4">
-                            <small class="text-muted d-block">Format</small>
-                            <code class="badge bg-info">JSON</code>
-                        </div>
-                        <div class="col-md-4">
-                            <small class="text-muted d-block">CORS</small>
-                            <code class="badge bg-warning text-dark">Enabled</code>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Blog Info -->
             <div class="card mb-4">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                            <h5 class="mb-1">
-                                <i class="bi bi-newspaper me-2"></i>Featured Article
-                            </h5>
+                <div class="card-body p-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <h5 class="mb-1"><i class="bi bi-newspaper me-2"></i>Featured Article</h5>
                             <p class="text-muted mb-0">
                                 Viewing article <strong x-text="currentPostId"></strong> of <strong x-text="data.length"></strong>
                             </p>
                         </div>
-                        <div>
-                            <button 
-                                @click="loadPost(currentPostId > 1 ? currentPostId - 1 : data.length)"
-                                class="btn btn-sm btn-outline-primary me-2">
-                                <i class="bi bi-chevron-left"></i> Previous
-                            </button>
-                            <button 
-                                @click="loadPost(currentPostId < data.length ? currentPostId + 1 : 1)"
-                                class="btn btn-sm btn-outline-primary">
-                                Next <i class="bi bi-chevron-right"></i>
-                            </button>
+                        <div class="col-md-6 d-flex align-items-center justify-content-end gap-2">
+                            <div class="d-flex align-items-center gap-2 no-print">
+                                <button class="btn btn-outline-secondary btn-sm" @click="printTable" title="Print / PDF"><i class="bi bi-printer"></i> Print</button>
+                                <button class="btn btn-outline-success btn-sm" @click="exportExcel" title="Export to Excel"><i class="bi bi-file-earmark-excel"></i> Excel</button>
+                            </div>
+                            <div class="d-flex align-items-center gap-2 no-print">
+                                <button @click="loadPost(currentPostId > 1 ? currentPostId - 1 : data.length)" class="btn btn-sm btn-outline-primary"><i class="bi bi-chevron-left"></i> Previous</button>
+                                <button @click="loadPost(currentPostId < data.length ? currentPostId + 1 : 1)" class="btn btn-sm btn-outline-primary">Next <i class="bi bi-chevron-right"></i></button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Loading State -->
             <div x-show="loading" class="text-center py-5">
-                <div class="loading-spinner mx-auto mb-3"></div>
-                <p class="text-muted">Loading blogs...</p>
+                <div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div>
+                <p class="text-muted mt-2">Loading blogs...</p>
             </div>
 
-            <!-- Error State -->
-            <div x-show="error" class="alert alert-danger" role="alert">
-                <i class="bi bi-exclamation-triangle me-2"></i>
-                <span x-text="error"></span>
-            </div>
+            <div x-show="error" class="alert alert-danger" x-text="error"></div>
 
-            <!-- Single Blog Post Display -->
             <div x-show="!loading && !error && currentBlog">
                 <article class="blog-item">
                     <img :src="currentBlog.thumbnail" :alt="currentBlog.title" class="blog-thumbnail">
                     <div class="blog-content">
-                        <!-- Article Header -->
                         <div class="mb-4">
                             <h1 class="display-5 fw-bold mb-3" x-text="currentBlog.title"></h1>
-                            
-                            <div class="d-flex align-items-center gap-3 mb-3 text-muted">
-                                <span>
-                                    <i class="bi bi-calendar3 me-2"></i>
-                                    Published: <span x-text="new Date().toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'})"></span>
-                                </span>
-                                <span>
-                                    <i class="bi bi-clock me-2"></i>
-                                    <span x-text="currentBlog.read_time"></span>
-                                </span>
+                            <div class="d-flex align-items-center gap-3 mb-3 text-muted flex-wrap">
+                                <span><i class="bi bi-calendar3 me-2"></i>Published: <span x-text="new Date().toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'})"></span></span>
+                                <span><i class="bi bi-clock me-2"></i><span x-text="currentBlog.read_time"></span></span>
                             </div>
-                            
                             <div class="stats-row mb-4">
-                                <span class="stat-badge">
-                                    <i class="bi bi-heart-fill"></i>
-                                    <span x-text="currentBlog.likes"></span> likes
-                                </span>
-                                <span class="stat-badge">
-                                    <i class="bi bi-hand-thumbs-down-fill"></i>
-                                    <span x-text="currentBlog.dislikes"></span> dislikes
-                                </span>
-                                <span class="stat-badge">
-                                    <i class="bi bi-share-fill"></i>
-                                    <span x-text="currentBlog.shares"></span> shares
-                                </span>
-                                <span class="stat-badge">
-                                    <i class="bi bi-chat-fill"></i>
-                                    <span x-text="currentBlog.replies"></span> replies
-                                </span>
+                                <span class="stat-badge"><i class="bi bi-heart-fill"></i><span x-text="currentBlog.likes"></span> likes</span>
+                                <span class="stat-badge"><i class="bi bi-hand-thumbs-down-fill"></i><span x-text="currentBlog.dislikes"></span> dislikes</span>
+                                <span class="stat-badge"><i class="bi bi-share-fill"></i><span x-text="currentBlog.shares"></span> shares</span>
+                                <span class="stat-badge"><i class="bi bi-chat-fill"></i><span x-text="currentBlog.replies"></span> replies</span>
                             </div>
                         </div>
-                        
-                        <!-- Short Description -->
+
                         <div class="alert alert-light border-start border-primary border-4 mb-4">
                             <p class="lead mb-0" x-text="currentBlog.short_display"></p>
                         </div>
-                        
-                        <!-- Tags -->
+
                         <div class="mb-4">
-                            <strong class="me-2">
-                                <i class="bi bi-tags-fill me-2"></i>Tags:
-                            </strong>
+                            <strong class="me-2"><i class="bi bi-tags-fill me-2"></i>Tags:</strong>
                             <template x-for="tag in currentBlog.tags" :key="tag">
                                 <span class="tag" x-text="'#' + tag"></span>
                             </template>
                         </div>
-                        
-                        <!-- Article Content -->
+
                         <div class="content-section mb-5" x-html="currentBlog.content"></div>
-                        
-                        <!-- Article Metadata -->
+
                         <div class="card bg-light mb-4">
                             <div class="card-body">
-                                <h5 class="card-title">
-                                    <i class="bi bi-info-circle me-2"></i>Article Details
-                                </h5>
+                                <h5 class="card-title"><i class="bi bi-info-circle me-2"></i>Article Details</h5>
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <p class="mb-2">
-                                            <strong>Article ID:</strong> 
-                                            <code x-text="currentBlog.id"></code>
-                                        </p>
-                                        <p class="mb-0">
-                                            <strong>URL Slug:</strong> 
-                                            <code x-text="currentBlog.slug"></code>
-                                        </p>
+                                        <p class="mb-2"><strong>Article ID:</strong> <code x-text="currentBlog.id"></code></p>
+                                        <p class="mb-0"><strong>URL Slug:</strong> <code x-text="currentBlog.slug"></code></p>
                                     </div>
                                     <div class="col-md-6">
-                                        <p class="mb-2">
-                                            <strong>Engagement Rate:</strong>
-                                            <span x-text="Math.round((currentBlog.likes / (currentBlog.likes + currentBlog.dislikes)) * 100) + '%'"></span>
-                                        </p>
-                                        <p class="mb-0">
-                                            <strong>Total Interactions:</strong>
-                                            <span x-text="currentBlog.likes + currentBlog.dislikes + currentBlog.shares"></span>
-                                        </p>
+                                        <p class="mb-2"><strong>Engagement Rate:</strong> <span x-text="Math.round((currentBlog.likes / (currentBlog.likes + currentBlog.dislikes)) * 100) + '%'"></span></p>
+                                        <p class="mb-0"><strong>Total Interactions:</strong> <span x-text="currentBlog.likes + currentBlog.dislikes + currentBlog.shares"></span></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
-                        <!-- Discussion Section -->
+
                         <template x-if="currentBlog.messages && currentBlog.messages.length > 0">
                             <div class="mt-5">
-                                <h3 class="mb-4 pb-3 border-bottom">
-                                    <i class="bi bi-chat-dots-fill me-2"></i>
-                                    Discussion (<span x-text="currentBlog.messages.length"></span> comments)
-                                </h3>
-                                
+                                <h3 class="mb-4 pb-3 border-bottom"><i class="bi bi-chat-dots-fill me-2"></i>Discussion (<span x-text="currentBlog.messages.length"></span> comments)</h3>
                                 <template x-for="message in currentBlog.messages" :key="message.id">
                                     <div class="message-thread mb-4">
                                         <div class="author-info">
@@ -399,26 +289,18 @@
                                                         <div class="fw-bold" x-text="message.author.name"></div>
                                                         <div class="small text-muted">
                                                             <span x-text="message.author.role"></span>
-                                                            <span class="mx-2">•</span>
+                                                            <span class="mx-2">&bull;</span>
                                                             <span x-text="new Date(message.created_at).toLocaleDateString('en-US', {month: 'short', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit'})"></span>
                                                         </div>
                                                     </div>
-                                                    <small class="text-muted" x-show="message.modified_at !== message.created_at">
-                                                        <i class="bi bi-pencil-square me-1"></i>Edited
-                                                    </small>
+                                                    <small class="text-muted" x-show="message.modified_at !== message.created_at"><i class="bi bi-pencil-square me-1"></i>Edited</small>
                                                 </div>
                                             </div>
                                         </div>
                                         <p class="mt-3 mb-2" x-text="message.content"></p>
-                                        
-                                        <!-- Replies -->
                                         <template x-if="message.replies && message.replies.length > 0">
                                             <div class="reply-section mt-3">
-                                                <div class="text-muted small mb-2">
-                                                    <i class="bi bi-arrow-return-right me-1"></i>
-                                                    <span x-text="message.replies.length"></span> 
-                                                    <span x-text="message.replies.length === 1 ? 'reply' : 'replies'"></span>
-                                                </div>
+                                                <div class="text-muted small mb-2"><i class="bi bi-arrow-return-right me-1"></i><span x-text="message.replies.length"></span> <span x-text="message.replies.length === 1 ? 'reply' : 'replies'"></span></div>
                                                 <template x-for="reply in message.replies" :key="reply.id">
                                                     <div class="message-thread">
                                                         <div class="author-info">
@@ -441,13 +323,10 @@
                                 </template>
                             </div>
                         </template>
-                        
-                        <!-- Navigation to other posts -->
+
                         <div class="card mt-5">
                             <div class="card-body">
-                                <h5 class="card-title mb-3">
-                                    <i class="bi bi-newspaper me-2"></i>More Articles
-                                </h5>
+                                <h5 class="card-title mb-3"><i class="bi bi-newspaper me-2"></i>More Articles</h5>
                                 <div class="row g-3">
                                     <template x-for="(post, index) in otherPosts.slice(0, 3)" :key="post.id">
                                         <div class="col-md-4">
@@ -456,11 +335,7 @@
                                                 <div class="card-body">
                                                     <h6 class="card-title" x-text="post.title"></h6>
                                                     <p class="card-text small text-muted" x-text="post.short_display.substring(0, 80) + '...'"></p>
-                                                    <button 
-                                                        @click="loadPost(post.id)" 
-                                                        class="btn btn-sm btn-gradient">
-                                                        Read Article
-                                                    </button>
+                                                    <button @click="loadPost(post.id)" class="btn btn-sm btn-gradient">Read Article</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -470,13 +345,51 @@
                         </div>
                     </div>
                 </article>
+
+                <div class="print-only mt-4" id="print-section">
+                    <table class="table table-bordered">
+                        <thead><tr><th>Field</th><th>Value</th></tr></thead>
+                        <tbody>
+                            <tr><td>Title</td><td x-text="currentBlog.title"></td></tr>
+                            <tr><td>Likes</td><td x-text="currentBlog.likes"></td></tr>
+                            <tr><td>Dislikes</td><td x-text="currentBlog.dislikes"></td></tr>
+                            <tr><td>Shares</td><td x-text="currentBlog.shares"></td></tr>
+                            <tr><td>Content</td><td x-text="currentBlog.short_display"></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <nav class="mt-3 d-flex justify-content-center no-print">
+                    <ul class="pagination pagination-sm mb-0">
+                        <li class="page-item" :class="{ disabled: currentPostId <= 1 }">
+                            <button class="page-link" @click="loadPost(currentPostId > 1 ? currentPostId - 1 : data.length)" :disabled="currentPostId <= 1">&laquo;</button>
+                        </li>
+                        <template x-for="i in Math.min(data.length, 10)" :key="i">
+                            <li class="page-item" :class="{ active: i === currentPostId }">
+                                <button class="page-link" @click="loadPost(i)" x-text="i"></button>
+                            </li>
+                        </template>
+                        <li class="page-item" :class="{ disabled: currentPostId >= data.length }">
+                            <button class="page-link" @click="loadPost(currentPostId < data.length ? currentPostId + 1 : 1)" :disabled="currentPostId >= data.length">&raquo;</button>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
+
+        <footer class="bg-dark text-white py-4 mt-5">
+            <div class="container text-center">
+                <p class="mb-2">
+                    <i class="bi bi-github me-2"></i>
+                    <a href="https://github.com/hinditutorpoint/json" target="_blank" class="text-white text-decoration-none">github.com/hinditutorpoint/json</a>
+                </p>
+                <p class="mb-0 text-muted">Built with Alpine.js & Bootstrap 5 | &copy; 2026 Hindi Tutor Point</p>
+            </div>
+        </footer>
     </div>
 
-    <!-- Bootstrap 5 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
     <script>
         function blogsViewer() {
             return {
@@ -485,57 +398,53 @@
                 currentPostId: 1,
                 loading: false,
                 error: null,
-                
-                async init() {
-                    await this.loadData();
-                },
-                
+
+                async init() { await this.loadData(); },
+
                 async loadData() {
                     this.loading = true;
                     this.error = null;
-                    
                     try {
-                        const response = await fetch('https://raw.githubusercontent.com/hinditutorpoint/json/main/posts.json');
-                        
-                        if (!response.ok) {
-                            throw new Error(`Failed to load data: ${response.status}`);
-                        }
-                        
-                        this.data = await response.json();
-                        
-                        // Load the first post by default
-                        if (this.data && this.data.length > 0) {
-                            this.currentBlog = this.data[0];
-                        }
+                        const res = await fetch('https://raw.githubusercontent.com/hinditutorpoint/json/main/posts.json');
+                        if (!res.ok) throw new Error('Failed to load data: ' + res.status);
+                        this.data = await res.json();
+                        if (this.data && this.data.length > 0) this.currentBlog = this.data[0];
                     } catch (err) {
                         this.error = 'Failed to load blog. Please try again later.';
                         console.error(err);
-                    } finally {
-                        this.loading = false;
-                    }
+                    } finally { this.loading = false; }
                 },
-                
+
                 loadPost(postId) {
                     const post = this.data.find(p => p.id === postId);
-                    if (post) {
-                        this.currentBlog = post;
-                        this.currentPostId = postId;
-                        window.scrollTo({ top: 0, behavior: 'smooth' });
-                    }
+                    if (post) { this.currentBlog = post; this.currentPostId = postId; window.scrollTo({ top: 0, behavior: 'smooth' }); }
                 },
-                
-                get otherPosts() {
-                    return this.data.filter(post => post.id !== this.currentPostId);
-                },
-                
 
-                
-                copyToClipboard(text) {
-                    navigator.clipboard.writeText(text).then(() => {
-                        alert('API URL copied to clipboard!');
-                    }).catch(err => {
-                        console.error('Failed to copy:', err);
-                    });
+                get otherPosts() { return this.data.filter(post => post.id !== this.currentPostId); },
+
+                printTable() {
+                    const opt = {
+                        margin: [5, 5, 5, 5],
+                        filename: 'blogs.pdf',
+                        image: { type: 'jpeg', quality: 0.98 },
+                        html2canvas: { scale: 2, useCORS: true },
+                        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+                    };
+                    document.body.classList.add('print-mode');
+                    setTimeout(() => {
+                        html2pdf().set(opt).from(document.getElementById('print-section')).save().then(() => {
+                            document.body.classList.remove('print-mode');
+                        }).catch(() => { document.body.classList.remove('print-mode'); });
+                    }, 300);
+                },
+
+                exportExcel() {
+                    const rows = [['ID', 'Title', 'Likes', 'Dislikes', 'Shares', 'Short Display']];
+                    this.data.forEach(b => rows.push([b.id, b.title, b.likes, b.dislikes, b.shares, (b.short_display || '').replace(/<[^>]*>/g, '')]));
+                    const csv = rows.map(r => r.map(v => '"' + String(v).replace(/"/g, '""') + '"').join(',')).join('\n');
+                    const blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8;' });
+                    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'blogs.csv'; a.click();
+                    URL.revokeObjectURL(a.href);
                 }
             }
         }

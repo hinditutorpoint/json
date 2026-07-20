@@ -139,6 +139,11 @@
         .stat-card.warning {
             border-top-color: #ffa751;
         }
+        .stat-card.teal { border-top-color: #1abc9c; }
+        .stat-card.dark { border-top-color: #34495e; }
+        .stat-card.pink { border-top-color: #e84393; }
+        .stat-card.green { border-top-color: #00b894; }
+        .stat-card.orange { border-top-color: #e17055; }
         
         .stat-number {
             font-size: 3rem;
@@ -291,40 +296,29 @@
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
             <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <i class="bi bi-database-gear me-2"></i>
-                    Hindi Tutor Point
-                </a>
+                <a class="navbar-brand d-flex align-items-center" href="index.html"><img src="jar.svg" alt="JAR" height="35" class="me-2"><span class="d-flex flex-column"><span>JAR</span><small class="text-muted" style="font-size:0.6rem;font-weight:400;line-height:1;background:none;-webkit-text-fill-color:#6c757d;color:#6c757d;">JSON API Repository</small></span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="blogs.html">
-                                <i class="bi bi-file-post me-1"></i>Blogs
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="demographicDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-globe2 me-1"></i>Demographic
                             </a>
+                            <ul class="dropdown-menu" aria-labelledby="demographicDropdown">
+                                <li><a class="dropdown-item" href="regions.html"><i class="bi bi-globe me-1"></i>Regions</a></li>
+                                <li><a class="dropdown-item" href="subregions.html"><i class="bi bi-map me-1"></i>Subregions</a></li>
+                                <li><a class="dropdown-item" href="country.html"><i class="bi bi-flag me-1"></i>Countries</a></li>
+                                <li><a class="dropdown-item" href="states.html"><i class="bi bi-building me-1"></i>States</a></li>
+                                <li><a class="dropdown-item" href="cities.html"><i class="bi bi-geo-alt me-1"></i>Cities</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="quotes.html">
-                                <i class="bi bi-quote me-1"></i>Quotes
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="personalities.html">
-                                <i class="bi bi-person-badge me-1"></i>Personalities
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="vocabulary.html">
-                                <i class="bi bi-book me-1"></i>Vocabulary
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/hinditutorpoint/json" target="_blank">
-                                <i class="bi bi-github me-1"></i>GitHub
-                            </a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="personalities.html"><i class="bi bi-person-badge me-1"></i>Personalities</a></li>
+                        <li class="nav-item"><a class="nav-link" href="quotes.html"><i class="bi bi-quote me-1"></i>Quotes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blogs.html"><i class="bi bi-file-post me-1"></i>Blogs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="vocabulary.html"><i class="bi bi-book me-1"></i>Vocabulary</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://github.com/hinditutorpoint/json" target="_blank"><i class="bi bi-github me-1"></i>GitHub</a></li>
                     </ul>
                 </div>
             </div>
@@ -341,7 +335,7 @@
                         Open-source data for developers, learners, and innovators
                     </p>
                     <p class="mb-5 fs-5">
-                        Access tech blogs, inspirational quotes, tech personalities, and vocabulary - all for free!
+                        Access tech blogs, quotes, personalities, vocabulary, and global demographic data - all for free!
                     </p>
                     <div class="d-flex justify-content-center gap-3 flex-wrap mb-4">
                         <a href="blogs.html" class="btn btn-light btn-lg">
@@ -407,6 +401,50 @@
                 </div>
             </div>
 
+            <h4 class="mb-3"><i class="bi bi-globe2 me-2"></i>Demographic Data</h4>
+            <div class="row g-4 mb-5">
+                <div class="col-md-4 col-sm-6">
+                    <div class="stat-card teal">
+                        <div class="stat-number" x-text="stats.regions">--</div>
+                        <div class="stat-label">
+                            <i class="bi bi-globe me-2"></i>Regions
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="stat-card dark">
+                        <div class="stat-number" x-text="stats.subregions">--</div>
+                        <div class="stat-label">
+                            <i class="bi bi-map me-2"></i>Subregions
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="stat-card pink">
+                        <div class="stat-number" x-text="stats.countries">--</div>
+                        <div class="stat-label">
+                            <i class="bi bi-flag me-2"></i>Countries
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="stat-card green">
+                        <div class="stat-number" x-text="stats.states">--</div>
+                        <div class="stat-label">
+                            <i class="bi bi-building me-2"></i>States
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="stat-card orange">
+                        <div class="stat-number" x-text="stats.cities">--</div>
+                        <div class="stat-label">
+                            <i class="bi bi-geo-alt me-2"></i>Cities
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Data Pages Navigation -->
             <div class="row g-4 mb-5">
                 <div class="col-md-6 col-lg-3">
@@ -467,6 +505,80 @@
                 </div>
             </div>
 
+            <h4 class="mb-3 mt-4"><i class="bi bi-globe2 me-2"></i>Demographic Data</h4>
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-lg-4">
+                    <a href="regions.html" class="text-decoration-none">
+                        <div class="feature-card">
+                            <div class="feature-icon" style="background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);">
+                                <i class="bi bi-globe"></i>
+                            </div>
+                            <h4 class="mb-3">Regions</h4>
+                            <p class="text-muted mb-3">Browse all continents and regions across the globe</p>
+                            <span class="text-primary fw-bold">
+                                View Regions <i class="bi bi-arrow-right ms-2"></i>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="subregions.html" class="text-decoration-none">
+                        <div class="feature-card">
+                            <div class="feature-icon" style="background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);">
+                                <i class="bi bi-map"></i>
+                            </div>
+                            <h4 class="mb-3">Subregions</h4>
+                            <p class="text-muted mb-3">Explore subregions filtered by selected region</p>
+                            <span class="text-primary fw-bold">
+                                View Subregions <i class="bi bi-arrow-right ms-2"></i>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="country.html" class="text-decoration-none">
+                        <div class="feature-card">
+                            <div class="feature-icon" style="background: linear-gradient(135deg, #e84393 0%, #d63384 100%);">
+                                <i class="bi bi-flag"></i>
+                            </div>
+                            <h4 class="mb-3">Countries</h4>
+                            <p class="text-muted mb-3">Browse countries filtered by region and subregion</p>
+                            <span class="text-primary fw-bold">
+                                View Countries <i class="bi bi-arrow-right ms-2"></i>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="states.html" class="text-decoration-none">
+                        <div class="feature-card">
+                            <div class="feature-icon" style="background: linear-gradient(135deg, #00b894 0%, #00a381 100%);">
+                                <i class="bi bi-building"></i>
+                            </div>
+                            <h4 class="mb-3">States</h4>
+                            <p class="text-muted mb-3">Explore states filtered by region, subregion, and country</p>
+                            <span class="text-primary fw-bold">
+                                View States <i class="bi bi-arrow-right ms-2"></i>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="cities.html" class="text-decoration-none">
+                        <div class="feature-card">
+                            <div class="feature-icon" style="background: linear-gradient(135deg, #e17055 0%, #d63031 100%);">
+                                <i class="bi bi-geo-alt"></i>
+                            </div>
+                            <h4 class="mb-3">Cities</h4>
+                            <p class="text-muted mb-3">Browse cities filtered by region, subregion, country, and state</p>
+                            <span class="text-primary fw-bold">
+                                View Cities <i class="bi bi-arrow-right ms-2"></i>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
             <!-- API Endpoints Section -->
             <div class="card mb-5">
                 <div class="card-body p-4">
@@ -496,6 +608,40 @@
                             <div class="api-endpoint">
                                 <small class="text-muted d-block mb-2">Tech Vocabulary API</small>
                                 <code>https://raw.githubusercontent.com/hinditutorpoint/json/main/tech_vocabulary.json</code>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <h5 class="mb-3"><i class="bi bi-globe2 me-2"></i>Demographic Data APIs</h5>
+                    <div class="row g-3">
+                        <div class="col-lg-6">
+                            <div class="api-endpoint">
+                                <small class="text-muted d-block mb-2">Regions API</small>
+                                <code>https://raw.githubusercontent.com/hinditutorpoint/json/main/regions.json</code>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="api-endpoint">
+                                <small class="text-muted d-block mb-2">Subregions API</small>
+                                <code>https://raw.githubusercontent.com/hinditutorpoint/json/main/subregions.json</code>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="api-endpoint">
+                                <small class="text-muted d-block mb-2">Countries API</small>
+                                <code>https://raw.githubusercontent.com/hinditutorpoint/json/main/countries.json</code>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="api-endpoint">
+                                <small class="text-muted d-block mb-2">States API</small>
+                                <code>https://raw.githubusercontent.com/hinditutorpoint/json/main/states.json</code>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="api-endpoint">
+                                <small class="text-muted d-block mb-2">Cities API</small>
+                                <code>https://raw.githubusercontent.com/hinditutorpoint/json/main/cities.json</code>
                             </div>
                         </div>
                     </div>
@@ -699,7 +845,17 @@
                     posts: '...',
                     quotes: '...',
                     personalities: '...',
-                    vocabulary: '...'
+                    vocabulary: '...',
+                    regions: '...',
+                    subregions: '...',
+                    countries: '...',
+                    states: '...',
+                    cities: '...'
+                },
+
+                extractData(json, tableName) {
+                    const table = json.find(item => item.type === 'table' && item.name === tableName);
+                    return table ? table.data : [];
                 },
                 
                 init() {
@@ -708,21 +864,34 @@
                 
                 async loadStats() {
                     try {
-                        // Load all data to count items
-                        const [posts, quotes, personalities, vocabulary] = await Promise.all([
+                        const [posts, quotes, personalities, vocabulary, regions, subregions, countries, states, cities] = await Promise.all([
                             fetch('https://raw.githubusercontent.com/hinditutorpoint/json/main/posts.json').then(r => r.json()),
                             fetch('https://raw.githubusercontent.com/hinditutorpoint/json/main/quotes.json').then(r => r.json()),
                             fetch('https://raw.githubusercontent.com/hinditutorpoint/json/main/tech_personalities.json').then(r => r.json()),
-                            fetch('https://raw.githubusercontent.com/hinditutorpoint/json/main/tech_vocabulary.json').then(r => r.json())
+                            fetch('https://raw.githubusercontent.com/hinditutorpoint/json/main/tech_vocabulary.json').then(r => r.json()),
+                            fetch('https://raw.githubusercontent.com/hinditutorpoint/json/main/regions.json').then(r => r.json()),
+                            fetch('https://raw.githubusercontent.com/hinditutorpoint/json/main/subregions.json').then(r => r.json()),
+                            fetch('https://raw.githubusercontent.com/hinditutorpoint/json/main/countries.json').then(r => r.json()),
+                            fetch('https://raw.githubusercontent.com/hinditutorpoint/json/main/states.json').then(r => r.json()),
+                            fetch('https://raw.githubusercontent.com/hinditutorpoint/json/main/cities.json').then(r => r.json())
                         ]);
                         
                         this.stats.posts = Array.isArray(posts) ? posts.length : 1;
                         this.stats.quotes = Array.isArray(quotes) ? quotes.length : 1;
                         this.stats.personalities = Array.isArray(personalities) ? personalities.length : 1;
                         this.stats.vocabulary = Array.isArray(vocabulary) ? vocabulary.length : 1;
+                        this.stats.regions = this.extractData(regions, 'regions').length || this.rawCount(regions);
+                        this.stats.subregions = this.extractData(subregions, 'subregions').length || this.rawCount(subregions);
+                        this.stats.countries = this.extractData(countries, 'countries').length || this.rawCount(countries);
+                        this.stats.states = this.extractData(states, 'states').length || this.rawCount(states);
+                        this.stats.cities = this.extractData(cities, 'cities').length || this.rawCount(cities);
                     } catch (err) {
                         console.error('Failed to load stats:', err);
                     }
+                },
+                
+                rawCount(data) {
+                    return Array.isArray(data) ? data.length : (data && Array.isArray(data.data) ? data.data.length : 0);
                 }
             }
         }

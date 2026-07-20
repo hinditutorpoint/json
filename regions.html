@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Regions - Hindi Tutor Point</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <style>
+        :root { --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        body { background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); min-height: 100vh; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .navbar { background: white !important; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .navbar-brand { font-weight: 700; background: var(--primary-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-size: 1.5rem; }
+        .nav-link { color: #667eea !important; font-weight: 500; transition: all 0.3s ease; position: relative; }
+        .nav-link:hover { color: #764ba2 !important; }
+        .nav-link::after { content: ''; position: absolute; bottom: 0; left: 50%; width: 0; height: 2px; background: var(--primary-gradient); transition: all 0.3s ease; transform: translateX(-50%); }
+        .nav-link:hover::after { width: 80%; }
+        .hero-section { background: var(--primary-gradient); color: white; padding: 4rem 0 3rem; margin-bottom: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+        .card { border: none; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); overflow: hidden; }
+        .table th { background: var(--primary-gradient); color: white; }
+        .spinner-overlay { display: flex; justify-content: center; align-items: center; padding: 3rem; }
+        .empty-state { text-align: center; padding: 3rem; color: #6c757d; }
+        .empty-state i { font-size: 3rem; margin-bottom: 1rem; display: block; }
+        body.print-mode .navbar,
+        body.print-mode .hero-section,
+        body.print-mode footer,
+        body.print-mode .no-print,
+        body.print-mode .pagination { display: none !important; }
+        body.print-mode .print-only { display: block !important; }
+        body.print-mode .card { box-shadow: none; border: 1px solid #ddd; }
+        .print-only { display: none; }
+    </style>
+</head>
+<body>
+    <div x-data="regionsPage()">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html"><img src="jar.svg" alt="JAR" height="35" class="me-2"><span class="d-flex flex-column"><span>JAR</span><small class="text-muted" style="font-size:0.6rem;font-weight:400;line-height:1;background:none;-webkit-text-fill-color:#6c757d;color:#6c757d;">JSON API Repository</small></span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="demographicDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-globe2 me-1"></i>Demographic
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="demographicDropdown">
+                                <li><a class="dropdown-item" href="regions.html"><i class="bi bi-globe me-1"></i>Regions</a></li>
+                                <li><a class="dropdown-item" href="subregions.html"><i class="bi bi-map me-1"></i>Subregions</a></li>
+                                <li><a class="dropdown-item" href="country.html"><i class="bi bi-flag me-1"></i>Countries</a></li>
+                                <li><a class="dropdown-item" href="states.html"><i class="bi bi-building me-1"></i>States</a></li>
+                                <li><a class="dropdown-item" href="cities.html"><i class="bi bi-geo-alt me-1"></i>Cities</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="personalities.html"><i class="bi bi-person-badge me-1"></i>Personalities</a></li>
+                        <li class="nav-item"><a class="nav-link" href="quotes.html"><i class="bi bi-quote me-1"></i>Quotes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blogs.html"><i class="bi bi-file-post me-1"></i>Blogs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="vocabulary.html"><i class="bi bi-book me-1"></i>Vocabulary</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://github.com/hinditutorpoint/json" target="_blank"><i class="bi bi-github me-1"></i>GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero-section">
+            <div class="container text-center">
+                <h1 class="display-4 fw-bold mb-3"><i class="bi bi-globe me-3"></i>World Regions</h1>
+                <p class="lead mb-0">Browse all continents and regions across the globe</p>
+            </div>
+        </div>
+
+        <div class="container pb-5">
+            <div class="card">
+                <div class="card-body p-4">
+                    <h3 class="mb-4"><i class="bi bi-list-columns me-2"></i>Regions List</h3>
+
+                    <div x-show="loading" class="spinner-overlay">
+                        <div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div>
+                    </div>
+                    <div x-show="error" class="alert alert-danger" x-text="error"></div>
+
+                    <div x-show="!loading && !error">
+                        <div class="row g-2 mb-3">
+                            <div class="col-12 col-sm-6 col-md-5">
+                                <input type="text" class="form-control form-control-sm" placeholder="Search regions..." x-model="searchQuery" @input="page = 1">
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-7 d-flex align-items-center justify-content-sm-end gap-2 flex-wrap no-print">
+                                <button class="btn btn-outline-secondary btn-sm" @click="printTable"><i class="bi bi-printer"></i> Print</button>
+                                <button class="btn btn-outline-success btn-sm" @click="exportExcel"><i class="bi bi-file-earmark-excel"></i> Excel</button>
+                                <select class="form-select form-select-sm" style="width: auto;" x-model="perPage" @change="page = 1">
+                                    <option value="10">10</option>
+                                    <option value="25">25</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                    <option value="200">200</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle mb-0">
+                                <thead><tr><th>#</th><th>Region Name</th><th>WikiData ID</th><th>Status</th></tr></thead>
+                                <tbody>
+                                    <template x-for="region in paginatedData" :key="region.id">
+                                        <tr>
+                                            <td x-text="region.id"></td>
+                                            <td><strong x-text="region.region"></strong></td>
+                                            <td><code x-text="region.wikiDataId"></code></td>
+                                            <td><span class="badge bg-success" x-text="region.status"></span></td>
+                                        </tr>
+                                    </template>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="print-only mt-4" id="print-section">
+                            <table class="table table-bordered">
+                                <thead><tr><th>#</th><th>Region Name</th><th>WikiData ID</th><th>Status</th></tr></thead>
+                                <tbody>
+                                    <template x-for="region in searchedData" :key="region.id">
+                                        <tr><td x-text="region.id"></td><td x-text="region.region"></td><td x-text="region.wikiDataId"></td><td x-text="region.status"></td></tr>
+                                    </template>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center mt-3 gap-2">
+                            <small class="text-muted">
+                                Showing <strong x-text="showingFrom"></strong>–<strong x-text="showingTo"></strong> of <strong x-text="searchedData.length"></strong>
+                                <template x-if="searchQuery && searchedData.length !== regions.length">
+                                    <span>(filtered from <strong x-text="regions.length"></strong>)</span>
+                                </template>
+                            </small>
+                            <nav x-show="totalPages > 1" class="no-print">
+                                <ul class="pagination pagination-sm mb-0">
+                                    <li class="page-item" :class="{ disabled: page === 1 }">
+                                        <button class="page-link" @click="goToPage(1)" :disabled="page === 1">&laquo;</button>
+                                    </li>
+                                    <li class="page-item" :class="{ disabled: page === 1 }">
+                                        <button class="page-link" @click="goToPage(page - 1)" :disabled="page === 1">&lsaquo;</button>
+                                    </li>
+                                    <template x-for="p in getPageNumbers()" :key="p">
+                                        <li class="page-item" :class="{ active: p === page, disabled: p === '...' }">
+                                            <button class="page-link" x-text="p" @click="goToPage(p)"></button>
+                                        </li>
+                                    </template>
+                                    <li class="page-item" :class="{ disabled: page === totalPages }">
+                                        <button class="page-link" @click="goToPage(page + 1)" :disabled="page === totalPages">&rsaquo;</button>
+                                    </li>
+                                    <li class="page-item" :class="{ disabled: page === totalPages }">
+                                        <button class="page-link" @click="goToPage(totalPages)" :disabled="page === totalPages">&raquo;</button>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-dark text-white py-4 mt-5">
+            <div class="container text-center">
+                <p class="mb-2"><i class="bi bi-github me-2"></i><a href="https://github.com/hinditutorpoint/json" target="_blank" class="text-white text-decoration-none">github.com/hinditutorpoint/json</a></p>
+                <p class="mb-0 text-muted">Built with Alpine.js & Bootstrap 5 | &copy; 2026 Hindi Tutor Point</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function regionsPage() {
+            return {
+                regions: [],
+                searchQuery: '',
+                page: 1,
+                perPage: 10,
+                loading: false,
+                error: null,
+
+                get searchedData() {
+                    if (!this.searchQuery) return this.regions;
+                    const q = this.searchQuery.toLowerCase();
+                    return this.regions.filter(r => r.region.toLowerCase().includes(q) || (r.wikiDataId || '').toLowerCase().includes(q));
+                },
+                get totalPages() { return Math.ceil(this.searchedData.length / this.perPage) || 1; },
+                get paginatedData() { const s = (this.page - 1) * this.perPage; return this.searchedData.slice(s, s + this.perPage); },
+                get showingFrom() { return this.searchedData.length ? (this.page - 1) * this.perPage + 1 : 0; },
+                get showingTo() { return Math.min(this.page * this.perPage, this.searchedData.length); },
+
+                goToPage(p) { if (p >= 1 && p <= this.totalPages) this.page = p; },
+                getPageNumbers() {
+                    const t = this.totalPages, c = this.page, p = [];
+                    if (t <= 7) { for (let i = 1; i <= t; i++) p.push(i); }
+                    else { p.push(1); if (c > 3) p.push('...'); for (let i = Math.max(2, c - 1); i <= Math.min(t - 1, c + 1); i++) p.push(i); if (c < t - 2) p.push('...'); p.push(t); }
+                    return p;
+                },
+                printTable() {
+                    const opt = {
+                        margin: [5, 5, 5, 5],
+                        filename: 'regions.pdf',
+                        image: { type: 'jpeg', quality: 0.98 },
+                        html2canvas: { scale: 2, useCORS: true },
+                        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+                    };
+                    document.body.classList.add('print-mode');
+                    setTimeout(() => {
+                        html2pdf().set(opt).from(document.getElementById('print-section')).save().then(() => {
+                            document.body.classList.remove('print-mode');
+                        }).catch(() => { document.body.classList.remove('print-mode'); });
+                    }, 300);
+                },
+                exportExcel() {
+                    const rows = [['ID', 'Region Name', 'WikiData ID', 'Status']];
+                    this.searchedData.forEach(r => rows.push([r.id, r.region, r.wikiDataId, r.status]));
+                    const csv = rows.map(r => r.map(v => `"${String(v).replace(/"/g, '""')}"`).join(',')).join('\n');
+                    const blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8;' });
+                    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'regions.csv'; a.click(); URL.revokeObjectURL(a.href);
+                },
+
+                async init() { await this.loadData(); },
+                extractData(json, tableName) { const table = json.find(item => item.type === 'table' && item.name === tableName); return table ? table.data : []; },
+                async loadData() {
+                    this.loading = true; this.error = null;
+                    try {
+                        const res = await fetch('https://raw.githubusercontent.com/hinditutorpoint/json/main/regions.json');
+                        this.regions = this.extractData(await res.json(), 'regions');
+                    } catch (err) { this.error = 'Failed to load regions data.'; console.error(err); }
+                    finally { this.loading = false; }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
