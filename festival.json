@@ -1,0 +1,282 @@
+[
+  {
+    "date": "2027-01-01",
+    "day": "Friday",
+    "name": "New Year's Day",
+    "type": "Regional / Restricted",
+    "regions": ["Pan India (Restricted)"]
+  },
+  {
+    "date": "2027-01-14",
+    "day": "Thursday",
+    "name": "Lohri / Bhogi",
+    "type": "Regional",
+    "regions": ["Punjab", "Haryana", "Himachal Pradesh", "Andhra Pradesh", "Telangana"]
+  },
+  {
+    "date": "2027-01-15",
+    "day": "Friday",
+    "name": "Makar Sankranti / Pongal / Magh Bihu / Guru Gobind Singh Jayanti",
+    "type": "Regional / Gazetted",
+    "regions": ["Pan India (Regional variations)", "Tamil Nadu", "Assam", "Punjab"]
+  },
+  {
+    "date": "2027-01-23",
+    "day": "Saturday",
+    "name": "Netaji Subhas Chandra Bose Jayanti",
+    "type": "Regional",
+    "regions": ["West Bengal", "Odisha", "Tripura", "Assam"]
+  },
+  {
+    "date": "2027-01-26",
+    "day": "Tuesday",
+    "name": "Republic Day",
+    "type": "National",
+    "regions": ["All India"]
+  },
+  {
+    "date": "2027-02-11",
+    "day": "Thursday",
+    "name": "Vasant Panchami / Saraswati Puja",
+    "type": "Regional",
+    "regions": ["West Bengal", "Odisha", "Bihar", "Haryana", "Tripura"]
+  },
+  {
+    "date": "2027-02-19",
+    "day": "Friday",
+    "name": "Chhatrapati Shivaji Maharaj Jayanti",
+    "type": "Regional",
+    "regions": ["Maharashtra"]
+  },
+  {
+    "date": "2027-03-06",
+    "day": "Saturday",
+    "name": "Maha Shivaratri",
+    "type": "National / Gazetted",
+    "regions": ["Most Indian States"]
+  },
+  {
+    "date": "2027-03-10",
+    "day": "Wednesday",
+    "name": "Eid-ul-Fitr (Tentative)",
+    "type": "National / Gazetted",
+    "regions": ["All India"]
+  },
+  {
+    "date": "2027-03-21",
+    "day": "Sunday",
+    "name": "Holika Dahan",
+    "type": "Regional",
+    "regions": ["North & West India"]
+  },
+  {
+    "date": "2027-03-22",
+    "day": "Monday",
+    "name": "Holi / Dol Jatra",
+    "type": "National / Gazetted",
+    "regions": ["All India (except few Southern states)"]
+  },
+  {
+    "date": "2027-03-26",
+    "day": "Friday",
+    "name": "Good Friday",
+    "type": "National / Gazetted",
+    "regions": ["All India"]
+  },
+  {
+    "date": "2027-03-28",
+    "day": "Sunday",
+    "name": "Easter Sunday",
+    "type": "Regional / Observance",
+    "regions": ["Goa", "Kerala", "North-East States"]
+  },
+  {
+    "date": "2027-04-07",
+    "day": "Wednesday",
+    "name": "Ugadi / Gudi Padwa / Cheti Chand",
+    "type": "Regional",
+    "regions": ["Maharashtra", "Karnataka", "Andhra Pradesh", "Telangana", "Goa"]
+  },
+  {
+    "date": "2027-04-14",
+    "day": "Wednesday",
+    "name": "Dr. B.R. Ambedkar Jayanti / Baisakhi / Vishu / Puthandu / Bohag Bihu",
+    "type": "National / Regional",
+    "regions": ["All India (Ambedkar Jayanti)", "Punjab", "Kerala", "Tamil Nadu", "Assam"]
+  },
+  {
+    "date": "2027-04-15",
+    "day": "Thursday",
+    "name": "Rama Navami / Pohela Boishakh (Bengali New Year)",
+    "type": "National / Regional",
+    "regions": ["Most Indian States", "West Bengal", "Tripura"]
+  },
+  {
+    "date": "2027-04-19",
+    "day": "Monday",
+    "name": "Mahavir Jayanti",
+    "type": "National / Gazetted",
+    "regions": ["All India"]
+  },
+  {
+    "date": "2027-05-01",
+    "day": "Saturday",
+    "name": "Maharashtra Day / Labour Day",
+    "type": "Regional",
+    "regions": ["Maharashtra", "Gujarat", "Karnataka", "Tamil Nadu", "Kerala", "West Bengal"]
+  },
+  {
+    "date": "2027-05-09",
+    "day": "Sunday",
+    "name": "Akshaya Tritiya / Rabindranath Tagore Jayanti",
+    "type": "Regional",
+    "regions": ["West Bengal", "Tripura", "Pan India (Observance)"]
+  },
+  {
+    "date": "2027-05-17",
+    "day": "Monday",
+    "name": "Eid-ul-Adha / Bakrid (Tentative)",
+    "type": "National / Gazetted",
+    "regions": ["All India"]
+  },
+  {
+    "date": "2027-05-20",
+    "day": "Thursday",
+    "name": "Buddha Purnima",
+    "type": "National / Gazetted",
+    "regions": ["All India"]
+  },
+  {
+    "date": "2027-06-16",
+    "day": "Wednesday",
+    "name": "Muharram (Tentative)",
+    "type": "National / Gazetted",
+    "regions": ["All India"]
+  },
+  {
+    "date": "2027-07-05",
+    "day": "Monday",
+    "name": "Jagannath Rath Yatra",
+    "type": "Regional",
+    "regions": ["Odisha", "Gujarat", "West Bengal"]
+  },
+  {
+    "date": "2027-07-18",
+    "day": "Sunday",
+    "name": "Guru Purnima",
+    "type": "Regional / Observance",
+    "regions": ["Maharashtra", "Madhya Pradesh", "North India"]
+  },
+  {
+    "date": "2027-08-15",
+    "day": "Sunday",
+    "name": "Independence Day / Eid-e-Milad (Tentative)",
+    "type": "National",
+    "regions": ["All India"]
+  },
+  {
+    "date": "2027-08-17",
+    "day": "Tuesday",
+    "name": "Raksha Bandhan",
+    "type": "Regional / Restricted",
+    "regions": ["North, West & Central India"]
+  },
+  {
+    "date": "2027-08-25",
+    "day": "Wednesday",
+    "name": "Krishna Janmashtami",
+    "type": "National / Gazetted",
+    "regions": ["Most Indian States"]
+  },
+  {
+    "date": "2027-09-04",
+    "day": "Saturday",
+    "name": "Ganesh Chaturthi",
+    "type": "Regional",
+    "regions": ["Maharashtra", "Gujarat", "Karnataka", "Telangana", "Andhra Pradesh", "Goa"]
+  },
+  {
+    "date": "2027-09-12",
+    "day": "Sunday",
+    "name": "Onam (Thiruvonam)",
+    "type": "Regional",
+    "regions": ["Kerala"]
+  },
+  {
+    "date": "2027-10-02",
+    "day": "Saturday",
+    "name": "Gandhi Jayanti",
+    "type": "National",
+    "regions": ["All India"]
+  },
+  {
+    "date": "2027-10-07",
+    "day": "Thursday",
+    "name": "Maha Ashtami (Durga Puja)",
+    "type": "Regional",
+    "regions": ["West Bengal", "Assam", "Odisha", "Bihar", "Tripura"]
+  },
+  {
+    "date": "2027-10-08",
+    "day": "Friday",
+    "name": "Maha Navami / Ayudha Puja",
+    "type": "Regional",
+    "regions": ["South India", "East India"]
+  },
+  {
+    "date": "2027-10-09",
+    "day": "Saturday",
+    "name": "Dussehra / Vijayadashami",
+    "type": "National / Gazetted",
+    "regions": ["All India"]
+  },
+  {
+    "date": "2027-10-18",
+    "day": "Monday",
+    "name": "Karwa Chauth",
+    "type": "Regional / Restricted",
+    "regions": ["North & West India"]
+  },
+  {
+    "date": "2027-10-29",
+    "day": "Friday",
+    "name": "Diwali / Deepavali (Lakshmi Puja)",
+    "type": "National / Gazetted",
+    "regions": ["All India"]
+  },
+  {
+    "date": "2027-10-30",
+    "day": "Saturday",
+    "name": "Govardhan Puja / Gujarati New Year",
+    "type": "Regional",
+    "regions": ["Gujarat", "North India"]
+  },
+  {
+    "date": "2027-10-31",
+    "day": "Sunday",
+    "name": "Bhai Dooj",
+    "type": "Regional",
+    "regions": ["North & West India"]
+  },
+  {
+    "date": "2027-11-04",
+    "day": "Thursday",
+    "name": "Chhath Puja",
+    "type": "Regional",
+    "regions": ["Bihar", "Jharkhand", "Eastern Uttar Pradesh", "Delhi"]
+  },
+  {
+    "date": "2027-11-14",
+    "day": "Sunday",
+    "name": "Guru Nanak Jayanti / Children's Day",
+    "type": "National / Gazetted",
+    "regions": ["All India"]
+  },
+  {
+    "date": "2027-12-25",
+    "day": "Saturday",
+    "name": "Christmas Day",
+    "type": "National / Gazetted",
+    "regions": ["All India"]
+  }
+]

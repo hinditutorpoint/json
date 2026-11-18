@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Festivals 2027 - Hindi Tutor Point</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --festival-national: #e74c3c;
+            --festival-regional: #3498db;
+            --festival-gazetted: #e67e22;
+            --festival-restricted: #9b59b6;
+        }
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .navbar {
+            background: white !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .navbar-brand {
+            font-weight: 700;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 1.5rem;
+        }
+        .nav-link {
+            color: #667eea !important;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link:hover { color: #764ba2 !important; }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--primary-gradient);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+        .nav-link:hover::after { width: 80%; }
+        .hero-section {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 3rem 0 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        /* Calendar Styles */
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.5rem;
+        }
+        .month-card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .month-card:hover {
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+            transform: translateY(-3px);
+        }
+        .month-header {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 0.8rem 1rem;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        .month-body {
+            padding: 0.8rem;
+        }
+        .cal-weekdays {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            text-align: center;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #6c757d;
+            margin-bottom: 0.3rem;
+            text-transform: uppercase;
+        }
+        .cal-days {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            text-align: center;
+            gap: 2px;
+        }
+        .cal-day {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            border-radius: 50%;
+            cursor: default;
+            color: #333;
+            font-weight: 500;
+        }
+        .cal-day.empty {
+            visibility: hidden;
+        }
+        .cal-day.sunday {
+            color: #e74c3c;
+        }
+        .cal-day.today {
+            background: #667eea;
+            color: white !important;
+            font-weight: 700;
+        }
+        .cal-day.has-festival {
+            cursor: pointer;
+            font-weight: 700;
+            position: relative;
+        }
+        .cal-day.has-festival::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+        }
+        .cal-day.has-festival.type-national::after {
+            background: var(--festival-national);
+        }
+        .cal-day.has-festival.type-regional::after {
+            background: var(--festival-regional);
+        }
+        .cal-day.has-festival.type-gazetted::after {
+            background: var(--festival-gazetted);
+        }
+        .cal-day.has-festival.type-restricted::after {
+            background: var(--festival-restricted);
+        }
+        .cal-day.has-festival.type-national {
+            background: rgba(231, 76, 60, 0.12);
+            color: var(--festival-national);
+        }
+        .cal-day.has-festival.type-regional {
+            background: rgba(52, 152, 219, 0.12);
+            color: var(--festival-regional);
+        }
+        .cal-day.has-festival.type-gazetted {
+            background: rgba(230, 126, 34, 0.12);
+            color: var(--festival-gazetted);
+        }
+        .cal-day.has-festival.type-restricted {
+            background: rgba(155, 89, 182, 0.12);
+            color: var(--festival-restricted);
+        }
+        .cal-day.has-festival.multi-festival::after {
+            width: 10px;
+            height: 6px;
+            border-radius: 3px;
+            background: linear-gradient(90deg, var(--festival-national), var(--festival-regional));
+        }
+
+        /* Festival tooltip */
+        .festival-tooltip {
+            position: absolute;
+            bottom: calc(100% + 8px);
+            left: 50%;
+            transform: translateX(-50%);
+            background: #2d3436;
+            color: white;
+            padding: 0.6rem 0.9rem;
+            border-radius: 10px;
+            font-size: 0.78rem;
+            white-space: nowrap;
+            z-index: 100;
+            pointer-events: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            line-height: 1.4;
+            max-width: 280px;
+            white-space: normal;
+            text-align: left;
+        }
+        .festival-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 6px solid transparent;
+            border-top-color: #2d3436;
+        }
+
+        /* Legend */
+        .legend-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.85rem;
+            color: #555;
+        }
+        .legend-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        /* Festival List */
+        .festival-list-card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+        .festival-item {
+            padding: 1rem 1.2rem;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            transition: background 0.2s;
+        }
+        .festival-item:hover {
+            background: #f8f9fa;
+        }
+        .festival-item:last-child {
+            border-bottom: none;
+        }
+        .festival-date-badge {
+            min-width: 55px;
+            text-align: center;
+            border-radius: 12px;
+            padding: 0.4rem 0.5rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        .festival-date-badge .f-day {
+            font-size: 1.3rem;
+            line-height: 1;
+        }
+        .festival-date-badge .f-month {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.85;
+        }
+        .type-badge {
+            font-size: 0.7rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-weight: 600;
+            display: inline-block;
+        }
+        .type-badge.national { background: rgba(231,76,60,0.12); color: var(--festival-national); }
+        .type-badge.regional { background: rgba(52,152,219,0.12); color: var(--festival-regional); }
+        .type-badge.gazetted { background: rgba(230,126,34,0.12); color: var(--festival-gazetted); }
+        .type-badge.restricted { background: rgba(155,89,182,0.12); color: var(--festival-restricted); }
+
+        .filter-btn {
+            border: 2px solid #e0e0e0;
+            border-radius: 25px;
+            padding: 0.4rem 1rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            background: white;
+            color: #555;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .filter-btn:hover, .filter-btn.active {
+            border-color: #667eea;
+            color: #667eea;
+            background: rgba(102,126,234,0.08);
+        }
+
+        .search-box {
+            border: 2px solid #e0e0e0;
+            border-radius: 25px;
+            padding: 0.6rem 1.2rem;
+            font-size: 0.95rem;
+            outline: none;
+            transition: border-color 0.3s;
+            width: 100%;
+            max-width: 400px;
+        }
+        .search-box:focus {
+            border-color: #667eea;
+        }
+
+        .upcoming-card {
+            background: linear-gradient(135deg, #667eea15, #764ba215);
+            border-radius: 16px;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+        }
+
+        .stat-pill {
+            background: white;
+            border-radius: 12px;
+            padding: 1rem 1.5rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        .stat-pill .num {
+            font-size: 2rem;
+            font-weight: 700;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        @media (max-width: 576px) {
+            .calendar-grid {
+                grid-template-columns: 1fr;
+            }
+            .festival-tooltip {
+                max-width: 200px;
+                font-size: 0.72rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div x-data="festivalsPage()">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html"><img src="jar.svg" alt="JAR" height="35" class="me-2"><span class="d-flex flex-column"><span>JAR</span><small class="text-muted" style="font-size:0.6rem;font-weight:400;line-height:1;background:none;-webkit-text-fill-color:#6c757d;color:#6c757d;">JSON API Repository</small></span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="demographicDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-globe2 me-1"></i>Demographic
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="demographicDropdown">
+                                <li><a class="dropdown-item" href="regions.html"><i class="bi bi-globe me-1"></i>Regions</a></li>
+                                <li><a class="dropdown-item" href="subregions.html"><i class="bi bi-map me-1"></i>Subregions</a></li>
+                                <li><a class="dropdown-item" href="country.html"><i class="bi bi-flag me-1"></i>Countries</a></li>
+                                <li><a class="dropdown-item" href="states.html"><i class="bi bi-building me-1"></i>States</a></li>
+                                <li><a class="dropdown-item" href="cities.html"><i class="bi bi-geo-alt me-1"></i>Cities</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="personalities.html"><i class="bi bi-person-badge me-1"></i>Personalities</a></li>
+                        <li class="nav-item"><a class="nav-link" href="quotes.html"><i class="bi bi-quote me-1"></i>Quotes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blogs.html"><i class="bi bi-file-post me-1"></i>Blogs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="vocabulary.html"><i class="bi bi-book me-1"></i>Vocabulary</a></li>
+                        <li class="nav-item"><a class="nav-link active fw-bold" href="festivals.html"><i class="bi bi-calendar-event me-1"></i>Festivals</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://github.com/hinditutorpoint/json" target="_blank"><i class="bi bi-github me-1"></i>GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <div class="container">
+                <div class="text-center" style="position:relative;z-index:1;">
+                    <h1 class="display-5 fw-bold mb-3">
+                        <i class="bi bi-calendar-event me-2"></i>Indian Festivals & Holidays 2027
+                    </h1>
+                    <p class="lead mb-0">Explore all national, regional, and gazetted holidays across India</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="container pb-5">
+
+            <!-- Stats Row -->
+            <div class="row g-3 mb-4">
+                <div class="col-6 col-md-3">
+                    <div class="stat-pill">
+                        <div class="num" x-text="festivals.length">0</div>
+                        <div class="text-muted small">Total Festivals</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-pill">
+                        <div class="num" x-text="festivals.filter(f => f.type.includes('National')).length">0</div>
+                        <div class="text-muted small">National</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-pill">
+                        <div class="num" x-text="festivals.filter(f => f.type.includes('Regional')).length">0</div>
+                        <div class="text-muted small">Regional</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-pill">
+                        <div class="num" x-text="upcomingFestivals().length">0</div>
+                        <div class="text-muted small">Upcoming</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upcoming Festival -->
+            <template x-if="nextFestival()">
+                <div class="upcoming-card mb-4">
+                    <div class="d-flex align-items-center flex-wrap gap-3">
+                        <div>
+                            <i class="bi bi-clock-history" style="font-size:2.5rem;color:#667eea;"></i>
+                        </div>
+                        <div class="flex-grow-1">
+                            <div class="text-muted small fw-bold text-uppercase">Next Upcoming Festival</div>
+                            <h4 class="mb-1" x-text="nextFestival().name"></h4>
+                            <div class="d-flex flex-wrap gap-2 align-items-center">
+                                <span class="text-muted" x-text="formatDate(nextFestival().date) + ' (' + nextFestival().day + ')'"></span>
+                                <span class="type-badge" :class="getTypeClass(nextFestival().type)" x-text="nextFestival().type"></span>
+                            </div>
+                        </div>
+                        <div class="text-end">
+                            <div class="num" style="font-size:1.5rem;" x-text="daysUntil(nextFestival().date)"></div>
+                            <div class="text-muted small">days away</div>
+                        </div>
+                    </div>
+                </div>
+            </template>
+
+            <!-- Legend -->
+            <div class="d-flex flex-wrap gap-3 mb-4 justify-content-center">
+                <div class="legend-item"><span class="legend-dot" style="background:var(--festival-national);"></span> National</div>
+                <div class="legend-item"><span class="legend-dot" style="background:var(--festival-gazetted);"></span> Gazetted</div>
+                <div class="legend-item"><span class="legend-dot" style="background:var(--festival-regional);"></span> Regional</div>
+                <div class="legend-item"><span class="legend-dot" style="background:var(--festival-restricted);"></span> Restricted</div>
+                <div class="legend-item"><span class="legend-dot" style="background:#667eea;"></span> Today</div>
+            </div>
+
+            <!-- 12 Month Calendar -->
+            <h4 class="mb-3"><i class="bi bi-calendar3 me-2"></i>12-Month Calendar View</h4>
+            <div class="calendar-grid mb-5">
+                <template x-for="month in 12" :key="month">
+                    <div class="month-card">
+                        <div class="month-header" x-text="monthName(month)"></div>
+                        <div class="month-body">
+                            <div class="cal-weekdays">
+                                <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+                            </div>
+                            <div class="cal-days">
+                                <template x-for="cell in getMonthCells(month)" :key="cell.key">
+                                    <div class="cal-day"
+                                         :class="{
+                                             'empty': cell.empty,
+                                             'sunday': cell.dayOfWeek === 0 && !cell.empty,
+                                             'today': cell.isToday,
+                                             'has-festival': cell.festivals && cell.festivals.length > 0,
+                                             'multi-festival': cell.festivals && cell.festivals.length > 1,
+                                             [getCalTypeClass(cell)]: cell.festivals && cell.festivals.length > 0
+                                         }"
+                                         x-text="cell.empty ? '' : cell.day"
+                                         @mouseenter="cell.festivals && cell.festivals.length ? (hoveredCell = cell.key) : null"
+                                         @mouseleave="hoveredCell = null"
+                                         @click="cell.festivals && cell.festivals.length ? scrollToFestival(cell.festivals[0]) : null"
+                                    >
+                                    </div>
+                                </template>
+                            </div>
+                            <!-- Month festival summary -->
+                            <div class="mt-2 px-1" x-show="getMonthFestivals(month).length > 0">
+                                <template x-for="f in getMonthFestivals(month)" :key="f.date + f.name">
+                                    <div class="d-flex align-items-start gap-2 py-1" style="font-size:0.78rem;border-bottom:1px solid #f5f5f5;">
+                                        <span class="fw-bold" style="min-width:28px;" x-text="new Date(f.date + 'T00:00:00').getDate()"></span>
+                                        <span class="flex-grow-1 text-truncate" x-text="f.name" :title="f.name"></span>
+                                        <span class="legend-dot flex-shrink-0" style="width:8px;height:8px;margin-top:4px;" :style="'background:' + getTypeDotColor(f.type)"></span>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </div>
+
+            <!-- Filter & Search -->
+            <h4 class="mb-3"><i class="bi bi-list-ul me-2"></i>All Festivals</h4>
+            <div class="d-flex flex-wrap gap-2 mb-3 align-items-center">
+                <input type="text" class="search-box" placeholder="Search festivals..." x-model="search">
+                <div class="d-flex flex-wrap gap-2">
+                    <button class="filter-btn" :class="{'active': filter === 'all'}" @click="filter = 'all'">All</button>
+                    <button class="filter-btn" :class="{'active': filter === 'National'}" @click="filter = 'National'">National</button>
+                    <button class="filter-btn" :class="{'active': filter === 'Regional'}" @click="filter = 'Regional'">Regional</button>
+                    <button class="filter-btn" :class="{'active': filter === 'Gazetted'}" @click="filter = 'Gazetted'">Gazetted</button>
+                </div>
+            </div>
+
+            <!-- Festival List -->
+            <div class="festival-list-card mb-5">
+                <template x-if="filteredFestivals().length === 0">
+                    <div class="text-center text-muted py-5">
+                        <i class="bi bi-search" style="font-size:3rem;"></i>
+                        <p class="mt-3">No festivals found matching your search.</p>
+                    </div>
+                </template>
+                <template x-for="f in filteredFestivals()" :key="f.date + f.name">
+                    <div class="festival-item" :id="'fest-' + f.date">
+                        <div class="festival-date-badge" :style="'background:' + getTypeBgColor(f.type) + ';color:' + getTypeTextColor(f.type)">
+                            <div class="f-day" x-text="new Date(f.date + 'T00:00:00').getDate()"></div>
+                            <div class="f-month" x-text="shortMonth(new Date(f.date + 'T00:00:00').getMonth())"></div>
+                        </div>
+                        <div class="flex-grow-1">
+                            <h6 class="mb-1" x-text="f.name"></h6>
+                            <div class="d-flex flex-wrap gap-2 align-items-center">
+                                <span class="text-muted small" x-text="f.day"></span>
+                                <span class="type-badge" :class="getTypeClass(f.type)" x-text="f.type"></span>
+                            </div>
+                            <div class="mt-1">
+                                <template x-for="r in f.regions" :key="r">
+                                    <span class="badge bg-light text-dark me-1 mb-1" style="font-size:0.72rem;" x-text="r"></span>
+                                </template>
+                            </div>
+                        </div>
+                        <div class="text-end text-muted small d-none d-md-block" style="min-width:100px;">
+                            <div x-text="formatDate(f.date)"></div>
+                            <div x-show="isPast(f.date)" class="text-muted"><i class="bi bi-check-circle me-1"></i>Passed</div>
+                            <div x-show="!isPast(f.date)" class="text-success fw-bold" x-text="daysUntil(f.date) + ' days'"></div>
+                        </div>
+                    </div>
+                </template>
+            </div>
+
+            <!-- API Section -->
+            <div class="card border-0" style="border-radius:16px;box-shadow:0 4px 15px rgba(0,0,0,0.08);">
+                <div class="card-body p-4">
+                    <h5 class="mb-3"><i class="bi bi-code-slash me-2"></i>Festival API Endpoint</h5>
+                    <div style="background:#f8f9fa;border-left:4px solid #667eea;padding:1rem;border-radius:8px;font-family:'Courier New',monospace;">
+                        <code>https://raw.githubusercontent.com/hinditutorpoint/json/main/festival.json</code>
+                    </div>
+                    <div class="mt-3 text-muted small">
+                        Returns an array of festival objects with <code>date</code>, <code>day</code>, <code>name</code>, <code>type</code>, and <code>regions</code> fields.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white py-4 mt-5">
+            <div class="container text-center">
+                <p class="mb-2">
+                    <i class="bi bi-github me-2"></i>
+                    <a href="https://github.com/hinditutorpoint/json" target="_blank" class="text-white text-decoration-none">
+                        github.com/hinditutorpoint/json
+                    </a>
+                </p>
+                <p class="mb-0 text-muted">Built with Alpine.js & Bootstrap 5 | © 2026 Hindi Tutor Point</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function festivalsPage() {
+            return {
+                festivals: [],
+                search: '',
+                filter: 'all',
+                hoveredCell: null,
+                year: 2027,
+
+                init() {
+                    this.loadFestivals();
+                },
+
+                async loadFestivals() {
+                    try {
+                        const res = await fetch('https://raw.githubusercontent.com/hinditutorpoint/json/main/festival.json');
+                        this.festivals = await res.json();
+                    } catch (err) {
+                        console.error('Failed to load festivals:', err);
+                    }
+                },
+
+                monthName(m) {
+                    return new Date(this.year, m - 1, 1).toLocaleString('en-US', { month: 'long', year: 'numeric' });
+                },
+
+                shortMonth(m) {
+                    const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+                    return months[m];
+                },
+
+                getMonthCells(month) {
+                    const firstDay = new Date(this.year, month - 1, 1);
+                    const daysInMonth = new Date(this.year, month, 0).getDate();
+                    const startDay = firstDay.getDay(); // 0=Sun
+                    const today = new Date();
+                    const cells = [];
+
+                    // Empty cells before first day
+                    for (let i = 0; i < startDay; i++) {
+                        cells.push({ key: `${month}-e-${i}`, empty: true });
+                    }
+
+                    for (let d = 1; d <= daysInMonth; d++) {
+                        const dateStr = `${this.year}-${String(month).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+                        const dayOfWeek = new Date(this.year, month - 1, d).getDay();
+                        const isToday = today.getFullYear() === this.year && today.getMonth() === month - 1 && today.getDate() === d;
+                        const festivals = this.festivals.filter(f => f.date === dateStr);
+
+                        cells.push({
+                            key: `${month}-${d}`,
+                            day: d,
+                            dayOfWeek,
+                            isToday,
+                            empty: false,
+                            festivals
+                        });
+                    }
+
+                    return cells;
+                },
+
+                getMonthFestivals(month) {
+                    const prefix = `${this.year}-${String(month).padStart(2,'0')}`;
+                    return this.festivals.filter(f => f.date.startsWith(prefix));
+                },
+
+                getCalTypeClass(cell) {
+                    if (!cell.festivals || cell.festivals.length === 0) return '';
+                    const type = cell.festivals[0].type;
+                    if (type.includes('National')) return 'type-national';
+                    if (type.includes('Gazetted')) return 'type-gazetted';
+                    if (type.includes('Restricted')) return 'type-restricted';
+                    return 'type-regional';
+                },
+
+                getTypeClass(type) {
+                    if (type.includes('National')) return 'national';
+                    if (type.includes('Gazetted')) return 'gazetted';
+                    if (type.includes('Restricted')) return 'restricted';
+                    return 'regional';
+                },
+
+                getTypeDotColor(type) {
+                    if (type.includes('National')) return 'var(--festival-national)';
+                    if (type.includes('Gazetted')) return 'var(--festival-gazetted)';
+                    if (type.includes('Restricted')) return 'var(--festival-restricted)';
+                    return 'var(--festival-regional)';
+                },
+
+                getTypeBgColor(type) {
+                    if (type.includes('National')) return 'rgba(231,76,60,0.12)';
+                    if (type.includes('Gazetted')) return 'rgba(230,126,34,0.12)';
+                    if (type.includes('Restricted')) return 'rgba(155,89,182,0.12)';
+                    return 'rgba(52,152,219,0.12)';
+                },
+
+                getTypeTextColor(type) {
+                    if (type.includes('National')) return 'var(--festival-national)';
+                    if (type.includes('Gazetted')) return 'var(--festival-gazetted)';
+                    if (type.includes('Restricted')) return 'var(--festival-restricted)';
+                    return 'var(--festival-regional)';
+                },
+
+                formatDate(dateStr) {
+                    const d = new Date(dateStr + 'T00:00:00');
+                    return d.toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
+                },
+
+                isPast(dateStr) {
+                    return new Date(dateStr + 'T23:59:59') < new Date();
+                },
+
+                daysUntil(dateStr) {
+                    const now = new Date();
+                    now.setHours(0,0,0,0);
+                    const target = new Date(dateStr + 'T00:00:00');
+                    return Math.max(0, Math.ceil((target - now) / (1000 * 60 * 60 * 24)));
+                },
+
+                nextFestival() {
+                    const now = new Date();
+                    now.setHours(0,0,0,0);
+                    return this.festivals.find(f => new Date(f.date + 'T00:00:00') >= now) || null;
+                },
+
+                upcomingFestivals() {
+                    const now = new Date();
+                    now.setHours(0,0,0,0);
+                    return this.festivals.filter(f => new Date(f.date + 'T00:00:00') >= now);
+                },
+
+                filteredFestivals() {
+                    let list = this.festivals;
+                    if (this.filter !== 'all') {
+                        list = list.filter(f => f.type.includes(this.filter));
+                    }
+                    if (this.search.trim()) {
+                        const q = this.search.toLowerCase();
+                        list = list.filter(f =>
+                            f.name.toLowerCase().includes(q) ||
+                            f.type.toLowerCase().includes(q) ||
+                            f.day.toLowerCase().includes(q) ||
+                            f.date.includes(q) ||
+                            f.regions.some(r => r.toLowerCase().includes(q))
+                        );
+                    }
+                    return list;
+                },
+
+                scrollToFestival(f) {
+                    const el = document.getElementById('fest-' + f.date);
+                    if (el) {
+                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        el.style.background = '#fff3cd';
+                        setTimeout(() => el.style.background = '', 1500);
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
